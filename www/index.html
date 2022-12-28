@@ -1,375 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-US">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!--
-    Modified from the Debian original for Ubuntu
-    Last updated: 2016-11-16
-    See: https://launchpad.net/bugs/1288690
-  -->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Apache2 Ubuntu Default Page: It works</title>
-    <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Matthew Green's Showcase</title>
+    <meta name="description" content="A modern and minimal CSS framework for terminal lovers." />
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/terminal.min.css" />
+    <style>
+        .components-grid {
+            display: grid;
+            grid-column-gap: 1.4em;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
 
-  body, html {
-    padding: 3px 3px 3px 3px;
+        .image-grid {
+            display: grid;
+            grid-template-rows: auto;
+            display: grid;
+            grid-gap: 1em;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(auto-fit,
+                    minmax(calc(var(--page-width) / 12), 1fr));
+        }
 
-    background-color: #D8DBE2;
-
-    font-family: Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
-
-  div.main_page {
-    position: relative;
-    display: table;
-
-    width: 800px;
-
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
-
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
-
-    background-color: #FFFFFF;
-
-    text-align: center;
-  }
-
-  div.page_header {
-    height: 99px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  div.table_of_contents {
-    clear: left;
-
-    min-width: 200px;
-
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.table_of_contents_item {
-    clear: left;
-
-    width: 100%;
-
-    margin: 4px 0px 0px 0px;
-
-    background-color: #FFFFFF;
-
-    color: #000000;
-    text-align: left;
-  }
-
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
-
-  div.content_section {
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    color: #000000;
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: #F5F6F7;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #8E9CB2;
-
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_red {
-    background-color: #CD214F;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
+        @media only screen and (min-width: 70em) {
+            .components-grid {
+                grid-template-columns: 3fr 9fr;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="page_header floating_element">
-        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
-        <span class="floating_element">
-          Apache2 Ubuntu Default Page
-        </span>
-      </div>
-<!--      <div class="table_of_contents floating_element">
-        <div class="section_header section_header_grey">
-          TABLE OF CONTENTS
+
+    <style>
+        :root {
+            --global-font-size: 15px;
+            --global-line-height: 1.4em;
+            --global-space: 10px;
+            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+                serif;
+            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+                serif;
+            --background-color: #222225;
+            --page-width: 60em;
+            --font-color: #e8e9ed;
+            --invert-font-color: #222225;
+            --secondary-color: #a3abba;
+            --tertiary-color: #a3abba;
+            --primary-color: #62c4ff;
+            --error-color: #ff3c74;
+            --progress-bar-background: #3f3f44;
+            --progress-bar-fill: #62c4ff;
+            --code-bg-color: #3f3f44;
+            --input-style: solid;
+            --display-h1-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+            <header class="terminal-logo">
+                <div class="logo terminal-prompt"><a href="https://terminalcss.xyz" class="no-style">Matthew Green's
+                        Showcase</a>
+                </div>
+            </header>
+            <nav class="terminal-menu">
+                <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                    <li property="itemListElement" typeof="ListItem"><a href="#projects" property="item"
+                            typeof="WebPage" class="menu-item active"><span property="name">Projects</span></a>
+                        <meta property="position" content="1">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem"><a href="#skills" property="item" typeof="WebPage"
+                            class="menu-item active"><span property="name">Skills</span></a>
+                        <meta property="position" content="2">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem"><a href="#work_experience" property="item"
+                            typeof="WebPage" class="menu-item active"><span property="name">Work Experience</span></a>
+                        <meta property="position" content="3">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem"><a href="#education" property="item"
+                            typeof="WebPage" class="menu-item active"><span property="name">Education</span></a>
+                        <meta property="position" content="4">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem"><a href="#about_me" property="item"
+                            typeof="WebPage" class="menu-item active"><span property="name">About Me</span></a>
+                        <meta property="position" content="5">
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#about">About</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#changes">Changes</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#scope">Scope</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#files">Config files</a>
-        </div>
-      </div>
--->
-      <div class="content_section floating_element">
-
-
-        <div class="section_header section_header_red">
-          <div id="about"></div>
-          It works!
-        </div>
-        <div class="content_section_text">
-          <p>
-                This is the default welcome page used to test the correct 
-                operation of the Apache2 server after installation on Ubuntu systems.
-                It is based on the equivalent page on Debian, from which the Ubuntu Apache
-                packaging is derived.
-                If you can read this page, it means that the Apache HTTP server installed at
-                this site is working properly. You should <b>replace this file</b> (located at
-                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
-          </p>
-
-
-          <p>
-                If you are a normal user of this web site and don't know what this page is
-                about, this probably means that the site is currently unavailable due to
-                maintenance.
-                If the problem persists, please contact the site's administrator.
-          </p>
-
-        </div>
-        <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
-        </div>
-        <div class="content_section_text">
-          <p>
-                Ubuntu's Apache2 default configuration is different from the
-                upstream default configuration, and split into several files optimized for
-                interaction with Ubuntu tools. The configuration system is
-                <b>fully documented in
-                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-                documentation. Documentation for the web server itself can be
-                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-                package was installed on this server.
-
-          </p>
-          <p>
-                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
-/etc/apache2/
-|-- apache2.conf
-|       `--  ports.conf
-|-- mods-enabled
-|       |-- *.load
-|       `-- *.conf
-|-- conf-enabled
-|       `-- *.conf
-|-- sites-enabled
-|       `-- *.conf
-          </pre>
-          <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
-
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
-
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
-
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                a2enmod,
-                                a2dismod,
-                           </tt>
-                           <tt>
-                                a2ensite,
-                                a2dissite,
-                            </tt>
-                                and
-                           <tt>
-                                a2enconf,
-                                a2disconf
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
-
-                        <li>
-                           The binary is called apache2. Due to the use of
-                           environment variables, in the default configuration, apache2 needs to be
-                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
-          </ul>
-        </div>
-
-        <div class="section_header">
-            <div id="docroot"></div>
-                Document Roots
-        </div>
-
-        <div class="content_section_text">
-            <p>
-                By default, Ubuntu does not allow access through the web browser to
-                <em>any</em> file apart of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
-            </p>
-            <p>
-                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www. This is different
-                to previous releases which provides better security out of the box.
-            </p>
-        </div>
-
-        <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
-        </div>
-        <div class="content_section_text">
-          <p>
-                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
-                rel="nofollow">existing bug reports</a> before reporting a new bug.
-          </p>
-          <p>
-                Please report bugs specific to modules (such as PHP and others)
-                to respective packages, not to the web server itself.
-          </p>
-        </div>
-
-
-
-
-      </div>
     </div>
-    <div class="validator">
+
+    <div class="container">
+        <p>
+            Hi, I am Matthew Green and this is a showcase of all my work experience, skills, and projects.
+        </p>
+
+        <div>
+            <h1 id="projects">Projects</h1>
+
+            <div>
+                <h2 id="trapstronauts">Trapstronauts</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Vitae nunc sed velit dignissim sodales ut. Odio ut enim blandit volutpat
+                    maecenas. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Nisl nisi scelerisque
+                    eu ultrices vitae auctor eu. Lacus viverra vitae congue eu consequat. Ipsum suspendisse ultrices
+                    gravida dictum fusce ut placerat. Vel pharetra vel turpis nunc eget lorem dolor sed. Nisl pretium
+                    fusce id velit ut. Sit amet facilisis magna etiam tempor orci eu lobortis. Vel risus commodo viverra
+                    maecenas accumsan lacus. Enim nunc faucibus a pellentesque sit. Cras pulvinar mattis nunc sed
+                    blandit libero volutpat sed cras. Augue lacus viverra vitae congue eu consequat ac. Praesent
+                    elementum facilisis leo vel fringilla est ullamcorper. Aliquet sagittis id consectetur purus ut
+                    faucibus pulvinar. Commodo ullamcorper a lacus vestibulum sed arcu. Tortor condimentum lacinia quis
+                    vel eros donec ac odio. Tempor id eu nisl nunc.
+                </p>
+                <div>
+                    <center>
+                        <figure>
+                            <video width="320" height="240" controls>
+                                <source src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <figcaption>Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts
+                                out frequently in the recording.</figcaption>
+                        </figure>
+                    </center>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div>
+                <h2 id="project_calamity">Project Calamity</h2>
+                <a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">Project Calamity UTA Senior
+                    Designs Blog Page</a>
+                <br>
+                <a href="https://git.matthewgreen.gg/matthewgreen/SeniorDesignProject">Personal Git Repo</a>
+                <br>
+                <a href="https://github.com/greenmatthew/SeniorDesignProject">Github Repo</a>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit. Sem nulla pharetra diam
+                    sit amet nisl suscipit adipiscing bibendum. In hac habitasse platea dictumst vestibulum. Enim nunc
+                    faucibus a pellentesque sit amet porttitor eget. Amet dictum sit amet justo donec enim. Blandit
+                    massa enim nec dui nunc. Vitae suscipit tellus mauris a diam maecenas sed enim. Facilisi nullam
+                    vehicula ipsum a arcu. Faucibus ornare suspendisse sed nisi. Maecenas ultricies mi eget mauris.
+                    Varius morbi enim nunc faucibus a pellentesque sit amet. Tempor nec feugiat nisl pretium fusce id.
+                    Cursus vitae congue mauris rhoncus aenean. Sagittis vitae et leo duis ut diam quam nulla porttitor.
+                    Sagittis vitae et leo duis ut diam quam nulla porttitor.
+
+                    Porta lorem mollis aliquam ut porttitor. Turpis egestas maecenas pharetra convallis. Pellentesque
+                    elit eget gravida cum sociis. Eu sem integer vitae justo eget magna. Mauris pharetra et ultrices
+                    neque ornare aenean euismod elementum nisi. Cum sociis natoque penatibus et. Sit amet mattis
+                    vulputate enim nulla aliquet. Mauris cursus mattis molestie a. Faucibus scelerisque eleifend donec
+                    pretium vulputate. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Erat pellentesque
+                    adipiscing commodo elit at. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt
+                    lobortis feugiat. Pulvinar sapien et ligula ullamcorper. Sagittis purus sit amet volutpat consequat.
+                    Etiam dignissim diam quis enim. Bibendum est ultricies integer quis auctor. Volutpat sed cras ornare
+                    arcu. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere.
+                </p>
+                <div>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_00.png"
+                            alt="Project Calamity Image 1">
+                        <figcaption>Project Calamity Image 1: A screenshot of the main menu of the game.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_01.png"
+                            alt="Project Calamity Image 2">
+                        <figcaption>Project Calamity Image 2: A screenshot of the main game screen of the game.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_02.png"
+                            alt="Project Calamity Image 3">
+                        <figcaption>Project Calamity Image 3: A screenshot of the main game screen of the game.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_03.png"
+                            alt="Project Calamity Image 4">
+                        <figcaption>Project Calamity Image 4: A screenshot of the main game screen of the game.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_04.png"
+                            alt="Project Calamity Image 5">
+                        <figcaption>Project Calamity Image 5: A screenshot of the main game screen of the game.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_05.png"
+                            alt="Project Calamity Image 6">
+                        <figcaption>Project Calamity Image 6: A screenshot of the main game screen of the game.
+                        </figcaption>
+                    </figure>
+                    <center>
+                        <figure>
+                            <video width="320" height="240" controls>
+                                <source src="project_calamity/project_calamity_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <figcaption>Project Calamity Demo Video: Recorded by one of my team members for the project
+                                Will Kembel.</figcaption>
+                        </figure>
+                    </center>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div>
+                <h2 id="cad_model_viewer">CAD Model Viewer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. In
+                    nibh mauris cursus mattis molestie a iaculis at. Nunc id cursus metus aliquam eleifend mi in. Morbi
+                    tincidunt ornare massa eget egestas. Sed adipiscing diam donec adipiscing. Tortor vitae purus
+                    faucibus ornare suspendisse sed nisi. Et sollicitudin ac orci phasellus egestas. Sodales ut etiam
+                    sit amet. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Velit scelerisque in
+                    dictum non. Aliquet nibh praesent tristique magna sit amet purus gravida quis.
+
+                    Pretium fusce id velit ut tortor pretium. Ut venenatis tellus in metus vulputate eu scelerisque
+                    felis. Id consectetur purus ut faucibus pulvinar elementum. Eu sem integer vitae justo eget magna
+                    fermentum iaculis. Proin fermentum leo vel orci porta non pulvinar neque. Pellentesque diam volutpat
+                    commodo sed egestas. Velit egestas dui id ornare arcu odio ut. Nullam vehicula ipsum a arcu cursus.
+                    Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Euismod quis viverra nibh cras
+                    pulvinar mattis nunc. Faucibus a pellentesque sit amet porttitor eget. Gravida in fermentum et
+                    sollicitudin ac orci. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Cras
+                    fermentum odio eu feugiat. Cursus metus aliquam eleifend mi in.
+                </p>
+            </div>
+
+            <br><br><br>
+
+            <div>
+                <h2 id="server_computer">Server Computer</h2>
+                My website, my plex server, game servers, unraid, blah blah blah.
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. In
+                    nibh mauris cursus mattis molestie a iaculis at. Nunc id cursus metus aliquam eleifend mi in. Morbi
+                    tincidunt ornare massa eget egestas. Sed adipiscing diam donec adipiscing. Tortor vitae purus
+                    faucibus ornare suspendisse sed nisi. Et sollicitudin ac orci phasellus egestas. Sodales ut etiam
+                    sit amet. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Velit scelerisque in
+                    dictum non. Aliquet nibh praesent tristique magna sit amet purus gravida quis.
+
+                    Pretium fusce id velit ut tortor pretium. Ut venenatis tellus in metus vulputate eu scelerisque
+                    felis. Id consectetur purus ut faucibus pulvinar elementum. Eu sem integer vitae justo eget magna
+                    fermentum iaculis. Proin fermentum leo vel orci porta non pulvinar neque. Pellentesque diam volutpat
+                    commodo sed egestas. Velit egestas dui id ornare arcu odio ut. Nullam vehicula ipsum a arcu cursus.
+                    Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Euismod quis viverra nibh cras
+                    pulvinar mattis nunc. Faucibus a pellentesque sit amet porttitor eget. Gravida in fermentum et
+                    sollicitudin ac orci. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Cras
+                    fermentum odio eu feugiat. Cursus metus aliquam eleifend mi in.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="skills">Skills</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus. Ut lectus arcu bibendum at
+                varius vel pharetra vel turpis. Sem viverra aliquet eget sit amet tellus cras. Diam sit amet nisl
+                suscipit adipiscing bibendum est. Donec massa sapien faucibus et molestie ac. Fames ac turpis egestas
+                maecenas pharetra. Ultrices vitae auctor eu augue ut. Integer enim neque volutpat ac tincidunt vitae
+                semper quis lectus. Pretium vulputate sapien nec sagittis aliquam malesuada. Diam ut venenatis tellus
+                in. Enim sit amet venenatis urna cursus eget. Fames ac turpis egestas sed. Amet est placerat in egestas.
+                Amet tellus cras adipiscing enim eu. Interdum velit laoreet id donec ultrices tincidunt arcu. Id aliquet
+                risus feugiat in ante metus dictum at tempor. Vulputate dignissim suspendisse in est ante in nibh mauris
+                cursus.
+
+                Molestie a iaculis at erat pellentesque adipiscing. Vulputate enim nulla aliquet porttitor lacus luctus.
+                A cras semper auctor neque vitae tempus quam pellentesque nec. Convallis aenean et tortor at risus
+                viverra adipiscing. Fames ac turpis egestas integer eget aliquet nibh. Consectetur lorem donec massa
+                sapien. Erat imperdiet sed euismod nisi porta lorem mollis. Sapien faucibus et molestie ac feugiat sed.
+                Sed arcu non odio euismod lacinia at quis risus sed. Sed faucibus turpis in eu mi bibendum neque egestas
+                congue. Cras adipiscing enim eu turpis egestas pretium.
+
+                Dui sapien eget mi proin sed libero enim. Integer vitae justo eget magna fermentum iaculis eu non diam.
+                Feugiat in fermentum posuere urna. Vulputate ut pharetra sit amet. Sit amet consectetur adipiscing elit
+                ut. Euismod lacinia at quis risus sed. Consectetur a erat nam at lectus urna duis. Dictum sit amet justo
+                donec enim diam vulputate. In fermentum posuere urna nec. Pellentesque diam volutpat commodo sed
+                egestas. Quis vel eros donec ac odio.
+
+                Venenatis cras sed felis eget velit aliquet sagittis. Elementum integer enim neque volutpat ac tincidunt
+                vitae. Convallis aenean et tortor at risus. Mi in nulla posuere sollicitudin aliquam ultrices. Elit
+                scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque habitant morbi tristique
+                senectus et netus. Diam maecenas sed enim ut sem. Arcu non sodales neque sodales ut etiam sit amet. Non
+                enim praesent elementum facilisis leo vel fringilla est. Sed id semper risus in hendrerit gravida
+                rutrum. Amet purus gravida quis blandit turpis cursus in hac habitasse. Nec nam aliquam sem et.
+
+                Aliquam sem et tortor consequat id porta nibh. In est ante in nibh mauris cursus. Tincidunt praesent
+                semper feugiat nibh sed pulvinar proin. Lacus sed viverra tellus in hac habitasse platea. Vitae purus
+                faucibus ornare suspendisse. Purus gravida quis blandit turpis cursus in. Vel facilisis volutpat est
+                velit egestas dui id. Posuere urna nec tincidunt praesent semper feugiat nibh. Cum sociis natoque
+                penatibus et. Molestie nunc non blandit massa enim nec dui nunc. Pellentesque id nibh tortor id aliquet
+                lectus proin. Eu augue ut lectus arcu.
+            </p>
+        </div>
+
+        <div>
+            <h1 id="work_experience">Work Experience</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus. Ut lectus arcu bibendum at
+                varius vel pharetra vel turpis. Sem viverra aliquet eget sit amet tellus cras. Diam sit amet nisl
+                suscipit adipiscing bibendum est. Donec massa sapien faucibus et molestie ac. Fames ac turpis egestas
+                maecenas pharetra. Ultrices vitae auctor eu augue ut. Integer enim neque volutpat ac tincidunt vitae
+                semper quis lectus. Pretium vulputate sapien nec sagittis aliquam malesuada. Diam ut venenatis tellus
+                in. Enim sit amet venenatis urna cursus eget. Fames ac turpis egestas sed. Amet est placerat in egestas.
+                Amet tellus cras adipiscing enim eu. Interdum velit laoreet id donec ultrices tincidunt arcu. Id aliquet
+                risus feugiat in ante metus dictum at tempor. Vulputate dignissim suspendisse in est ante in nibh mauris
+                cursus.
+
+                Molestie a iaculis at erat pellentesque adipiscing. Vulputate enim nulla aliquet porttitor lacus luctus.
+                A cras semper auctor neque vitae tempus quam pellentesque nec. Convallis aenean et tortor at risus
+                viverra adipiscing. Fames ac turpis egestas integer eget aliquet nibh. Consectetur lorem donec massa
+                sapien. Erat imperdiet sed euismod nisi porta lorem mollis. Sapien faucibus et molestie ac feugiat sed.
+                Sed arcu non odio euismod lacinia at quis risus sed. Sed faucibus turpis in eu mi bibendum neque egestas
+                congue. Cras adipiscing enim eu turpis egestas pretium.
+
+                Dui sapien eget mi proin sed libero enim. Integer vitae justo eget magna fermentum iaculis eu non diam.
+                Feugiat in fermentum posuere urna. Vulputate ut pharetra sit amet. Sit amet consectetur adipiscing elit
+                ut. Euismod lacinia at quis risus sed. Consectetur a erat nam at lectus urna duis. Dictum sit amet justo
+                donec enim diam vulputate. In fermentum posuere urna nec. Pellentesque diam volutpat commodo sed
+                egestas. Quis vel eros donec ac odio.
+
+                Venenatis cras sed felis eget velit aliquet sagittis. Elementum integer enim neque volutpat ac tincidunt
+                vitae. Convallis aenean et tortor at risus. Mi in nulla posuere sollicitudin aliquam ultrices. Elit
+                scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque habitant morbi tristique
+                senectus et netus. Diam maecenas sed enim ut sem. Arcu non sodales neque sodales ut etiam sit amet. Non
+                enim praesent elementum facilisis leo vel fringilla est. Sed id semper risus in hendrerit gravida
+                rutrum. Amet purus gravida quis blandit turpis cursus in hac habitasse. Nec nam aliquam sem et.
+
+                Aliquam sem et tortor consequat id porta nibh. In est ante in nibh mauris cursus. Tincidunt praesent
+                semper feugiat nibh sed pulvinar proin. Lacus sed viverra tellus in hac habitasse platea. Vitae purus
+                faucibus ornare suspendisse. Purus gravida quis blandit turpis cursus in. Vel facilisis volutpat est
+                velit egestas dui id. Posuere urna nec tincidunt praesent semper feugiat nibh. Cum sociis natoque
+                penatibus et. Molestie nunc non blandit massa enim nec dui nunc. Pellentesque id nibh tortor id aliquet
+                lectus proin. Eu augue ut lectus arcu.
+            </p>
+            <div class="terminal-timeline">
+                <div class="terminal-card">
+                    <header>
+                        <center>
+                            <h1>UTA XR Programmer</h1>
+                        </center>
+                        Jan. 2022 - Present
+                    </header>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+                        ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+                        incidunt. Eaque quod et, aut maiores excepturi sint.
+                    </div>
+                </div>
+                <div class="terminal-card">
+                    <header>
+                        <center>
+                            <h1>Walgreens</h1>
+                        </center>
+                        Jan. 0000 - Jan. 0000
+                    </header>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+                        ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+                        incidunt. Eaque quod et, aut maiores excepturi sint.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="education">Education</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus. Ut lectus arcu bibendum at
+                varius vel pharetra vel turpis. Sem viverra aliquet eget sit amet tellus cras. Diam sit amet nisl
+                suscipit adipiscing bibendum est. Donec massa sapien faucibus et molestie ac. Fames ac turpis egestas
+                maecenas pharetra. Ultrices vitae auctor eu augue ut. Integer enim neque volutpat ac tincidunt vitae
+                semper quis lectus. Pretium vulputate sapien nec sagittis aliquam malesuada. Diam ut venenatis tellus
+                in. Enim sit amet venenatis urna cursus eget. Fames ac turpis egestas sed. Amet est placerat in egestas.
+                Amet tellus cras adipiscing enim eu. Interdum velit laoreet id donec ultrices tincidunt arcu. Id aliquet
+                risus feugiat in ante metus dictum at tempor. Vulputate dignissim suspendisse in est ante in nibh mauris
+                cursus.
+
+                Molestie a iaculis at erat pellentesque adipiscing. Vulputate enim nulla aliquet porttitor lacus luctus.
+                A cras semper auctor neque vitae tempus quam pellentesque nec. Convallis aenean et tortor at risus
+                viverra adipiscing. Fames ac turpis egestas integer eget aliquet nibh. Consectetur lorem donec massa
+                sapien. Erat imperdiet sed euismod nisi porta lorem mollis. Sapien faucibus et molestie ac feugiat sed.
+                Sed arcu non odio euismod lacinia at quis risus sed. Sed faucibus turpis in eu mi bibendum neque egestas
+                congue. Cras adipiscing enim eu turpis egestas pretium.
+
+                Dui sapien eget mi proin sed libero enim. Integer vitae justo eget magna fermentum iaculis eu non diam.
+                Feugiat in fermentum posuere urna. Vulputate ut pharetra sit amet. Sit amet consectetur adipiscing elit
+                ut. Euismod lacinia at quis risus sed. Consectetur a erat nam at lectus urna duis. Dictum sit amet justo
+                donec enim diam vulputate. In fermentum posuere urna nec. Pellentesque diam volutpat commodo sed
+                egestas. Quis vel eros donec ac odio.
+
+                Venenatis cras sed felis eget velit aliquet sagittis. Elementum integer enim neque volutpat ac tincidunt
+                vitae. Convallis aenean et tortor at risus. Mi in nulla posuere sollicitudin aliquam ultrices. Elit
+                scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque habitant morbi tristique
+                senectus et netus. Diam maecenas sed enim ut sem. Arcu non sodales neque sodales ut etiam sit amet. Non
+                enim praesent elementum facilisis leo vel fringilla est. Sed id semper risus in hendrerit gravida
+                rutrum. Amet purus gravida quis blandit turpis cursus in hac habitasse. Nec nam aliquam sem et.
+
+                Aliquam sem et tortor consequat id porta nibh. In est ante in nibh mauris cursus. Tincidunt praesent
+                semper feugiat nibh sed pulvinar proin. Lacus sed viverra tellus in hac habitasse platea. Vitae purus
+                faucibus ornare suspendisse. Purus gravida quis blandit turpis cursus in. Vel facilisis volutpat est
+                velit egestas dui id. Posuere urna nec tincidunt praesent semper feugiat nibh. Cum sociis natoque
+                penatibus et. Molestie nunc non blandit massa enim nec dui nunc. Pellentesque id nibh tortor id aliquet
+                lectus proin. Eu augue ut lectus arcu.
+            </p>
+        </div>
+
+        <div>
+            <h1 id="about_me">About Me</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus. Ut lectus arcu bibendum at
+                varius vel pharetra vel turpis. Sem viverra aliquet eget sit amet tellus cras. Diam sit amet nisl
+                suscipit adipiscing bibendum est. Donec massa sapien faucibus et molestie ac. Fames ac turpis egestas
+                maecenas pharetra. Ultrices vitae auctor eu augue ut. Integer enim neque volutpat ac tincidunt vitae
+                semper quis lectus. Pretium vulputate sapien nec sagittis aliquam malesuada. Diam ut venenatis tellus
+                in. Enim sit amet venenatis urna cursus eget. Fames ac turpis egestas sed. Amet est placerat in egestas.
+                Amet tellus cras adipiscing enim eu. Interdum velit laoreet id donec ultrices tincidunt arcu. Id aliquet
+                risus feugiat in ante metus dictum at tempor. Vulputate dignissim suspendisse in est ante in nibh mauris
+                cursus.
+
+                Molestie a iaculis at erat pellentesque adipiscing. Vulputate enim nulla aliquet porttitor lacus luctus.
+                A cras semper auctor neque vitae tempus quam pellentesque nec. Convallis aenean et tortor at risus
+                viverra adipiscing. Fames ac turpis egestas integer eget aliquet nibh. Consectetur lorem donec massa
+                sapien. Erat imperdiet sed euismod nisi porta lorem mollis. Sapien faucibus et molestie ac feugiat sed.
+                Sed arcu non odio euismod lacinia at quis risus sed. Sed faucibus turpis in eu mi bibendum neque egestas
+                congue. Cras adipiscing enim eu turpis egestas pretium.
+
+                Dui sapien eget mi proin sed libero enim. Integer vitae justo eget magna fermentum iaculis eu non diam.
+                Feugiat in fermentum posuere urna. Vulputate ut pharetra sit amet. Sit amet consectetur adipiscing elit
+                ut. Euismod lacinia at quis risus sed. Consectetur a erat nam at lectus urna duis. Dictum sit amet justo
+                donec enim diam vulputate. In fermentum posuere urna nec. Pellentesque diam volutpat commodo sed
+                egestas. Quis vel eros donec ac odio.
+
+                Venenatis cras sed felis eget velit aliquet sagittis. Elementum integer enim neque volutpat ac tincidunt
+                vitae. Convallis aenean et tortor at risus. Mi in nulla posuere sollicitudin aliquam ultrices. Elit
+                scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque habitant morbi tristique
+                senectus et netus. Diam maecenas sed enim ut sem. Arcu non sodales neque sodales ut etiam sit amet. Non
+                enim praesent elementum facilisis leo vel fringilla est. Sed id semper risus in hendrerit gravida
+                rutrum. Amet purus gravida quis blandit turpis cursus in hac habitasse. Nec nam aliquam sem et.
+
+                Aliquam sem et tortor consequat id porta nibh. In est ante in nibh mauris cursus. Tincidunt praesent
+                semper feugiat nibh sed pulvinar proin. Lacus sed viverra tellus in hac habitasse platea. Vitae purus
+                faucibus ornare suspendisse. Purus gravida quis blandit turpis cursus in. Vel facilisis volutpat est
+                velit egestas dui id. Posuere urna nec tincidunt praesent semper feugiat nibh. Cum sociis natoque
+                penatibus et. Molestie nunc non blandit massa enim nec dui nunc. Pellentesque id nibh tortor id aliquet
+                lectus proin. Eu augue ut lectus arcu.
+            </p>
+        </div>
     </div>
-  </body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("pre code").forEach(block => {
+                window.hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+</body>
+
 </html>
-
