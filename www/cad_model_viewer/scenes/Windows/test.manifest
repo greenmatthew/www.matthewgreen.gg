@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3444161979
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fc4ccd0ac9fd3e4bea62f44d5da6c224
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c12678a98877549a3fe7bb52917258ad
+HashAppended: 0
+ClassTypes:
+- Class: 329
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleTemp/new/DrF video test.m4v
+Dependencies: []
