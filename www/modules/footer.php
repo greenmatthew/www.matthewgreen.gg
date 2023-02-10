@@ -1,3 +1,8 @@
 <?php
-echo '<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>';
-?>
+echo "
+<div class=\"container\">
+<small>
+    Copyright &copy; 2022-" . date("Y") . " Matthew Green
+</small>
+</div>
+";

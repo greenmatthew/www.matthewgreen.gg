@@ -2,9 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <!-- <link rel="icon" type="image/png" href="/icons/terminal16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/icons/terminal48x48.png" sizes="48x48"> -->
-    <div w3-include-html="modules/header.html"></div>
+    <?php require 'modules/header.php'; ?>
 </head>
 
 <body>
@@ -20,8 +18,7 @@
 
             <div>
                 <h2 id="trapstronauts">
-                    <a href="https://www.matthewgreen.gg/trapstronauts.html">Trapstronauts</a> <a
-                        href="https://www.matthewgreen.gg/#trapstronauts">#</a>
+                    <a href="https://www.matthewgreen.gg/trapstronauts.html">Trapstronauts</a> <a href="https://www.matthewgreen.gg/#trapstronauts">#</a>
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -54,8 +51,7 @@
 
             <div>
                 <h2 id="project_calamity">
-                    <a href="https://www.matthewgreen.gg/project_calamity.html">Project Calamity</a> <a
-                        href="https://www.matthewgreen.gg/#project_calamity">#</a>
+                    <a href="https://www.matthewgreen.gg/project_calamity.html">Project Calamity</a> <a href="https://www.matthewgreen.gg/#project_calamity">#</a>
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -66,13 +62,11 @@
                     vehicula ipsum a arcu.
                 </p>
                 <p>
-                    You can see more about this project <a
-                        href="https://www.matthewgreen.gg/project_calamity.html">here</a>.
+                    You can see more about this project <a href="https://www.matthewgreen.gg/project_calamity.html">here</a>.
                 </p>
                 <div>
                     <figure>
-                        <img src="project_calamity/project_calamity_gameplay_screenshot_00.png"
-                            alt="Project Calamity Image 1">
+                        <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Image 1">
                         <figcaption>Project Calamity Image 1: Showcasing the terrain and skybox.</figcaption>
                     </figure>
                 </div>
@@ -82,8 +76,7 @@
 
             <div>
                 <h2 id="cad_model_viewer">
-                    <a href="https://www.matthewgreen.gg/cad_model_viewer.html">CAD Model Viewer</a> <a
-                        href="https://www.matthewgreen.gg/#cad_model_viewer">#</a>
+                    <a href="https://www.matthewgreen.gg/cad_model_viewer.html">CAD Model Viewer</a> <a href="https://www.matthewgreen.gg/#cad_model_viewer">#</a>
                 </h2>
 
                 <p>
@@ -153,8 +146,7 @@
                             </p>
                         </center>
                         <p>
-                            I was hired by <a
-                                href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr.
+                            I was hired by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr.
                                 Raul Fernandez</a>, of the Mechanical and Aerospace Engineering Department at UTA, to
                             work individually on a <a href="https://www.matthewgreen.gg/#cad_model_viewer">VR
                                 application</a>. The application is meant to help students learn about the concepts of
@@ -289,15 +281,13 @@
 </body>
 
 <footer>
-    <?php include 'footer.php'; ?>
+    <?php require 'modules/footer.php'; ?>
 </footer>
 
-<script src="scripts/include_html.js"></script>
-<script>includeHTML();</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll("pre code").forEach(block => {
             window.hljs.highlightBlock(block);
         });
