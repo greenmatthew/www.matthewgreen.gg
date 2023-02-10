@@ -39,7 +39,7 @@
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
             serif;
         --background-color: #222225;
-        --page-width: 60em;
+        --page-width: 70em;
         --font-color: #e8e9ed;
         --invert-font-color: #222225;
         --secondary-color: #a3abba;
