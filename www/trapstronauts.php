@@ -12,17 +12,40 @@
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a>
         </h2>
 
-        <div class="container">
-            <h3 id="links">
-                Links <a href="https://www.matthewgreen.gg/trapstronauts.php#links">#</a>
-            </h3>
-            <ul>
-                <li><a href="https://git.matthewgreen.gg/matthewgreen/GameDesignProject">Personal Git Repo</a></li>
-                <li><a href="https://github.com/greenmatthew/GameDesignProject">Github Repo</a></li>
-            </ul>
-        </div>
+        <h3 id="links">
+            Links<a href="#links">#</a>
+        </h3>
+        <ul>
+            <li><a href="https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git">Personal Git Repo</a></li>
+            <li><a href="https://github.com/greenmatthew/Trapstronauts">Github Repo</a></li>
+        </ul>
+
+        <h3 id="content">
+            Content <a href="#content">#</a>
+        </h3>
+        <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#summary">Summary</a></li>
+            <div class="container">
+                <ul>
+                    <li><a href="#demo_video">Demo Video</a></li>
+                </ul>
+            </div>
+        </ul>
 
         <br>
+
+        <h2 id="purpose">Purpose <a href="#purpose">#</a></h2>
+        <p>
+        This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at the University of Texas at Arlington.
+        </p>
+
+        <h2 id="summary">Summary <a href="#summary">#</a></h2>
+        <p>
+        It is a local multiplayer party game, which draws heavy inspirations from another video game called Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme. That being 2-4 players vote on a map. Then a proportional voting system chooses at random evenly between each players' vote and then the players then proceed to play multiple rounds on it. The players all have the same goal get to the finish line as soon as possible. However, there is a catch, at the beginning of each round the players all place a single item from a small random assortment of items. Some of these items being platforms others being traps. Depending on what the players choose and place it can either make making it to the finish line easier or harder. These traps as well as environmental hazards on the map can kill players and stop them from making it to the finish. At the end of a round, players are awarded points for what they did that round. Once a player earns a certain number of points they win, and the rest of the players lose.
+
+        A motif of the game would certainly be that the players are always competing. Even when they are not racing to the finish. The players will end up fighting over which map to play on. Starting the game before the other players are ready and have voted on a map. Stealing items from other player's when choosing items at the start of every round. Blocking pathways or destroying blocks to the finish line. Making the map harder or easier to navigate against other players' wishes. All these individual design features lead to a very fun experience with a couple of friends to laugh over while playing and after the game is over.
+        </p>
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
