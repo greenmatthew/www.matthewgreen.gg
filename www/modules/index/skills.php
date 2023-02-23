@@ -12,7 +12,7 @@
     <li>Troubleshooting</li>
     <li>Project Management</li>
     <li>Analyzation</li>
-    <li>Documenting</li>
+    <li>Documentation</li>
     <li>Organization</li>
 </ul>
 <h2 id="technical_skills">
@@ -21,6 +21,7 @@
 <ul>
     <li>C/C++</li>
     <li>C#</li>
+    <li>Python</li>
     <li>Unity Engine</li>
     <li>Git</li>
 </ul>
