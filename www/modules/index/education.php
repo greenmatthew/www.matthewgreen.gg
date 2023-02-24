@@ -32,7 +32,7 @@
                     <p>
                         Aug. 2015 - May. 2019
                         <br>
-                        Walgreens
+                        Computer Science Major
                         <br>
                         North Richland Hills, TX
                     </p>

@@ -7,19 +7,13 @@
 
 <body>
     <div class="container">
-        <center>
-            <h1 id="trapstronauts">
-                <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a>
-            </h1>
-            <br>
-            <div class="container">
-                <figure id="title_screen">
-                    <img src="trapstronauts/title_screen.png" alt="Trapstronauts Title Screen"
-                        style="width:480px;height:auto;">
-                </figure>
-            </div>
-
-        </center>
+        <h1 id="trapstronauts">
+            <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a>
+        </h1>
+        <br>
+        <figure id="title_screen">
+            <img src="trapstronauts/preview.png" alt="Trapstronauts Title Screen" style="width:100%;">
+        </figure>
 
         <br>
 
@@ -98,7 +92,7 @@
             <p>
                 A motif of the game would certainly be that the players are always competing. Even when they are not
                 racing to the finish. The players will end up fighting over which map to play on. Starting the game
-                before the other players are ready and have voted on a map. Stealing items from other player's when
+                before the other players are ready and have voted on a map. Stealing items from other players when
                 choosing items at the start of every round. Blocking pathways or destroying blocks to the finish line.
                 Making the map harder or easier to navigate against other players' wishes. All these individual design
                 features lead to a very fun experience with a couple of friends to laugh over while playing and after
@@ -108,7 +102,7 @@
             <div class="container">
                 <center>
                     <figure id="demo_video">
-                        <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" width="1024" controls>
+                        <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" style="width:100%;" controls>
                             Your browser does not support the video tag.
                         </video>
                         <figcaption>
@@ -139,9 +133,10 @@
             <h2 id="maps">Maps <a href="#maps">#</a></h2>
             <ul>
                 <figure id="map_hub">
-                    <img src="trapstronauts/map_hub_labelled.png" alt="Trapstronauts Spaceship (Hub) Map">
+                    <img src="trapstronauts/map_hub_labelled.png" alt="Trapstronauts Spaceship (Hub) Map"
+                        style="width:100%;">
                     <figcaption>
-                        This is where the players start when they load up the game. The player's spawn in separate
+                        This is where the players start when they load up the game. The players spawn in separate
                         bedrooms. Here they can vote on a map then go to the portal room and start the game once enough
                         players are in there.
                     </figcaption>
@@ -149,7 +144,8 @@
                 <br>
 
                 <figure id="map_sawmill">
-                    <img src="trapstronauts/map_sawmill_labelled.png" alt="Trapstronauts Sawmill Planet Map">
+                    <img src="trapstronauts/map_sawmill_labelled.png" alt="Trapstronauts Sawmill Planet Map"
+                        style="width:100%;">
                     <figcaption>
                         This is a simple but fun map, where there is a sawmill in the center. You can choose the safer
                         option to go over it if it's not blocked or covered in traps from players item placement. You
@@ -161,9 +157,10 @@
                 <br>
 
                 <figure id="map_valley">
-                    <img src="trapstronauts/map_valley_labelled.png" alt="Trapstronauts Valley Planet Map">
+                    <img src="trapstronauts/map_valley_labelled.png" alt="Trapstronauts Valley Planet Map"
+                        style="width:100%;">
                     <figcaption>
-                        The player's start on the left bank of a steep valley, then the finish line is up above
+                        The players' start on the left bank of a steep valley, then the finish line is up above
                         on the right bank. If they fall into the pt beween the two banks they die. At first his is
                         unavoidable, so they must build their way up using platforms and traps.
                     </figcaption>
@@ -171,7 +168,8 @@
                 <br>
 
                 <figure id="map_cliffs">
-                    <img src="trapstronauts/map_cliffs_labelled.png" alt="Trapstronauts Cliffs Planet Map">
+                    <img src="trapstronauts/map_cliffs_labelled.png" alt="Trapstronauts Cliffs Planet Map"
+                        style="width:100%;">
                     <figcaption>
                         This is very similar to valley, but a lot smaller. Better for a quick game.
                     </figcaption>
@@ -179,7 +177,8 @@
                 <br>
 
                 <figure id="map_canyon">
-                    <img src="trapstronauts/map_canyon_labelled.png" alt="Trapstronauts Canyon Planet Map">
+                    <img src="trapstronauts/map_canyon_labelled.png" alt="Trapstronauts Canyon Planet Map"
+                        style="width:100%;">
                     <figcaption>
                         The players start on the left bank of a canyon and the finish is in the bottom right
                         cave in the pit of the canyon. There are two hidden paths on the outskirts of the map that
@@ -199,7 +198,7 @@
                 one-thirds chance of being Valley, once the players start the game at the portal room.
             </p>
             <figure>
-                <img src="trapstronauts/voting_system.png" alt="Trapstronauts Voting System">
+                <img src="trapstronauts/voting_system.png" alt="Trapstronauts Voting System" style="width:100%;">
             </figure>
             <br>
         </div>
@@ -215,11 +214,13 @@
                 placed items, if the map is impossible or just if a player wants to remove a group of items.
             </p>
             <figure>
-                <img src="trapstronauts/placement_system_0.png" alt="Trapstronauts Placement System">
+                <img src="trapstronauts/placement_system_0.png" alt="Trapstronauts Placement System"
+                    style="width:100%;">
             </figure>
             <br>
             <figure>
-                <img src="trapstronauts/placement_system_1.png" alt="Trapstronauts Placement System">
+                <img src="trapstronauts/placement_system_1.png" alt="Trapstronauts Placement System"
+                    style="width:100%;">
             </figure>
             <br>
         </div>
