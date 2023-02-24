@@ -75,8 +75,7 @@
         <div>
             <h2 id="purpose">Purpose <a href="#purpose">#</a></h2>
             <p>
-                This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course
-                at
+                This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at
                 the University of Texas at Arlington.
             </p>
         </div>
@@ -85,35 +84,24 @@
             <h2 id="summary">Summary <a href="#summary">#</a></h2>
             <p>
                 It is a local multiplayer party game, which draws heavy inspirations from another video game called
-                Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi
-                theme.
-                That being 2-4 players vote on a map. Then a proportional voting system chooses at random evenly
-                between
-                each players' vote and then the players then proceed to play multiple rounds on it. The players all
-                have
-                the same goal get to the finish line as soon as possible. However, there is a catch, at the
-                beginning of
-                each round the players all place a single item from a small random assortment of items. Some of
-                these
-                items being platforms others being traps. Depending on what the players choose and place it can
-                either
-                make making it to the finish line easier or harder. These traps as well as environmental hazards on
-                the
+                Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme.
+                That being 2-4 players vote on a map. Then a proportional voting system chooses at random evenly between
+                each players' vote and then the players then proceed to play multiple rounds on it. The players all have
+                the same goal get to the finish line as soon as possible. However, there is a catch, at the beginning of
+                each round the players all place a single item from a small random assortment of items. Some of these
+                items being platforms others being traps. Depending on what the players choose and place it can either
+                make making it to the finish line easier or harder. These traps as well as environmental hazards on the
                 map can kill players and stop them from making it to the finish. At the end of a round, players are
-                awarded points for what they did that round. Once a player earns a certain number of points they
-                win,
+                awarded points for what they did that round. Once a player earns a certain number of points they win,
                 and the rest of the players lose.
             </p>
             <p>
                 A motif of the game would certainly be that the players are always competing. Even when they are not
                 racing to the finish. The players will end up fighting over which map to play on. Starting the game
                 before the other players are ready and have voted on a map. Stealing items from other player's when
-                choosing items at the start of every round. Blocking pathways or destroying blocks to the finish
-                line.
-                Making the map harder or easier to navigate against other players' wishes. All these individual
-                design
-                features lead to a very fun experience with a couple of friends to laugh over while playing and
-                after
+                choosing items at the start of every round. Blocking pathways or destroying blocks to the finish line.
+                Making the map harder or easier to navigate against other players' wishes. All these individual design
+                features lead to a very fun experience with a couple of friends to laugh over while playing and after
                 the game is over.
             </p>
 
@@ -123,9 +111,10 @@
                         <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" width="1024" controls>
                             Your browser does not support the video tag.
                         </video>
-                        <figcaption>Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts
-                            out
-                            frequently in the recording.</figcaption>
+                        <figcaption>
+                            Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts out frequently
+                            in the recording.
+                        </figcaption>
                     </figure>
                 </center>
             </div>
@@ -203,15 +192,12 @@
 
         <div>
             <h2 id="voting_system">Voting System <a href="#voting_system">#</a></h2>
-            <p id="voting_system_screenshot">The players vote on which map they want, however, instead of a majority
-                voting, it is proportionally
-                random.
-                Meaning each vote has an equal chance of being randomly selected. For example, if two players voted
-                on
-                Sawmill and one voted on Valley, then it would be a two-thirds chance of being Sawmill and
-                one-thirds
-                chance
-                of being Valley, once the players start the game at the portal room.</p>
+            <p id="voting_system_screenshot">
+                The players vote on which map they want, however, instead of a majority voting, it is proportionally
+                random. Meaning each vote has an equal chance of being randomly selected. For example, if two players
+                voted on Sawmill and one voted on Valley, then it would be a two-thirds chance of being Sawmill and
+                one-thirds chance of being Valley, once the players start the game at the portal room.
+            </p>
             <figure>
                 <img src="trapstronauts/voting_system.png" alt="Trapstronauts Voting System">
             </figure>
@@ -220,19 +206,14 @@
 
         <div>
             <h2 id="placement_system">Placement System <a href="#placement_system">#</a></h2>
-            <p id="placement_system_screenshots">At the start of every round on a map, the players get a random
-                assortment of items
-                to choose from,
-                but
-                they have to choose quickly. Once an item has been selected no one else can choose that item. Then
-                the
-                players place The assortment of items is platforms, traps, and bombs. The platforms are for making
-                or
-                blocking paths to the finish line. Then for traps, most double as a platform, but they all some
-                unique
-                danger associated with them that can kill a player. Finally, there is the bomb which blows up an
-                area of
-                placed items, if the map is impossible or just if a player wants to remove a group of items.</p>
+            <p id="placement_system_screenshots">
+                At the start of every round on a map, the players get a random assortment of items to choose from, but
+                they have to choose quickly. Once an item has been selected no one else can choose that item. Then the
+                players place The assortment of items is platforms, traps, and bombs. The platforms are for making or
+                blocking paths to the finish line. Then for traps, most double as a platform, but they all some unique
+                danger associated with them that can kill a player. Finally, there is the bomb which blows up an area of
+                placed items, if the map is impossible or just if a player wants to remove a group of items.
+            </p>
             <figure>
                 <img src="trapstronauts/placement_system_0.png" alt="Trapstronauts Placement System">
             </figure>
@@ -252,41 +233,42 @@
                     <ul>
                         <li>A storage bay, containing a mini-game to play while waiting for other players.</li>
                         <li>An engine room, where the host player can tweak settings about the game.</li>
-                        <li>Better bedrooms, they were supposed to have beds in them, and wardrobes used to
-                            customize
-                            and choose characters. Also motion sensing doors, that only open to the owner’s motion.
-                            You
+                        <li>Better bedrooms, they were supposed to have beds in them, and wardrobes used to customize
+                            and choose characters. Also motion sensing doors, that only open to the owner's motion. You
                             could lock a player in your bedroom if you wanted.</li>
                     </ul>
                 </li>
                 <li>
                     More maps of course.
                     <ul>
-                        <li>Sun, where solar flares shoot out and cook anyone hit by one as a unique environmental
-                            hazard.</li>
-                        <li>Mini Moons, where multiple miniature moons are present and have a gravitational pull on
-                            the
-                            players as they get near, making it difficult to get past them to the finish.</li>
-                        <li>Mountainous or City Skyline Planet, where the players are occasionally hit by gusts of
-                            wind,
-                            which happen at random times with random force and duration.</li>
-                        <li>Caverns Planet, where the players are underground in a cavern and there is platforms
-                            that
+                        <li>
+                            Sun, where solar flares shoot out and cook anyone hit by one as a unique environmental
+                            hazard.
+                        </li>
+                        <li>
+                            Mini Moons, where multiple miniature moons are present and have a gravitational pull on the
+                            players as they get near, making it difficult to get past them to the finish.
+                        </li>
+                        <li>
+                            Mountainous or City Skyline Planet, where the players are occasionally hit by gusts of wind,
+                            which happen at random times with random force and duration.
+                        </li>
+                        <li>
+                            Caverns Planet, where the players are underground in a cavern and there is platforms that
                             crumble a second after they are touched, sending any player or players on top to fall to
-                            their deaths. Any crumbled platforms would reappear the following round.</li>
-                        <li>Ice Planet, where all the starting surfaces start with ice, causing the players to slide
-                            when moving on to it. Occasionally a blizzard will come through making it hard to see.
-                            There
-                            is a small warning before the blizzard so you at least have a little time to hunker
-                            down.
-                            During a blizzard there is a chance for the surfaces of player placed items, if not
-                            already,
-                            to become covered in ice.</li>
-                        <li>Stormy Planet, visibility is limited because of the very dark and intense thunderstorm
-                            occurring. When lightning strikes at random intervals, the whole map is lit up to be
-                            easily
-                            visible before fading back to dark. Possibly, the lightning can randomly strike a player
-                            on
+                            their deaths. Any crumbled platforms would reappear the following round.
+                        </li>
+                        <li>
+                            Ice Planet, where all the starting surfaces start with ice, causing the players to slide
+                            when moving on to it. Occasionally a blizzard will come through making it hard to see. There
+                            is a small warning before the blizzard so you at least have a little time to hunker down.
+                            During a blizzard there is a chance for the surfaces of player placed items, if not already,
+                            to become covered in ice.
+                        </li>
+                        <li>
+                            Stormy Planet, visibility is limited because of the very dark and intense thunderstorm
+                            occurring. When lightning strikes at random intervals, the whole map is lit up to be easily
+                            visible before fading back to dark. Possibly, the lightning can randomly strike a player on
                             the map every once and a while, killing them if they do not have a structure above them.
                         </li>
                     </ul>
@@ -294,22 +276,27 @@
                 <li>
                     More items to place.
                     <ul>
-                        <li>A bigger bomb, with a larger radius of item removal.</li>
-                        <li>Rotator, which rotates any attached items, and this rotational system can be extended
-                            with
-                            the next item.</li>
-                        <li>Alien Goo, a sticky substance that attaches items together into one whole physical
-                            structure. It also slows down a player if they are touching it.</li>
-                        <li>Electrifier, placed next to metal items. On a fixed timer, it kills anything touching
-                            the
+                        <li>
+                            A bigger bomb, with a larger radius of item removal.
+                        </li>
+                        <li>
+                            Rotator, which rotates any attached items, and this rotational system can be extended with
+                            the next item.
+                        </li>
+                        <li>
+                            Alien Goo, a sticky substance that attaches items together into one whole physical
+                            structure. It also slows down a player if they are touching it.
+                        </li>
+                        <li>
+                            Electrifier, placed next to metal items. On a fixed timer, it kills anything touching the
                             metal items. The metal items have their own system, where you can string metal items
-                            together to increase the number of items that get electrified.</li>
+                            together to increase the number of items that get electrified.
+                        </li>
                         <li>And much more.</li>
                     </ul>
                 </li>
                 <li>
-                    Laser Reflections, so when a rotator is in place, and the laser is activated, the laser would
-                    rotate
+                    Laser Reflections, so when a rotator is in place, and the laser is activated, the laser would rotate
                     accordingly.
                 </li>
             </ul>
