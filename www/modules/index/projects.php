@@ -1,14 +1,16 @@
 <?php echo '
 <div class="container">
-    <h1 id="projects">
+    <h3 id="projects">
         Projects</a> <a href="https://www.matthewgreen.gg/#projects">#</a>
-    </h1>
+    </h3>
 
     <div>
-        <h2 id="trapstronauts">
+        <h3 id="trapstronauts">
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a> <a href="#trapstronauts">#</a>
-        </h2>
-        <img src="trapstronauts/preview.png" alt="Trapstronauts Preview" style="width:100%">
+        </h3>
+        <a href="https://www.matthewgreen.gg/trapstronauts.php">
+            <img src="trapstronauts/preview.png" alt="Trapstronauts Preview" style="width:100%">
+        </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
             <br><br>
@@ -17,10 +19,12 @@
     </div>
 
     <div>
-        <h2 id="project_calamity">
+        <h3 id="project_calamity">
             <a href="https://www.matthewgreen.gg/project_calamity.php">Project Calamity</a> <a href="#project_calamity">#</a>
-        </h2>
-        <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+        </h3>
+        <a href="https://www.matthewgreen.gg/project_calamity.php">
+            <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+        </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
             <br><br>
@@ -29,10 +33,12 @@
     </div>
 
     <div>
-        <h2 id="cad_model_viewer">
+        <h3 id="cad_model_viewer">
             <a href="https://www.matthewgreen.gg/cad_model_viewer.php">CAD Model Viewer</a> <a href="#cad_model_viewer">#</a>
-        </h2>
-        <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+        </h3>
+        <a href="https://www.matthewgreen.gg/cad_model_viewer.php">
+            <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+        </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
             <br><br>
@@ -41,12 +47,14 @@
     </div>
 
     <div>
-        <h2 id="server_computer">
+        <h3 id="server_computer">
             <a href="https://www.matthewgreen.gg/server_computer.php">Server Computer</a> <a href="#server_computer">#</a>
-        </h2>
-        <center>
-        <img src="server_computer/server_computer.jpg" alt="Server Computer Preview" style="height:33vh;width:auto;">
-        </center>
+        </h3>
+        <a href="https://www.matthewgreen.gg/server_computer.php">
+            <center>
+                <img class="auto_fit" src="server_computer/server_computer.jpg" alt="Server Computer Preview">
+            </center>
+        </a>
         <p>
             A hobby of mine is building and working on an old server computer. I use it for various things such as hosting this website, a personal Git website, a Minecraft game server, and much more.
             <br><br>

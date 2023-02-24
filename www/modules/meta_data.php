@@ -7,3 +7,4 @@
 <meta name="description"
     content="Hi, I am Matthew Green and this is a showcase of all my work experience, skills, and projects." />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="image_sizing.css">

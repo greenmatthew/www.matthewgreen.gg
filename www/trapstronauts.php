@@ -7,9 +7,9 @@
 
 <body>
     <div class="container">
-        <h1 id="trapstronauts">
+        <h3 id="trapstronauts">
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a>
-        </h1>
+        </h3>
         <br>
         <figure id="title_screen">
             <img src="trapstronauts/preview.png" alt="Trapstronauts Title Screen" style="width:100%;">
@@ -18,9 +18,9 @@
         <br>
 
         <div>
-            <h2 id="links">
+            <h3 id="links">
                 Links <a href="#links">#</a>
-            </h2>
+            </h3>
             <ul>
                 <li><a href="https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git">Personal Git Repo</a></li>
                 <li><a href="https://github.com/greenmatthew/Trapstronauts">Github Repo</a></li>
@@ -28,9 +28,9 @@
         </div>
 
         <div>
-            <h2 id="content">
+            <h3 id="content">
                 Content <a href="#content">#</a>
-            </h2>
+            </h3>
             <ul>
                 <li><a href="#purpose">Purpose</a></li>
                 <li><a href="#summary">Summary</a></li>
@@ -67,7 +67,7 @@
         </div>
 
         <div>
-            <h2 id="purpose">Purpose <a href="#purpose">#</a></h2>
+            <h3 id="purpose">Purpose <a href="#purpose">#</a></h3>
             <p>
                 This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at
                 the University of Texas at Arlington.
@@ -75,7 +75,7 @@
         </div>
 
         <div>
-            <h2 id="summary">Summary <a href="#summary">#</a></h2>
+            <h3 id="summary">Summary <a href="#summary">#</a></h3>
             <p>
                 It is a local multiplayer party game, which draws heavy inspirations from another video game called
                 Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme.
@@ -99,23 +99,19 @@
                 the game is over.
             </p>
 
-            <div class="container">
-                <center>
-                    <figure id="demo_video">
-                        <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" style="width:100%;" controls>
-                            Your browser does not support the video tag.
-                        </video>
-                        <figcaption>
-                            Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts out frequently
-                            in the recording.
-                        </figcaption>
-                    </figure>
-                </center>
-            </div>
+            <figure id="demo_video">
+                <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" style="width:100%;" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>
+                    Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts out frequently
+                    in the recording.
+                </figcaption>
+            </figure>
         </div>
 
         <div>
-            <h2 id="points">Points <a href="#points">#</a></h2>
+            <h3 id="points">Points <a href="#points">#</a></h3>
             <p>There are many ways to get points, some events give you more points than others:</p>
             <ul>
                 <li>Getting to the finish line, as long as one person perished before making it to the finish line.</li>
@@ -130,7 +126,7 @@
         </div>
 
         <div>
-            <h2 id="maps">Maps <a href="#maps">#</a></h2>
+            <h3 id="maps">Maps <a href="#maps">#</a></h3>
             <ul>
                 <figure id="map_hub">
                     <img src="trapstronauts/map_hub_labelled.png" alt="Trapstronauts Spaceship (Hub) Map"
@@ -190,7 +186,7 @@
         </div>
 
         <div>
-            <h2 id="voting_system">Voting System <a href="#voting_system">#</a></h2>
+            <h3 id="voting_system">Voting System <a href="#voting_system">#</a></h3>
             <p id="voting_system_screenshot">
                 The players vote on which map they want, however, instead of a majority voting, it is proportionally
                 random. Meaning each vote has an equal chance of being randomly selected. For example, if two players
@@ -204,7 +200,7 @@
         </div>
 
         <div>
-            <h2 id="placement_system">Placement System <a href="#placement_system">#</a></h2>
+            <h3 id="placement_system">Placement System <a href="#placement_system">#</a></h3>
             <p id="placement_system_screenshots">
                 At the start of every round on a map, the players get a random assortment of items to choose from, but
                 they have to choose quickly. Once an item has been selected no one else can choose that item. Then the
@@ -226,7 +222,7 @@
         </div>
 
         <div>
-            <h2 id="future_work">Future Work <a href="#future_work">#</a></h2>
+            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
             <p>If we were to keep working on the game there is many things we would have liked to add.</p>
             <ul>
                 <li>

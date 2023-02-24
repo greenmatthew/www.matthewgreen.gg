@@ -1,8 +1,8 @@
 <?php echo '
 <div class="container">
-    <h1 id="work_experience">
+    <h3 id="work_experience">
         Work Experience <a href="https://www.matthewgreen.gg/#work_experience">#</a>
-    </h1>
+    </h3>
     <div class="terminal-timeline">
         <div class="terminal-card">
             <header>
@@ -21,7 +21,7 @@
                 <p>
                     I was hired by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr.
                         Raul Fernandez</a>, of the Mechanical and Aerospace Engineering Department at UTA, to
-                    work individually on a <a href="https://www.matthewgreen.gg/#cad_model_viewer">VR
+                    work individually on a <a href="https://www.matthewgreen.gg/cad_model_viewer.php">VR
                         application</a>. The application is meant to help students learn about the concepts of
                     Computer Aided Design (CAD) in a new 3D virtual environment. The benefits of using VR is to
                     allow students to interact with the CAD models and concepts in a way that is not possible in

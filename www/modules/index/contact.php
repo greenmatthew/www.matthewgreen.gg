@@ -1,21 +1,21 @@
 <?php echo '
 <div class="container">
-    <h1 id="contact">
+    <h2 id="contact">
         Contact <a href="https://www.matthewgreen.gg/#contact">#</a>
-    </h1>
+    </h2>
     
     <div>
-        <h4 id="email">Email</h4>
+        <h3 id="email">Email</h3>
         <p> greenmatthew07@gmail.com </p>
     </div>
     
     <div>
-        <h4 id="phone_number">Phone Number</h4>
+        <h3 id="phone_number">Phone Number</h3>
         <p> +1 817-965-3090 </p>
     </div>
 
     <div>
-        <h4 id="address">Address</h4>
+        <h3 id="address">Address</h3>
         <p>
             <address>
                 8533 Ellis Drive<br />
@@ -26,9 +26,9 @@
     </div>
 
     <div>
-        <h4 id="links">Links</h4>
+        <h3 id="links">Links</h3>
         <ul>
-            <li><a href="https://git.matthewgreen.gg">Personal Git Website</a></li>
+            <li><a href="https://git.matthewgreen.gg/matthewgreen/">Personal Git Website</a></li>
             <li><a href="https://github.com/greenmatthew">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/matthewalangreen/">LinkedIn</a></li>
         </ul>

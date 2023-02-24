@@ -1,8 +1,8 @@
 <?php echo '
 <div class="container">
-    <h1 id="education">
+    <h3 id="education">
         Education <a href="https://www.matthewgreen.gg/#education">#</a>
-    </h1>
+    </h3>
     <div class="terminal-timeline">
         <div class="terminal-card">
             <header>
@@ -19,7 +19,7 @@
                     </p>
                 </center>
                 <ul>
-                    <li>Cum. GPA: 3.29</li>
+                    <li>GPA: 3.29</li>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div>
                 <center>
                     <p>
-                        Aug. 2015 - May. 2019
+                        Aug. 2015 - May 2019
                         <br>
                         Computer Science Major
                         <br>

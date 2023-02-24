@@ -8,9 +8,9 @@
 <body>
     <div class="container">
         <center>
-            <h1 id="server_computer">
+            <h3 id="server_computer">
                 <a href="https://www.matthewgreen.gg/server_computer.php">Server Computer</a>
-            </h1>
+            </h3>
             <br>
             <div class="container">
                 <figure id="preview">
@@ -24,9 +24,9 @@
         <br>
 
         <div>
-            <h2 id="content">
+            <h3 id="content">
                 Content <a href="#content">#</a>
-            </h2>
+            </h3>
             <ul>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#website">Website</a></li>
@@ -41,7 +41,7 @@
         </div>
 
         <div>
-            <h2 id="summary">Summary <a href="#summary">#</a></h2>
+            <h3 id="summary">Summary <a href="#summary">#</a></h3>
             <p>
                 A hobby of mine as of lately is working on an old server computer that I bought. At first, I just wanted
                 a dedicated computer for hosting video game servers. Next thing I know I am buying a server rack for it,
@@ -60,7 +60,7 @@
         </div>
 
         <div>
-            <h2 id="website">Website <a href="#website">#</a></h2>
+            <h3 id="website">Website <a href="#website">#</a></h3>
             <p>
                 A portfolio website, that you are looking at right now, that shows off my projects, skills, work
                 experience, education, and tells you more about myself.
@@ -82,7 +82,7 @@
         </div>
 
         <div>
-            <h2 id="git_website">Git Website <a href="#git_website">#</a></h2>
+            <h3 id="git_website">Git Website <a href="#git_website">#</a></h3>
             <p>
                 I have setup my own personal Git website where I store all my projects. It acts as redundancy to GitHub,
                 but also allows me to circumvent GitHub restrictions on file sizes, push sizes, and Git LFS storage
@@ -101,7 +101,7 @@
         </div>
 
         <div>
-            <h2 id="wildcard_ssl_cert">Wildcard SSL Certificate <a href="#wildcard_ssl_cert">#</a></h2>
+            <h3 id="wildcard_ssl_cert">Wildcard SSL Certificate <a href="#wildcard_ssl_cert">#</a></h3>
             <p>
                 I have setup a wildcard SSL certificate so all my different subdomains are secure and also to make it
                 easier to add a new and secure subdomains in the future. You can even see this certificate in action.
@@ -111,7 +111,7 @@
         </div>
 
         <div>
-            <h2 id="dynamic_dns">Dynamic DNS (DDNS) <a href="#dynamic_dns">#</a></h2>
+            <h3 id="dynamic_dns">Dynamic DNS (DDNS) <a href="#dynamic_dns">#</a></h3>
             <p>
                 One issue that I was always worried about when hosting different things such as my Git website is if my
                 public IP address would change while I was away from home and needed to access one of my services. Well
@@ -124,7 +124,7 @@
         </div>
 
         <div>
-            <h2 id="vpn">VPN <a href="#vpn">#</a></h2>
+            <h3 id="vpn">VPN <a href="#vpn">#</a></h3>
             <p>
                 When I am away from home and I want to update my website, access the web GUI for my server computer, or
                 do not trust the Wi-Fi network I am on I connect to my own self-hosted VPN. Its built right into the
@@ -133,7 +133,7 @@
         </div>
 
         <div>
-            <h2 id="game_servers">Game Servers <a href="#game_servers">#</a></h2>
+            <h3 id="game_servers">Game Servers <a href="#game_servers">#</a></h3>
             <p>
                 Every once and a while, me and some friends will want to play a multiplayer game and we will want to
                 host our own server. I always volunteer to host because it can be fun to set them up and I have lots of
@@ -147,7 +147,7 @@
         </div>
 
         <div>
-            <h2 id="other_services">Other Services <a href="#other_services">#</a></h2>
+            <h3 id="other_services">Other Services <a href="#other_services">#</a></h3>
             <p>
                 As for what else I host, I have my own personal cloud storage with NextCloud. It is basically Google
                 Drive but without a storage cap. It even has its own plugins for online document viewing and editing
@@ -166,7 +166,7 @@
         </div>
 
         <div>
-            <h2 id="future_work">Future Work <a href="#future_work">#</a></h2>
+            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
             <p>
                 I have many things that I would like to do in the future with my server computer and the server rack it
                 is on.

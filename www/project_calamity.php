@@ -7,9 +7,9 @@
 
 <body>
     <div class="container">
-        <h2 id="project_calamity">
+        <h3 id="project_calamity">
             <a href="https://www.matthewgreen.gg/project_calamity.php">Project Calamity</a>
-        </h2>
+        </h3>
 
         <div class="container">
             <h3 id="links">
