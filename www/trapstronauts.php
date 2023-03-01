@@ -77,17 +77,17 @@
         <div>
             <h3 id="summary">Summary <a href="#summary">#</a></h3>
             <p>
-                It is a local multiplayer party game, which draws heavy inspirations from another video game called
-                Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme.
-                That being 2-4 players vote on a map. Then a proportional voting system chooses at random evenly between
-                each players' vote and then the players then proceed to play multiple rounds on it. The players all have
-                the same goal get to the finish line as soon as possible. However, there is a catch, at the beginning of
-                each round the players all place a single item from a small random assortment of items. Some of these
-                items being platforms others being traps. Depending on what the players choose and place it can either
-                make making it to the finish line easier or harder. These traps as well as environmental hazards on the
-                map can kill players and stop them from making it to the finish. At the end of a round, players are
-                awarded points for what they did that round. Once a player earns a certain number of points they win,
-                and the rest of the players lose.
+                It is a local multiplayer party game, made in the Godot game engine with GDscript. It draws heavy
+                inspirations from another video game called Ultimate Chicken Horse. We borrow the game loop from that
+                title and fit it around a new sci-fi theme. That being 2-4 players vote on a map. Then a proportional
+                voting system chooses at random evenly between each players' vote and then the players then proceed to
+                play multiple rounds on it. The players all have the same goal get to the finish line as soon as
+                possible. However, there is a catch, at the beginning of each round the players all place a single item
+                from a small random assortment of items. Some of these items being platforms others being traps.
+                Depending on what the players choose and place it can either make making it to the finish line easier or
+                harder. These traps as well as environmental hazards on the map can kill players and stop them from
+                making it to the finish. At the end of a round, players are awarded points for what they did that round.
+                Once a player earns a certain number of points they win, and the rest of the players lose.
             </p>
             <p>
                 A motif of the game would certainly be that the players are always competing. Even when they are not
@@ -100,7 +100,7 @@
             </p>
 
             <figure id="demo_video">
-                <video src="trapstronauts/trapstronauts_demo.mp4" type="video/mp4" style="width:100%;" controls>
+                <video src="trapstronauts/demo.mp4" type="video/mp4" style="width:100%;" controls>
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>
@@ -202,12 +202,18 @@
         <div>
             <h3 id="placement_system">Placement System <a href="#placement_system">#</a></h3>
             <p id="placement_system_screenshots">
-                At the start of every round on a map, the players get a random assortment of items to choose from, but
-                they have to choose quickly. Once an item has been selected no one else can choose that item. Then the
-                players place The assortment of items is platforms, traps, and bombs. The platforms are for making or
-                blocking paths to the finish line. Then for traps, most double as a platform, but they all some unique
-                danger associated with them that can kill a player. Finally, there is the bomb which blows up an area of
-                placed items, if the map is impossible or just if a player wants to remove a group of items.
+                At the start of every round on a map, the players get a random assortment of items, which can be
+                platforms, traps, and bombs, but they must choose quickly and wisely. Once an item has been selected you
+                are locked in and no one else can choose that item. Once all the players have chosen an item, then they
+                all at once try and place their items. Then after all items are placed they race to the finish.
+            </p>
+            <p>
+                The platforms are for making or blocking paths to the finish line. Then for the traps they can kill
+                players making it harder to get to the finish but can also usually be used as a platform additionally.
+                Finally, there is the bombs which blows up a small area of placed items, which is useful for if the map
+                is impossible or just if a player wants to remove a group of items. Most players usually have their own
+                path to get to the finish through the map and they place items to make their path easier or to make
+                others' paths harder to navigate without dying.
             </p>
             <figure>
                 <img src="trapstronauts/placement_system_0.png" alt="Trapstronauts Placement System"
@@ -216,6 +222,11 @@
             <br>
             <figure>
                 <img src="trapstronauts/placement_system_1.png" alt="Trapstronauts Placement System"
+                    style="width:100%;">
+            </figure>
+            <br>
+            <figure>
+                <img src="trapstronauts/placement_system_2.png" alt="Trapstronauts Placement System"
                     style="width:100%;">
             </figure>
             <br>
