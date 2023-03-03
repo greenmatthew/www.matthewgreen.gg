@@ -11,7 +11,7 @@
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a>
         </h3>
         <br>
-        <figure id="title_screen">
+        <figure id="preview">
             <img src="trapstronauts/preview.png" alt="Trapstronauts Title Screen" style="width:100%;">
         </figure>
 

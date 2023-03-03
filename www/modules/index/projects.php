@@ -23,7 +23,7 @@
             <a href="https://www.matthewgreen.gg/project_calamity.php">Project Calamity</a> <a href="#project_calamity">#</a>
         </h3>
         <a href="https://www.matthewgreen.gg/project_calamity.php">
-            <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+            <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Preview" style="width:100%">
         </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
@@ -37,7 +37,7 @@
             <a href="https://www.matthewgreen.gg/cad_model_viewer.php">CAD Model Viewer</a> <a href="#cad_model_viewer">#</a>
         </h3>
         <a href="https://www.matthewgreen.gg/cad_model_viewer.php">
-            <img src="project_calamity/project_calamity_gameplay_screenshot_00.png" alt="Project Calamity Preview" style="width:100%">
+            <img src="" alt="Project Calamity Preview" style="width:100%">
         </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
