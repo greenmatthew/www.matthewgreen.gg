@@ -47,6 +47,11 @@
                     </ul>
                 </div>
                 <li><a href="#story">Story</a></li>
+                <div class="container">
+                    <ul>
+                        <li><a href="#environment_screenshots">Environment Screenshots</a></li>
+                    </ul>
+                </div>
                 <li><a href="#setting">Setting</a></li>
                 <li><a href="#pms">Player Management Station (PMS)</a></li>
                 <div class="container">
@@ -55,8 +60,18 @@
                     </ul>
                 </div>
                 <li><a href="#inventory_system">Inventory System</a></li>
+                <div class="container">
+                    <ul>
+                        <li><a href="#inventory_screenshots">Inventory Screenshots</a></li>
+                    </ul>
+                </div>
                 <li><a href="#health_system">Health System</a></li>
                 <li><a href="#combat">Combat</a></li>
+                <div class="container">
+                    <ul>
+                        <li><a href="#enemies_screenshots">Enemies Screenshots</a></li>
+                    </ul>
+                </div>
                 <li><a href="#conclusion">Conclusion</a></li>
                 <li><a href="#future_work">Future Work</a></li>
             </ul>
@@ -133,7 +148,7 @@
                 the surface. With many dangerous creatures and robots roaming the surface and caves also worth searching
                 for resources. There are caves littered all around the surface, all plentifully filled with raw ores
                 waiting to be mined; copper, titanium, iron, gold, silver, and more, however, the corporation does not
-                seem to be mining these particularly common but useful ores.
+                seem to be mining these particularly common but useful ores right outside their compound.
             </p>
             <p>
                 There is a massive compound on the equator of the planet, owned by the corporation. Inside there is many
@@ -148,6 +163,29 @@
                 plenty and flora and fauna to fulfill upgrading your gear and start repairs on your ship, if you're
                 willing to do a little exploring around.
             </p>
+            <p>
+                ***
+                <b>
+                    <i>
+                        Notice: In the current build, there is no compound nor any caves to find. Just a few buildings
+                        and a few aggressive alien creatures sprinkled around the map.
+
+                    </i>
+                </b>
+                ***
+            </p>
+            <div id="environment_screenshots">
+                <figure>
+                    <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Environment 0">
+                </figure>
+                <figure>
+                    <img src="project_calamity/webp/environment_1.webp" alt="Project Calamity Environment 1">
+                </figure>
+                <figure>
+                    <img src="project_calamity/webp/environment_2.webp" alt="Project Calamity Environment 2">
+                </figure>
+                <br>
+            </div>
         </div>
 
         <div>
@@ -201,6 +239,11 @@
                 </li>
             </ul>
             <p>
+                These stations are inspired by the Dark Souls franchise bon fires and the Dead Space upgrade stations.
+                They are basically a mix of the two, with the additional crafting module being directly inspired by
+                Subnautica.
+            </p>
+            <p>
                 ***
                 <b>
                     <i>
@@ -209,11 +252,6 @@
                     </i>
                 </b>
                 ***
-            </p>
-            <p>
-                These stations are inspired by the Dark Souls franchise bon fires and the Dead Space upgrade stations.
-                They are basically a mix of the two, with the additional crafting module being directly inspired by
-                Subnautica.
             </p>
             <div id="pms_screenshots">
                 <figure>
@@ -263,18 +301,21 @@
             </ul>
             <p>
                 Both the vests and backpacks have internal storage inside them, where you can move and rotate items to
-                fit and organize items in the contents of these storage items.
+                fit and organize items in the contents of these storage items. Which was inspired by Escape From
+                Tarkov's inventory system and is a direct copy except for some removed and additional slots.
             </p>
             <p>
+                ***
                 <b>
                     <i>
-                        *** Notice: All the slots are in the game, except for the vest and backpack slots, however,
+                        Notice: All the slots are in the game, except for the vest and backpack slots, however,
                         there are no items other than a rifle and some example items and there is a fixed size storage
                         container just called backpack. So, the whole inventory system provides nothing to the final
                         build of the game. The only interaction with it is you immediately equip your rifle from an
-                        Alpha PMS's stash module. ***
+                        Alpha PMS's stash module.
                     </i>
                 </b>
+                ***
             </p>
 
             <div id="inventory_screenshots">
@@ -290,16 +331,73 @@
 
         <div>
             <h3 id="health_system">Health System <a href="#inventory">#</a></h3>
+            <ul>
+                <li>
+                    You have both armors and shields you can wear to stop or reduce damage take to the player.
+                </li>
+                <li>
+                    You can upgrade your max health in the suit module.
+                </li>
+                <li>
+                    Health is regenerated from health kits or resting at an Alpha PMS; however, health kits are
+                    incredibly rare to find and costly to craft.
+                </li>
+            </ul>
             <p>
-
+                ***
+                <b>
+                    <i>
+                        Notice: None of these features are in the final build. There is just 100 health points and is
+                        unrecoverable unless you restart the game.
+                    </i>
+                </b>
+                ***
             </p>
         </div>
 
         <div>
             <h3 id="combat">Combat <a href="#combat">#</a></h3>
             <p>
-
+                There is a decent selection of different firearms that you can obtain or craft throughout the
+                progression of the game. Some require ammunition cartridges and magazines. While others use energy and
+                require batteries and capacitors. All these weapons have different fire modes or a mixture of fire
+                modes, those being semi-automatic, fully-automatic, and three-round burst as well as some of the energy
+                weapons shoot out a beam continuously for a short amount of time.
             </p>
+            <p>
+                Magazines must be loaded with cartridges, unlike most other games. You can do this by combining the
+                magazine and the cartridges. It will automatically fill up the magazine to full capacity if you have
+                enough cartridges or else it just fills the magazine as much as it can. You can also only reload the
+                firearms using the magazines if you have a magazine in your vest. Same goes for throwing a grenade it
+                must be in a vest to use. Both features are inspired from Escape From Tarkov.
+            </p>
+            <p>
+                There are different types of AI used by the different enemies in the game with different levels of
+                intellect and tactics. Animal creatures generally are not that smart and will attack head on and will
+                fight to the death. While humanoids are usually smarter and will use cover, flee if they feel they are
+                losing a fight, and if in a group will leverage that against you by working together.
+            </p>
+            <p>
+                ***
+                <b>
+                    <i>
+                        Notice: In the final build there is only a single firearm, found in the stash with a magazine
+                        item, but the magazine is nonfunctional, so the firearm just has infinite reloads for the
+                        purposes of the demo. Also the AI is very basic and just goes directly towards a player and
+                        attacks when in range. It has no sort of other logic now.
+                    </i>
+                </b>
+                ***
+            </p>
+            <div id="enemies_screenshots">
+                <figure>
+                    <img src="project_calamity/webp/enemies_0.webp" alt="Project Calamity Enemies 0">
+                </figure>
+                <figure>
+                    <img src="project_calamity/webp/enemies_1.webp" alt="Project Calamity Enemies 1">
+                </figure>
+                <br>
+            </div>
         </div>
 
         <div>
@@ -337,9 +435,10 @@
             </p>
             <p>
                 The aforementioned issues lead to the final build of the game being a shell of what it was supposed to
-                be. It was missing many of the planned features and the that were implemented were only partially
-                functional. Which personally upset me. It was nowhere near the way I had envisioned it or anyone else
-                for that matter. I really wanted the game to be something truly fun to play.
+                be and short of a minimum viable product. It was missing many of the planned features and the that were
+                implemented were only partially functional. Which personally upset me. It was nowhere near the way I had
+                envisioned it or anyone else for that matter. I really wanted the game to be something truly fun to
+                play.
             </p>
             <p>
                 We certainly learned the importance of keeping a project scope small and incrementally adding to the
@@ -352,8 +451,79 @@
         <div>
             <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
             <p>
-
+                Work needed to bring the game to a minimum viable product as it falls short of that.
             </p>
+            <ul>
+                <li>
+                    Get enemy respawning and health regeneration upon using an Alpha PMS.
+                </li>
+                <li>
+                    Make it so it is possible to die, currently nothing happens after your health reaches 0 or below.
+                </li>
+                <li>
+                    Add in recipes for making ammunition and magazines for the only firearm, as well as the recipes for
+                    any intermediate parts needed for them.
+                </li>
+                <li>
+                    Add in the crafting module to the PMS system.
+                </li>
+                <li>
+                    Add in item drops from killing enemies.
+                </li>
+                <li>
+                    Add in harvestable items around the map.
+                </li>
+                <li>
+                    Add in the quest module to the PMS system. We have a quest system it just is not accessible
+                    currently.
+                </li>
+                <li>
+                    Optimize the graphics, using LODs, and other techniques.
+                </li>
+            </ul>
+            <p>
+                While that seems like a whole lot just to get to an MVP, we have most of the code already done for it
+                and the code we don't have already should be easy to implement. The hardest issue would be optimization
+                as we have never done it before.
+            </p>
+            <p>
+                After reaching an MVP, what we would want to add to make it more fun.
+            </p>
+            <ul>
+                <li>
+                    Add more intermediate part recipes for use in other recipes.
+                </li>
+                <li>
+                    A handful more weapons to find and craft.
+                </li>
+                <li>
+                    One or more vests, backpacks, armors, and shields to find or craft and to be able to equip them.
+                </li>
+                <li>
+                    Recycler crafting module upgrade, which would allow you to recycle any applicable crafted or found
+                    items for half their raw ingredient items back.
+                </li>
+                <li>
+                    Add humanoid enemies with firearms, that would drop ammunition, magazines, firearms, and other misc.
+                    items.
+                </li>
+                <li>
+                    Add pickaxe and ore nodes with a finite amount to be harvested. These being a place to get large
+                    amounts of a particular ore.
+                </li>
+                <li>
+                    Increase the size of the playable map.
+                </li>
+                <li>
+                    Make buildings possible to be entered.
+                </li>
+                <li>
+                    Add caves.
+                </li>
+                <li>
+                    Add more alien creature enemies.
+                </li>
+            </ul>
         </div>
     </div>
 </body>
