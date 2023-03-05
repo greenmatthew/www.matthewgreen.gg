@@ -19,12 +19,12 @@
 
         <div>
             <h3 id="links">
-                Links <a href="https://www.matthewgreen.gg/project_calamity.php#links">#</a>
+                Links <a href="#links">#</a>
             </h3>
             <ul>
                 <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA
                         Senior Designs Blog</a></li>
-                <li><a href="https://git.matthewgreen.gg/Euporie-Studios/SeniorDesignProject">Personal Git Repo</a></li>
+                <li><a href="https://git.matthewgreen.gg/matthewgreen/ProjectCalamity.">Personal Git Repo</a></li>
                 <li><a href="https://github.com/greenmatthew/SeniorDesignProject">Github Repo</a></li>
                 <li>
                     <a href="https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf">
@@ -518,7 +518,7 @@
                     Increase the size of the playable map.
                 </li>
                 <li>
-                    Make buildings possible to be entered.
+                    Make buildings possible to enter as currently they are not.
                 </li>
                 <li>
                     Add caves.
