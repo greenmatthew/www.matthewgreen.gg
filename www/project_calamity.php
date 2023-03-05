@@ -480,6 +480,9 @@
                 <li>
                     Optimize the graphics, using LODs, and other techniques.
                 </li>
+                <li>
+                    Add ability to save and load different game states to be able save progress.
+                </li>
             </ul>
             <p>
                 While that seems like a whole lot just to get to an MVP, we have most of the code already done for it
