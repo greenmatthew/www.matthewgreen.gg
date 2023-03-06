@@ -19,12 +19,12 @@
 
         <div>
             <h3 id="links">
-                Links <a href="#links">#</a>
+                Links <a href="https://www.matthewgreen.gg/project_calamity.php#links">#</a>
             </h3>
             <ul>
                 <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA
                         Senior Designs Blog</a></li>
-                <li><a href="https://git.matthewgreen.gg/matthewgreen/ProjectCalamity.">Personal Git Repo</a></li>
+                <li><a href="https://git.matthewgreen.gg/Euporie-Studios/SeniorDesignProject">Personal Git Repo</a></li>
                 <li><a href="https://github.com/greenmatthew/SeniorDesignProject">Github Repo</a></li>
                 <li>
                     <a href="https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf">
@@ -445,6 +445,9 @@
                 <li>
                     Optimize the graphics, using LODs, and other techniques.
                 </li>
+                <li>
+                    Add ability to save and load different game states to be able save progress.
+                </li>
             </ul>
             <p>
                 While that seems like a whole lot just to get to an MVP, we have most of the code already done for it
@@ -480,7 +483,7 @@
                     Increase the size of the playable map.
                 </li>
                 <li>
-                    Make buildings possible to enter as currently they are not.
+                    Make buildings possible to be entered.
                 </li>
                 <li>
                     Add caves.
