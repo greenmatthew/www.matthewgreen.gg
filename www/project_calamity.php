@@ -12,7 +12,7 @@
         </h3>
         <br>
         <figure id="preview">
-            <img src="project_calamity/webp/environment_0.webp" alt="Trapstronauts Title Screen" style="width:100%;">
+            <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Preview" style="width:100%;">
         </figure>
 
         <br>
@@ -403,48 +403,13 @@
         <div>
             <h3 id="conclusion">Conclusion <a href="#conclusion">#</a></h3>
             <p>
-                While Senior Design is two whole semesters, the first semester is nearly all documentation and planning,
-                then the second is actually working on the project but also more documentation. While I understand the
-                value of documentation I felt the planning and documentation was awkward and mostly a waste of time,
-                because it had general engineering focus. The class did not feel suited for making a video game even
-                though it was an allowed option. This cost us a lot of valuable development time.
+                While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.time.
             </p>
             <p>
-                We also ran into issues with the second semester being all our last semester and our schedules were
-                packed with other classes and responsibilities. On top of that one person in the group while they help
-                with the documentation they never actually contributed to the game. Not a single line of code, not any
-                map designing, not any fabrication of 2D or 3D graphical assets, not putting assets together into
-                prefabs, not anything.
+                We also faced many other problems, such as scope creep, all but one team member had experience using Unity and C#, and underestimating our final semester’s workloads and other responsibilities impact on how much we could get done. These aforementioned issues lead to the final build of the game being a shell of what it was supposed to be and short of a minimum viable product. It was missing many of the planned features and the that were implemented were only partially functional.
             </p>
             <p>
-                While I had used Unity many times before, my teammates had never used Unity before and not even the
-                programming language it uses; C#. While we were grouped together because we all were interested in
-                making a video game for Senior Design. They were not ready to make this game and I was probably not
-                ready yet either. We should have done another type of project or a simpler 2D game.
-            </p>
-            <p>
-                Finally, there was another issue that I feel is my fault. I came up with many of the ideas for the game
-                once we had settled on a horror FPS. They just came to me naturally as we planned, and everyone liked
-                them, so we all agreed to add them. I also had loads of professional grade assets to use for the
-                project, that I had previously purchased myself at large discounts. Which further increased the amount
-                and scale of my ideas. With all the assets I had already all we had to do was the UI, programming, and
-                map design. While none of us have really done map design before, I had done UI before, and programming
-                was all our specialty so it should all be doable. That is what I was and everyone else was thinking. We
-                were certainly being overzealous with the total scope of the project, far too many ideas to be all
-                implemented even semi-functional.
-            </p>
-            <p>
-                The aforementioned issues lead to the final build of the game being a shell of what it was supposed to
-                be and short of a minimum viable product. It was missing many of the planned features and the that were
-                implemented were only partially functional. Which personally upset me. It was nowhere near the way I had
-                envisioned it or anyone else for that matter. I really wanted the game to be something truly fun to
-                play.
-            </p>
-            <p>
-                We certainly learned the importance of keeping a project scope small and incrementally adding to the
-                scope as features are finished, not before. As well as the importance of being truthful to ourselves on
-                our skills and amount of work we can complete. In fact, this is the whole point of Senior Design; to
-                learn about project pitfalls before enter industry.
+                We certainly learned the importance of keeping a project scope small and incrementally adding to the scope as features are finished, not before. As well as the importance of being truthful to ourselves on our skills and amount of work we can complete. In fact, this is the whole point of Senior Design; to learn about project pitfalls before enter industry.
             </p>
         </div>
 
