@@ -3,9 +3,7 @@
     <h3 id="about_me">
         About Me <a href="https://www.matthewgreen.gg/#about_me">#</a>
     </h3>
-    <center>
-        <img class="auto_fit" src="images/me/me_profile_pic_square.jfif" alt="Trapstronauts Preview">
-    </center>
+    <img class="auto_fit" src="images/me/me_profile_pic_square.jfif" alt="Trapstronauts Preview">
     <p>
         Hi, I am Matthew Green a fresh 21-year-old graduate with a Bachelor of Science in Computer Science from the University of Texas at Arlington back in December. Now I would like to start a career in video game programming. Ever since I took a programming and game design course back in high school it has been my dream to program video games. Eventually I would like to try and make my own games, as I feel I have a natural habit of coming up with amazing ideas and would like to make games that I want to play a reality for myself and others to enjoy. However first I need to gain more experience and save up money to do something like that full time. Right now, it is just something to do in my free time.
     </p>
