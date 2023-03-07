@@ -7,9 +7,7 @@
 
 <body>
     <div class="container">
-        <h3 id="project_calamity">
-            <a href="https://www.matthewgreen.gg/project_calamity.php">Project Calamity</a>
-        </h3>
+        <h3 id="project_calamity">Project Calamity</h3>
         <br>
         <figure id="preview">
             <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Preview" style="width:100%;">
@@ -89,10 +87,10 @@
         <div>
             <h3 id="summary">Summary <a href="#summary">#</a></h3>
             <p>
-                This is a sci-fi horror tactical FPS role playing game where you take control of a bounty hunter who has
-                crash landed on a mining colony planet, filled with horrific and violent alien creatures and people
-                trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the
-                story of this planet and its humanoid inhabitants and their secret plans.
+                This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a
+                bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien
+                creatures and people trying to kill you. Collect and craft items to help you survive and finish quests
+                as you undercover the story of this planet and its humanoid inhabitants and their secret plans.
             </p>
             <p>
                 Highly inspired by other games of the same genres, most notably the Dead Space franchise and others like
@@ -403,13 +401,24 @@
         <div>
             <h3 id="conclusion">Conclusion <a href="#conclusion">#</a></h3>
             <p>
-                While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.time.
+                While Senior Design is two whole semesters, the first semester is nearly all documentation and planning,
+                then the second is actually working on the project but also more documentation. While we understand the
+                value of documentation we felt the planning and documentation was awkward and mostly a waste of time,
+                because it had general engineering focus. The class did not feel suited for making a video game even
+                though it was an allowed option. This cost us a lot of valuable development time.time.
             </p>
             <p>
-                We also faced many other problems, such as scope creep, all but one team member had experience using Unity and C#, and underestimating our final semester’s workloads and other responsibilities impact on how much we could get done. These aforementioned issues lead to the final build of the game being a shell of what it was supposed to be and short of a minimum viable product. It was missing many of the planned features and the that were implemented were only partially functional.
+                We also faced many other problems, such as scope creep, all but one team member had experience using
+                Unity and C#, and underestimating our final semester’s workloads and other responsibilities impact on
+                how much we could get done. These aforementioned issues lead to the final build of the game being a
+                shell of what it was supposed to be and short of a minimum viable product. It was missing many of the
+                planned features and the that were implemented were only partially functional.
             </p>
             <p>
-                We certainly learned the importance of keeping a project scope small and incrementally adding to the scope as features are finished, not before. As well as the importance of being truthful to ourselves on our skills and amount of work we can complete. In fact, this is the whole point of Senior Design; to learn about project pitfalls before enter industry.
+                We certainly learned the importance of keeping a project scope small and incrementally adding to the
+                scope as features are finished, not before. As well as the importance of being truthful to ourselves on
+                our skills and amount of work we can complete. In fact, this is the whole point of Senior Design; to
+                learn about project pitfalls before enter industry.
             </p>
         </div>
 

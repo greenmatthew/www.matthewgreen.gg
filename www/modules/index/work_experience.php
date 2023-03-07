@@ -19,19 +19,19 @@
                     </p>
                 </center>
                 <p>
-                    I was hired by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr.
-                        Raul Fernandez</a>, of the Mechanical and Aerospace Engineering Department at UTA, to
-                    work individually on a <a href="https://www.matthewgreen.gg/cad_model_viewer.php">VR
-                        application</a>. The application is meant to help students learn about the concepts of
-                    Computer Aided Design (CAD) in a new 3D virtual environment. The benefits of using VR is to
-                    allow students to interact with the CAD models and concepts in a way that is not possible in
-                    a 2D environment. The application is built using Unity Engine and C#.
+                    I was hired by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr. Raul Fernandez</a>, of the Mechanical and Aerospace Engineering Department at UTA, to work individually on a <a href="https://www.matthewgreen.gg/cad_model_viewer.php">VR application</a> as part of his new <a href="https://mevrstudy.uta.edu">Mechanical Engineering study program</a> he is experimenting with. The application is meant to help students learn about the concepts of Computer Aided Design (CAD) in a new 3D virtual environment. The benefits of using VR is to allow students to interact with the CAD models and concepts in a way that is not possible in a 2D environment.
+                </p>
+                <p>
+                    It\'s going to be available for nearly all devices, with it being made for phone VR headsets with Google Cardboard and for PC and standalone VR headsets with SteamVR and Oculus (Meta). So, everyone can get access to the application.
+                </p>
+                <p>
+                    After a year of development, I feel comfortable and confident using Unity and programming in C#. The application is also well polished and ready to start being used by students to help with their learning.
                 </p>
             </div>
         </div>
         <div class="terminal-card">
             <header>
-                <b>Designatted Hitter</b>
+                <b>Designated Hitter</b>
             </header>
             <div>
                 <center>
