@@ -21,7 +21,7 @@
             </h3>
             <ul>
                 <li><a href="https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git">Personal Git Repo</a></li>
-                <li><a href="https://github.com/greenmatthew/Trapstronauts">Github Repo</a></li>
+                <li><a href="https://github.com/greenmatthew/Trapstronauts">GitHub Repo</a></li>
             </ul>
         </div>
 

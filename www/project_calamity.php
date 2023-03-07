@@ -23,7 +23,7 @@
                 <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA
                         Senior Designs Blog</a></li>
                 <li><a href="https://git.matthewgreen.gg/Euporie-Studios/SeniorDesignProject">Personal Git Repo</a></li>
-                <li><a href="https://github.com/greenmatthew/SeniorDesignProject">Github Repo</a></li>
+                <li><a href="https://github.com/greenmatthew/SeniorDesignProject">GitHub Repo</a></li>
                 <li>
                     <a href="https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf">
                         My Initial Ideas Document
