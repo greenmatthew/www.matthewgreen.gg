@@ -9,7 +9,7 @@
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a> <a href="#trapstronauts">#</a>
         </h3>
         <a href="https://www.matthewgreen.gg/trapstronauts.php">
-            <img src="trapstronauts/preview.png" alt="Trapstronauts Preview" style="width:100%">
+            <img src="trapstronauts/webp/preview.webp" alt="Trapstronauts Preview" style="width:100%">
         </a>
         <p>
             A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back-to-back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
@@ -40,7 +40,7 @@
             <img src="cad_model_viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
         </a>
         <p>
-            A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back to back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult.
+            It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington.
             <br><br>
             You can see more about this project <a href="https://www.matthewgreen.gg/cad_model_viewer.php">here</a>.
         </p>    
@@ -51,7 +51,9 @@
             <a href="https://www.matthewgreen.gg/server_computer.php">Server Computer</a> <a href="#server_computer">#</a>
         </h3>
         <a href="https://www.matthewgreen.gg/server_computer.php">
-            <img class="auto_fit" src="server_computer/server_computer.jpg" alt="Server Computer Preview">
+            <center>
+                <img class="auto_fit" src="server_computer/webp/server_computer.webp" alt="Server Computer Preview">
+            </center>
         </a>
         <p>
             A hobby of mine is building and working on an old server computer. I use it for various things such as hosting this website, a personal Git website, a Minecraft game server, and much more.

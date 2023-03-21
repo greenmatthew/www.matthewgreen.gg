@@ -409,7 +409,7 @@
             </p>
             <p>
                 We also faced many other problems, such as scope creep, all but one team member had experience using
-                Unity and C#, and underestimating our final semester’s workloads and other responsibilities impact on
+                Unity and C#, and underestimating our final semester's workloads and other responsibilities impact on
                 how much we could get done. These aforementioned issues lead to the final build of the game being a
                 shell of what it was supposed to be and short of a minimum viable product. It was missing many of the
                 planned features and the that were implemented were only partially functional.

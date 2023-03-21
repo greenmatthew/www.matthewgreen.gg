@@ -10,7 +10,9 @@
         <h3 id="server_computer">Server Computer</h3>
         <br>
         <figure id="preview">
-            <img class="auto_fit" src="server_computer/server_computer.jpg" alt="Server Computer Preview">
+            <center>
+                <img class="auto_fit" src="server_computer/webp/server_computer.webp" alt="Server Computer Preview">
+            </center>
         </figure>
         <br>
 
@@ -68,9 +70,6 @@
                 to do that with just HTML, however, I switched to using a mixture of HTML and PHP to better suit my
                 needs. While I do not use much PHP, it helped to break down the website into different modules and I
                 reuse said modules, to prevent code duplication.
-            </p>
-            <p>
-
             </p>
             <p>
                 I used Git, like I do for any project, for safely storing and doing version control of the source code

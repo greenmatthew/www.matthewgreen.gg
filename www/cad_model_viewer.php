@@ -9,7 +9,7 @@
     <div class="container">
         <h3 id="cad_model_viewer">CAD Model Viewer</h3>
         <figure id="preview">
-            <img src="cad_model_viewer/preview.png" alt="CAD Model Viewer Preview" style="width:100%">
+            <img src="cad_model_viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
         </figure>
 
         <br>
@@ -19,8 +19,9 @@
                 Links <a href="https://www.matthewgreen.gg/cad_model_viewer.php#links">#</a>
             </h3>
             <ul>
-                <li><a href="https://git.matthewgreen.gg/matthewgreen/CADModelViewer.git">Personal Git Repo</a></li>
-                <li><a href="https://github.com/greenmatthew/CADModelViewer">GitHub Repo</a></li>
+                <li><a href="https://git.matthewgreen.gg/matthewgreen/CADModelViewer.git">Personal Git Repo</a>
+                    (Currently private)</li>
+                <li><a href="https://github.com/greenmatthew/CADModelViewer">GitHub Repo</a> (Currently private)</li>
             </ul>
         </div>
 
@@ -54,10 +55,10 @@
             <h3 id="summary">Summary <a href="#summary">#</a></h3>
             <p>
                 It is a learning application, made in Unity, intended to be a companion application to the current
-                curriculum of Introduction to Engineering Design's current curriculum. The benefits of this application
-                and the fact that it is VR, is that it is more interactive, immersive, and easier to have complete focus
-                on learning as you are completely isolated from the real world distractions when inside a VR headset, as
-                opposed to a textbook or a 2D application.
+                curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington. The
+                benefits of this application and the fact that it is VR, is that it is more interactive, immersive, and
+                easier to have complete focus on learning as you are completely isolated from the real world
+                distractions when inside a VR headset, as opposed to a textbook or a 2D application.
             </p>
             <p>
                 It is planned to work for the SteamVR and Oculus (Meta) platforms on Windows, MacOS, and Linux for PC VR

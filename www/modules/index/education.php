@@ -13,13 +13,14 @@
                     <p>
                         Aug. 2019 - Dec. 2022
                         <br>
-                        Bachelor of Computer Science
+                        Bachelor of Science in Computer Science
                         <br>
                         Arlington, TX
                     </p>
                 </center>
                 <ul>
-                    <li>GPA: 3.29</li>
+                    <li>GPA: 3.287</li>
+                    <li>Notable Courses Taken: Game Design, Computer Graphics, Computer Networks, Linear Algebra, Computational Methods, Calculus I & II, Physics I & II, AI, Machine Learning, Senior Design I & II, Database Systems I & II, Software Engineering</li>
                 </ul>
             </div>
         </div>
@@ -32,13 +33,13 @@
                     <p>
                         Aug. 2015 - May 2019
                         <br>
-                        Computer Science Major
+                        High School Diploma
                         <br>
                         North Richland Hills, TX
                     </p>
                 </center>
                 <ul>
-                    <li>GPA: 4.00</li>
+                    <li>GPA: 4.000</li>
                     <li>Magna Cum Laude Graduate</li>
                     <li>Ranked 25th Percentile</li>
                 </ul>
