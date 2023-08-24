@@ -5,6 +5,20 @@
     </h3>
 
     <div>
+        <h3 id="cad_model_viewer">
+            <a href="https://www.matthewgreen.gg/cad_model_viewer.php">CAD Model Viewer</a> <a href="#cad_model_viewer">#</a>
+        </h3>
+        <a href="https://www.matthewgreen.gg/cad_model_viewer.php">
+            <img src="cad_model_viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
+        </a>
+        <p>
+            It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington.
+            <br><br>
+            You can see more about this project <a href="https://www.matthewgreen.gg/cad_model_viewer.php">here</a>.
+        </p>    
+    </div>
+
+    <div>
         <h3 id="trapstronauts">
             <a href="https://www.matthewgreen.gg/trapstronauts.php">Trapstronauts</a> <a href="#trapstronauts">#</a>
         </h3>
@@ -30,20 +44,6 @@
             <br><br>
             You can see more about this project <a href="https://www.matthewgreen.gg/project_calamity.php">here</a>.
         </p>
-    </div>
-
-    <div>
-        <h3 id="cad_model_viewer">
-            <a href="https://www.matthewgreen.gg/cad_model_viewer.php">CAD Model Viewer</a> <a href="#cad_model_viewer">#</a>
-        </h3>
-        <a href="https://www.matthewgreen.gg/cad_model_viewer.php">
-            <img src="cad_model_viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
-        </a>
-        <p>
-            It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington.
-            <br><br>
-            You can see more about this project <a href="https://www.matthewgreen.gg/cad_model_viewer.php">here</a>.
-        </p>    
     </div>
 
     <div>
