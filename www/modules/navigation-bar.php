@@ -7,7 +7,7 @@
         </header>
         <nav class="terminal-menu">
             <ul>
-                <li><a href="https://www.matthewgreen.gg/#about_me">About Me</a>
+                <li><a href="https://www.matthewgreen.gg/#about-me">About Me</a>
                     <meta property="position" content="1">
                 </li>
                 <li><a href="https://www.matthewgreen.gg/#projects">Projects</a>
@@ -16,7 +16,7 @@
                 <li><a href="https://www.matthewgreen.gg/#skills">Skills</a>
                     <meta property="position" content="3">
                 </li>
-                <li><a href="https://www.matthewgreen.gg/#work_experience">Work Experience</a>
+                <li><a href="https://www.matthewgreen.gg/#work-experience">Work Experience</a>
                     <meta property="position" content="4">
                 </li>
                 <li><a href="https://www.matthewgreen.gg/#education">Education</a>

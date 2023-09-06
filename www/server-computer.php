@@ -7,11 +7,11 @@
 
 <body>
     <div class="container">
-        <h3 id="server_computer">Server Computer</h3>
+        <h3 id="server-computer">Server Computer</h3>
         <br>
         <figure id="preview">
             <center>
-                <img class="auto_fit" src="server_computer/webp/server_computer.webp" alt="Server Computer Preview">
+                <img class="auto-fit" src="media/server-computer/webp/server-computer.webp" alt="Server Computer Preview">
             </center>
         </figure>
         <br>
@@ -23,13 +23,13 @@
             <ul>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#website">Website</a></li>
-                <li><a href="#git_website">Git Website</a></li>
-                <li><a href="#wildcard_ssl_cert">Wildcard SSL Certificate</a></li>
-                <li><a href="#dynamic_dns">Dynamic DNS (DDNS)</a></li>
+                <li><a href="#git-website">Git Website</a></li>
+                <li><a href="#wildcard-ssl-cert">Wildcard SSL Certificate</a></li>
+                <li><a href="#dynamic-dns">Dynamic DNS (DDNS)</a></li>
                 <li><a href="#vpn">VPN</a></li>
-                <li><a href="#game_servers">Game Servers</a></li>
-                <li><a href="#other_services">Other Services</a></li>
-                <li><a href="#future_work">Future Work</a></li>
+                <li><a href="#game-servers">Game Servers</a></li>
+                <li><a href="#other-services">Other Services</a></li>
+                <li><a href="#future-work">Future Work</a></li>
             </ul>
         </div>
 
@@ -73,13 +73,13 @@
             </p>
             <p>
                 I used Git, like I do for any project, for safely storing and doing version control of the source code
-                on my personal Git website <a href="https://git.matthewgreen.gg/matthewgreen/matthewgreen.gg">here</a>
+                on my personal Git website <a href="https://git.matthewgreen.gg/mgreen/matthewgreen.gg">here</a>
                 or on GitHub <a href="https://github.com/greenmatthew/matthewgreen.gg">here</a>.
             </p>
         </div>
 
         <div>
-            <h3 id="git_website">Git Website <a href="#git_website">#</a></h3>
+            <h3 id="git-website">Git Website <a href="#git-website">#</a></h3>
             <p>
                 I have setup my own personal Git website where I store all my projects. It acts as redundancy to GitHub,
                 but also allows me to circumvent GitHub restrictions on file sizes, push sizes, and Git LFS storage
@@ -93,12 +93,12 @@
             </p>
             <p>
                 You can see this website and all my public repositories
-                <a href="https://git.matthewgreen.gg/matthewgreen">here</a>.
+                <a href="https://git.matthewgreen.gg/mgreen">here</a>.
             </p>
         </div>
 
         <div>
-            <h3 id="wildcard_ssl_cert">Wildcard SSL Certificate <a href="#wildcard_ssl_cert">#</a></h3>
+            <h3 id="wildcard-ssl-cert">Wildcard SSL Certificate <a href="#wildcard-ssl-cert">#</a></h3>
             <p>
                 I have setup a wildcard SSL certificate, so all my different subdomains are secure with a single
                 certificate. It also is incredibly easy to secure new subdomains in the future. You can even see this
@@ -108,7 +108,7 @@
         </div>
 
         <div>
-            <h3 id="dynamic_dns">Dynamic DNS (DDNS) <a href="#dynamic_dns">#</a></h3>
+            <h3 id="dynamic-dns">Dynamic DNS (DDNS) <a href="#dynamic-dns">#</a></h3>
             <p>
                 One issue that I was always worried about when hosting different things such as my Git website is if my
                 public IP address would change while I was away from home and needed to access one of my services. Well
@@ -128,7 +128,7 @@
         </div>
 
         <div>
-            <h3 id="game_servers">Game Servers <a href="#game_servers">#</a></h3>
+            <h3 id="game-servers">Game Servers <a href="#game-servers">#</a></h3>
             <p>
                 Every once and a while, me and some friends will want to play a multiplayer game and host our own
                 server. I always volunteer to host because it can be fun to set them up and I have lots of prior
@@ -142,7 +142,7 @@
         </div>
 
         <div>
-            <h3 id="other_services">Other Services <a href="#other_services">#</a></h3>
+            <h3 id="other-services">Other Services <a href="#other-services">#</a></h3>
             <p>
                 As for what else I host, I have my own personal cloud storage with NextCloud. It is my own personal
                 Google Drive without a storage cap and third-party plugins to customize it to my needs. It even has its
@@ -161,7 +161,7 @@
         </div>
 
         <div>
-            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
+            <h3 id="future-work">Future Work <a href="#future-work">#</a></h3>
             <p>
                 I have many things that I would like to do in the future with my server computer and the server rack it
                 is on.

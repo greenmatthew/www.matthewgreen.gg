@@ -7,17 +7,17 @@
 
 <body>
     <div class="container">
-        <h3 id="project_calamity">Project Calamity</h3>
+        <h3 id="project-calamity">Project Calamity</h3>
         <br>
         <figure id="preview">
-            <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Preview" style="width:100%;">
+            <img src="media/project-calamity/webp/environment-0.webp" alt="Project Calamity Preview" style="width:100%;">
         </figure>
 
         <br>
 
         <div>
             <h3 id="links">
-                Links <a href="https://www.matthewgreen.gg/project_calamity.php#links">#</a>
+                Links <a href="https://www.matthewgreen.gg/project-calamity.php#links">#</a>
             </h3>
             <ul>
                 <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA
@@ -41,37 +41,37 @@
                 <li><a href="#summary">Summary</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#demo_video">Demo Video</a></li>
+                        <li><a href="#demo-video">Demo Video</a></li>
                     </ul>
                 </div>
                 <li><a href="#story">Story</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#environment_screenshots">Environment Screenshots</a></li>
+                        <li><a href="#environment-screenshots">Environment Screenshots</a></li>
                     </ul>
                 </div>
                 <li><a href="#setting">Setting</a></li>
                 <li><a href="#pms">Player Management Station (PMS)</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#pms_screenshots">PMS Screenshots</a></li>
+                        <li><a href="#pms-screenshots">PMS Screenshots</a></li>
                     </ul>
                 </div>
-                <li><a href="#inventory_system">Inventory System</a></li>
+                <li><a href="#inventory-system">Inventory System</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#inventory_screenshots">Inventory Screenshots</a></li>
+                        <li><a href="#inventory-screenshots">Inventory Screenshots</a></li>
                     </ul>
                 </div>
-                <li><a href="#health_system">Health System</a></li>
+                <li><a href="#health-system">Health System</a></li>
                 <li><a href="#combat">Combat</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#enemies_screenshots">Enemies Screenshots</a></li>
+                        <li><a href="#enemies-screenshots">Enemies Screenshots</a></li>
                     </ul>
                 </div>
                 <li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#future_work">Future Work</a></li>
+                <li><a href="#future-work">Future Work</a></li>
             </ul>
         </div>
 
@@ -110,8 +110,8 @@
                 ***
             </p>
 
-            <figure id="demo_video">
-                <video src="project_calamity/demo.mp4" type="video/mp4" style="width:100%;" controls>
+            <figure id="demo-video">
+                <video src="media/project-calamity/demo.mp4" type="video/mp4" style="width:100%;" controls>
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>
@@ -172,15 +172,15 @@
                 </b>
                 ***
             </p>
-            <div id="environment_screenshots">
+            <div id="environment-screenshots">
                 <figure>
-                    <img src="project_calamity/webp/environment_0.webp" alt="Project Calamity Environment 0">
+                    <img src="media/project-calamity/webp/environment-0.webp" alt="Project Calamity Environment 0">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/environment_1.webp" alt="Project Calamity Environment 1">
+                    <img src="media/project-calamity/webp/environment-1.webp" alt="Project Calamity Environment 1">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/environment_2.webp" alt="Project Calamity Environment 2">
+                    <img src="media/project-calamity/webp/environment-2.webp" alt="Project Calamity Environment 2">
                 </figure>
                 <br>
             </div>
@@ -195,7 +195,7 @@
                 capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities
                 and even more modules.
             </p>
-            <h4 id="beta_pms">Beta PMS</h4>
+            <h4 id="beta-pms">Beta PMS</h4>
             <ul>
                 <li>
                     Suit Upgrade Module - Allowing upgrading of armor and movement speed.
@@ -211,7 +211,7 @@
                     rewards.
                 </li>
             </ul>
-            <h4 id="alpha_pms">Alpha PMS</h4>
+            <h4 id="alpha-pms">Alpha PMS</h4>
             <ul>
                 <li>
                     All the same modules from the Beta PMS, but these modules can push and pull items into or from the
@@ -251,15 +251,15 @@
                 </b>
                 ***
             </p>
-            <div id="pms_screenshots">
+            <div id="pms-screenshots">
                 <figure>
-                    <img src="project_calamity/webp/pms.webp" alt="Project Calamity Alpha & Beta PMS">
+                    <img src="media/project-calamity/webp/pms.webp" alt="Project Calamity Alpha & Beta PMS">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/alpha_pms_open.webp" alt="Project Calamity Alpha PMS">
+                    <img src="media/project-calamity/webp/alpha-pms-open.webp" alt="Project Calamity Alpha PMS">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/alpha_pms_stash_module.webp"
+                    <img src="media/project-calamity/webp/alpha-pms-stash-module.webp"
                         alt="Project Calamity Alpha PMS Stash Module">
                 </figure>
                 <br>
@@ -267,7 +267,7 @@
         </div>
 
         <div>
-            <h3 id="inventory_system">Inventory System <a href="#inventory">#</a></h3>
+            <h3 id="inventory-system">Inventory System <a href="#inventory">#</a></h3>
             <p>
                 The player's inventory contains multiple different slots for equipment.
             </p>
@@ -316,19 +316,19 @@
                 ***
             </p>
 
-            <div id="inventory_screenshots">
+            <div id="inventory-screenshots">
                 <figure>
-                    <img src="project_calamity/webp/inventory.webp" alt="Project Calamity Inventory">
+                    <img src="media/project-calamity/webp/inventory.webp" alt="Project Calamity Inventory">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/inventory_sorted.webp" alt="Project Calamity Inventory Sorted">
+                    <img src="media/project-calamity/webp/inventory-sorted.webp" alt="Project Calamity Inventory Sorted">
                 </figure>
                 <br>
             </div>
         </div>
 
         <div>
-            <h3 id="health_system">Health System <a href="#inventory">#</a></h3>
+            <h3 id="health-system">Health System <a href="#inventory">#</a></h3>
             <ul>
                 <li>
                     You have both armors and shields you can wear to stop or reduce damage take to the player.
@@ -387,12 +387,12 @@
                 </b>
                 ***
             </p>
-            <div id="enemies_screenshots">
+            <div id="enemies-screenshots">
                 <figure>
-                    <img src="project_calamity/webp/enemies_0.webp" alt="Project Calamity Enemies 0">
+                    <img src="media/project-calamity/webp/enemies-0.webp" alt="Project Calamity Enemies 0">
                 </figure>
                 <figure>
-                    <img src="project_calamity/webp/enemies_1.webp" alt="Project Calamity Enemies 1">
+                    <img src="media/project-calamity/webp/enemies-1.webp" alt="Project Calamity Enemies 1">
                 </figure>
                 <br>
             </div>
@@ -423,7 +423,7 @@
         </div>
 
         <div>
-            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
+            <h3 id="future-work">Future Work <a href="#future-work">#</a></h3>
             <p>
                 Work needed to bring the game to a minimum viable product as it falls short of that.
             </p>

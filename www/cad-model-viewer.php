@@ -7,19 +7,19 @@
 
 <body>
     <div class="container">
-        <h3 id="cad_model_viewer">CAD Model Viewer</h3>
+        <h3 id="cad-model-viewer">CAD Model Viewer</h3>
         <figure id="preview">
-            <img src="cad_model_viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
+            <img src="media/cad-model-viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
         </figure>
 
         <br>
 
         <div>
             <h3 id="links">
-                Links <a href="https://www.matthewgreen.gg/cad_model_viewer.php#links">#</a>
+                Links <a href="https://www.matthewgreen.gg/cad-model-viewer.php#links">#</a>
             </h3>
             <ul>
-                <li><a href="https://git.matthewgreen.gg/matthewgreen/CADModelViewer.git">Personal Git Repo</a>
+                <li><a href="https://git.matthewgreen.gg/mgreen/CADModelViewer.git">Personal Git Repo</a>
                     (Currently private)</li>
                 <li><a href="https://github.com/greenmatthew/CADModelViewer">GitHub Repo</a> (Currently private)</li>
             </ul>
@@ -34,12 +34,12 @@
                 <li><a href="#summary">Summary</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#demo_video">Demo Video</a></li>
+                        <li><a href="#demo-video">Demo Video</a></li>
                     </ul>
                 </div>
-                <li><a href="#scene_system">Scene System</a></li>
+                <li><a href="#scene-system">Scene System</a></li>
                 <li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#future_work">Future Work</a></li>
+                <li><a href="#future-work">Future Work</a></li>
             </ul>
         </div>
 
@@ -66,8 +66,8 @@
                 finally the Google Cardboard platform on Android and iOS for phone VR headsets. So, students do not even
                 need a dedicated VR headset, they can just use their phone with an inexpensive cardboard phone headset.
             </p>
-            <figure id="demo_video">
-                <video src="cad_model_viewer/demo.mp4" type="video/mp4" style="width:100%;" controls>
+            <figure id="demo-video">
+                <video src="media/cad-model-viewer/demo.mp4" type="video/mp4" style="width:100%;" controls>
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>
@@ -76,7 +76,7 @@
         </div>
 
         <div>
-            <h3 id="scene_system">Scene System <a href="#scene_system">#</a></h3>
+            <h3 id="scene-system">Scene System <a href="#scene-system">#</a></h3>
             <p>
                 Upon opening the application, you will be greeted with a menu where you can open, download, or delete
                 scenes. These scenes are a model or a few models, accompanied by a video. A scene is a lesson for a
@@ -93,19 +93,19 @@
                 the student are only applicable to them.
             </p>
             <figure>
-                <img src="cad_model_viewer/webp/scene_downloading.webp" alt="CAD Model Viewer Downloading Scene"
+                <img src="media/cad-model-viewer/webp/scene-downloading.webp" alt="CAD Model Viewer Downloading Scene"
                     style="width:100%;">
             </figure>
             <figure>
-                <img src="cad_model_viewer/webp/scene_opening.webp" alt="CAD Model Viewer Opening Scene"
+                <img src="media/cad-model-viewer/webp/scene-opening.webp" alt="CAD Model Viewer Opening Scene"
                     style="width:100%;">
             </figure>
             <figure>
-                <img src="cad_model_viewer/webp/scene_opened.webp" alt="CAD Model Viewer Opened Scene"
+                <img src="media/cad-model-viewer/webp/scene-opened.webp" alt="CAD Model Viewer Opened Scene"
                     style="width:100%;">
             </figure>
             <figure>
-                <img src="cad_model_viewer/webp/scene_playing.webp" alt="CAD Model Viewer Playing Scene"
+                <img src="media/cad-model-viewer/webp/scene-playing.webp" alt="CAD Model Viewer Playing Scene"
                     style="width:100%;">
             </figure>
         </div>
@@ -122,7 +122,7 @@
         </div>
 
         <div>
-            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
+            <h3 id="future-work">Future Work <a href="#future-work">#</a></h3>
             <p></p>
             <ul>
                 <li>

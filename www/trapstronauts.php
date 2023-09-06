@@ -10,7 +10,7 @@
         <h3 id="trapstronauts">Trapstronauts</h3>
         <br>
         <figure id="preview">
-            <img src="trapstronauts/webp/preview.webp" alt="Trapstronauts Preview" style="width:100%;">
+            <img src="media/trapstronauts/webp/preview.webp" alt="Trapstronauts Preview" style="width:100%;">
         </figure>
 
         <br>
@@ -20,7 +20,7 @@
                 Links <a href="#links">#</a>
             </h3>
             <ul>
-                <li><a href="https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git">Personal Git Repo</a></li>
+                <li><a href="https://git.matthewgreen.gg/mgreen/Trapstronauts.git">Personal Git Repo</a></li>
                 <li><a href="https://github.com/greenmatthew/Trapstronauts">GitHub Repo</a></li>
             </ul>
         </div>
@@ -34,34 +34,34 @@
                 <li><a href="#summary">Summary</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#demo_video">Demo Video</a></li>
+                        <li><a href="#demo-video">Demo Video</a></li>
                     </ul>
                 </div>
                 <li><a href="#points">Points</a></li>
                 <li><a href="#maps">Maps</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#map_hub">Spaceship (Hub) Screenshot</a></li>
-                        <li><a href="#map_sawmill">Sawmill Screenshot</a></li>
-                        <li><a href="#map_valley">Valley Screenshot</a></li>
-                        <li><a href="#map_cliffs">Cliffs Screenshot</a></li>
-                        <li><a href="#map_canyon">Canyon Screenshot</a></li>
+                        <li><a href="#map-hub">Spaceship (Hub) Screenshot</a></li>
+                        <li><a href="#map-sawmill">Sawmill Screenshot</a></li>
+                        <li><a href="#map-valley">Valley Screenshot</a></li>
+                        <li><a href="#map-cliffs">Cliffs Screenshot</a></li>
+                        <li><a href="#map-canyon">Canyon Screenshot</a></li>
                     </ul>
                 </div>
-                <li><a href="#voting_system">Voting System</a></li>
+                <li><a href="#voting-system">Voting System</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#voting_system_screenshot">Voting Screenshot</a></li>
+                        <li><a href="#voting-system-screenshot">Voting Screenshot</a></li>
                     </ul>
                 </div>
-                <li><a href="#placement_system">Placement System</a></li>
+                <li><a href="#placement-system">Placement System</a></li>
                 <div class="container">
                     <ul>
-                        <li><a href="#placement_system_screenshots">Placement Screenshots</a></li>
+                        <li><a href="#placement-system-screenshots">Placement Screenshots</a></li>
                     </ul>
                 </div>
                 <li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#future_work">Future Work</a></li>
+                <li><a href="#future-work">Future Work</a></li>
             </ul>
         </div>
 
@@ -93,8 +93,8 @@
                 to play with a group of friends to laugh over.
             </p>
 
-            <figure id="demo_video">
-                <video src="trapstronauts/demo.mp4" type="video/mp4" style="width:100%;" controls>
+            <figure id="demo-video">
+                <video src="media/trapstronauts/demo.mp4" type="video/mp4" style="width:100%;" controls>
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>
@@ -115,7 +115,7 @@
                 <li>Post-mortem arrival to the finish line.</li>
             </ul>
             <figure>
-                <img src="trapstronauts/webp/points_system.webp" alt="Trapstronauts Points System">
+                <img src="media/trapstronauts/webp/points-system.webp" alt="Trapstronauts Points System">
             </figure>
             <br>
         </div>
@@ -123,8 +123,8 @@
         <div>
             <h3 id="maps">Maps <a href="#maps">#</a></h3>
             <ul>
-                <figure id="map_hub">
-                    <img src="trapstronauts/webp/map_hub_labelled.webp" alt="Trapstronauts Spaceship (Hub) Map"
+                <figure id="map-hub">
+                    <img src="media/trapstronauts/webp/map-hub-labelled.webp" alt="Trapstronauts Spaceship (Hub) Map"
                         style="width:100%;">
                     <figcaption>
                         This is where the players start when they load up the game. The players spawn in separate
@@ -134,8 +134,8 @@
                 </figure>
                 <br>
 
-                <figure id="map_sawmill">
-                    <img src="trapstronauts/webp/map_sawmill_labelled.webp" alt="Trapstronauts Sawmill Planet Map"
+                <figure id="map-sawmill">
+                    <img src="media/trapstronauts/webp/map-sawmill-labelled.webp" alt="Trapstronauts Sawmill Planet Map"
                         style="width:100%;">
                     <figcaption>
                         This is a simple but fun map, where there is a sawmill in the center. You can choose the safer
@@ -147,8 +147,8 @@
                 </figure>
                 <br>
 
-                <figure id="map_valley">
-                    <img src="trapstronauts/webp/map_valley_labelled.webp" alt="Trapstronauts Valley Planet Map"
+                <figure id="map-valley">
+                    <img src="media/trapstronauts/webp/map-valley-labelled.webp" alt="Trapstronauts Valley Planet Map"
                         style="width:100%;">
                     <figcaption>
                         The players start on the left bank of a steep valley with the finish line up above on the right
@@ -158,8 +158,8 @@
                 </figure>
                 <br>
 
-                <figure id="map_cliffs">
-                    <img src="trapstronauts/webp/map_cliffs_labelled.webp" alt="Trapstronauts Cliffs Planet Map"
+                <figure id="map-cliffs">
+                    <img src="media/trapstronauts/webp/map-cliffs-labelled.webp" alt="Trapstronauts Cliffs Planet Map"
                         style="width:100%;">
                     <figcaption>
                         This is very similar to valley, but a lot smaller. It is the best map for a quick game.
@@ -167,8 +167,8 @@
                 </figure>
                 <br>
 
-                <figure id="map_canyon">
-                    <img src="trapstronauts/webp/map_canyon_labelled.webp" alt="Trapstronauts Canyon Planet Map"
+                <figure id="map-canyon">
+                    <img src="media/trapstronauts/webp/map-canyon-labelled.webp" alt="Trapstronauts Canyon Planet Map"
                         style="width:100%;">
                     <figcaption>
                         The players start on the left bank of a canyon and the finish is in the bottom right cave inside
@@ -181,8 +181,8 @@
         </div>
 
         <div>
-            <h3 id="voting_system">Voting System <a href="#voting_system">#</a></h3>
-            <p id="voting_system_screenshot">
+            <h3 id="voting-system">Voting System <a href="#voting-system">#</a></h3>
+            <p id="voting-system-screenshot">
                 The players vote on which map they want, however, instead of a majority vote winning, it is
                 proportionally selected at random. Meaning each vote has an equal chance of being randomly selected. For
                 example, if two players voted on Sawmill and one voted on Valley, then it would be a two-thirds chance
@@ -190,14 +190,14 @@
                 room.
             </p>
             <figure>
-                <img src="trapstronauts/webp/voting_system.webp" alt="Trapstronauts Voting System" style="width:100%;">
+                <img src="media/trapstronauts/webp/voting-system.webp" alt="Trapstronauts Voting System" style="width:100%;">
             </figure>
             <br>
         </div>
 
         <div>
-            <h3 id="placement_system">Placement System <a href="#placement_system">#</a></h3>
-            <p id="placement_system_screenshots">
+            <h3 id="placement-system">Placement System <a href="#placement-system">#</a></h3>
+            <p id="placement-system-screenshots">
                 At the start of every round, the players get a random assortment of items, which can be platforms,
                 traps, and bombs, but they must choose quickly and wisely. Once an item has been selected you are locked
                 in and no one else can choose that item. After all the players have chosen an item, then they all at
@@ -213,17 +213,17 @@
                 paths harder to navigate without dying.
             </p>
             <figure>
-                <img src="trapstronauts/webp/placement_system_0.webp" alt="Trapstronauts Placement System"
+                <img src="media/trapstronauts/webp/placement-system-0.webp" alt="Trapstronauts Placement System"
                     style="width:100%;">
             </figure>
             <br>
             <figure>
-                <img src="trapstronauts/webp/placement_system_1.webp" alt="Trapstronauts Placement System"
+                <img src="media/trapstronauts/webp/placement-system-1.webp" alt="Trapstronauts Placement System"
                     style="width:100%;">
             </figure>
             <br>
             <figure>
-                <img src="trapstronauts/webp/placement_system_2.webp" alt="Trapstronauts Placement System"
+                <img src="media/trapstronauts/webp/placement-system-2.webp" alt="Trapstronauts Placement System"
                     style="width:100%;">
             </figure>
             <br>
@@ -239,7 +239,7 @@
         </div>
 
         <div>
-            <h3 id="future_work">Future Work <a href="#future_work">#</a></h3>
+            <h3 id="future-work">Future Work <a href="#future-work">#</a></h3>
             <p>If we were to keep working on the game there is many things we would have liked to add.</p>
             <ul>
                 <li>

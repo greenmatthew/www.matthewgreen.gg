@@ -6,10 +6,10 @@
 </head>
 
 <body>
-    <?php require 'modules/index/about_me.php'; ?>
+    <?php require 'modules/index/about-me.php'; ?>
     <?php require 'modules/index/projects.php'; ?>
     <?php require 'modules/index/skills.php'; ?>
-    <?php require 'modules/index/work_experience.php'; ?>
+    <?php require 'modules/index/work-experience.php'; ?>
     <?php require 'modules/index/education.php'; ?>
     <?php require 'modules/index/contact.php'; ?>
 </body>

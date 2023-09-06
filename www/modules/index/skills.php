@@ -3,8 +3,8 @@
 <h3 id="skills">
     Skills <a href="https://www.matthewgreen.gg/#skills">#</a>
 </h3>
-<h3 id="soft_skills">
-    Soft Skills <a href="https://www.matthewgreen.gg/#soft_skills">#</a>
+<h3 id="soft-skills">
+    Soft Skills <a href="https://www.matthewgreen.gg/#soft-skills">#</a>
 </h3>
 <ul>
     <li>Collaboration</li>
@@ -15,8 +15,8 @@
     <li>Documentation</li>
     <li>Organization</li>
 </ul>
-<h3 id="technical_skills">
-    Technical Skills <a href="https://www.matthewgreen.gg/#technical_skills">#</a>
+<h3 id="technical-skills">
+    Technical Skills <a href="https://www.matthewgreen.gg/#technical-skills">#</a>
 </h3>
 <ul>
     <li>C/C++</li>

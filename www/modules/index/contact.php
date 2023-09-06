@@ -12,7 +12,7 @@
     <div>
         <h3 id="links">Links</h3>
         <ul>
-            <li><a href="https://git.matthewgreen.gg/matthewgreen/">Personal Git Website</a></li>
+            <li><a href="https://git.matthewgreen.gg/mgreen/">Personal Git Website</a></li>
             <li><a href="https://github.com/greenmatthew">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/matthewalangreen/">LinkedIn</a></li>
         </ul>

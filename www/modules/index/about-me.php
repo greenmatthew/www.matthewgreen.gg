@@ -1,10 +1,10 @@
 <?php echo '
 <div class="container">
-    <h3 id="about_me">
-        About Me <a href="https://www.matthewgreen.gg/#about_me">#</a>
+    <h3 id="about-me">
+        About Me <a href="https://www.matthewgreen.gg/#about-me">#</a>
     </h3>
     <center>
-        <img class="auto_fit" src="images/me/webp/me_profile_pic_square.webp" alt="Me">
+        <img class="auto-fit" src="media/images/me/webp/me-profile-pic-square.webp" alt="Me">
     </center>
     <p>
         Hello, I am Matthew Green, a 21-year-old recent graduate with a Bachelor of Science in Computer Science from the University of Texas at Arlington from this past December. Now that I have received my degree I want to start a career in video game programming. Ever since I took a programming and game design course back in high school, it has been my ambition to develop video games as a career alongside accomplished peers. I have the correct skills and creativity to make a game become reality for the masses to enjoy. I also have found myself naturally taking a leadership role in the group projects I have taken part in, so I believe I could be a candidate for a managerial role in the future.
