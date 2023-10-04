@@ -20,9 +20,8 @@
                 Links <a href="https://www.matthewgreen.gg/project-calamity.php#links">#</a>
             </h3>
             <ul>
-                <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA
-                        Senior Designs Blog</a></li>
-                <li><a href="https://git.matthewgreen.gg/Euporie-Studios/SeniorDesignProject">Personal Git Repo</a></li>
+                <li><a href="https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/">UTA Senior Designs Blog</a></li>
+                <li><a href="https://git.matthewgreen.gg/mgreen/ProjectCalamity">Personal Git Repo</a></li>
                 <li><a href="https://github.com/greenmatthew/SeniorDesignProject">GitHub Repo</a></li>
                 <li>
                     <a href="https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf">
