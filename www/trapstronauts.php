@@ -93,15 +93,14 @@
                 to play with a group of friends to laugh over.
             </p>
 
-            <figure id="demo-video">
-                <video src="media/trapstronauts/demo.mp4" type="video/mp4" style="width:100%;" controls>
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>
-                    Trapstronauts Demo Video: Due to the way the demo was recorded the audio cuts out frequently
-                    in the recording.
-                </figcaption>
+            <figure>
+                <div style="position: relative; padding-bottom: 56.25%;">
+                    <iframe id="demo-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/mKnVCvUbzQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <figcaption style="text-align: center;"><a href="https://youtu.be/mKnVCvUbzQI?si=P-2s6JGi5dibp6RP">Trapstronauts Demo Video:</a> Due to the way the demo was recorded the audio cuts out frequently
+                    in the recording.</figcaption>
             </figure>
+            <br>
         </div>
 
         <div>

@@ -109,14 +109,11 @@
                 ***
             </p>
 
-            <figure id="demo-video">
-                <video src="media/project-calamity/demo.mp4" type="video/mp4" style="width:100%;" controls>
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>
-                    Project Calamity Demo Video: Recorded by one of my team members for the project Will Kembel. If the
-                    video is not showing try the <a href="https://youtu.be/olbn0plXHug">original YouTube upload</a>.
-                </figcaption>
+            <figure>
+                <div style="position: relative; padding-bottom: 56.25%;">
+                    <iframe id="demo-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/JKdABwatEUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <figcaption style="text-align: center;"><a href="https://youtu.be/JKdABwatEUQ?si=iVCE0lfp9oDjuuEz">Project Calamity Demo:</a> Recorded by one of my team members for the project Will Kembel.</figcaption>
             </figure>
             <br>
         </div>

@@ -20,7 +20,7 @@
                 </center>
                 <ul>
                     <li>GPA: 3.287</li>
-                    <li>Notable Courses Taken: Game Design, Computer Graphics, Computer Networks, Linear Algebra, Computational Methods, Calculus I & II, Physics I & II, AI, Machine Learning, Senior Design I & II, Database Systems I & II, Software Engineering</li>
+                    <li>Notable Courses Taken: Game Design, Computer Graphics, Computer Networks, Linear Algebra, Computational Methods, Calculus I & II, Physics I & II, Artificial Intelligence, Machine Learning, Senior Design I & II, Database Systems I & II, Software Engineering</li>
                 </ul>
             </div>
         </div>

@@ -11,7 +11,7 @@
             <div>
                 <center>
                     <p>
-                        Feb. 2022 - Present
+                        Feb. 2022 - Oct. 2023
                         <br>
                         University of Texas at Arlington
                         <br>
@@ -19,13 +19,13 @@
                     </p>
                 </center>
                 <p>
-                    I was hired by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr. Raul Fernandez</a>, of the Mechanical and Aerospace Engineering Department at UTA, to work individually on a <a href="https://www.matthewgreen.gg/cad-model-viewer.php">VR application</a> as part of his new <a href="https://mevrstudy.uta.edu">Mechanical Engineering study program</a> he is experimenting with. The application is meant to help students learn about the concepts of Computer Aided Design (CAD) in a new 3D virtual environment. The benefits of using VR is to allow students to interact with the CAD models and concepts in a way that is not possible in a 2D environment.
+                    I was engaged by <a href="https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me">Dr. Raul Fernandez</a>, from the Mechanical and Aerospace Engineering Department at UTA, to independently develop a <a href="https://www.matthewgreen.gg/cad-model-viewer.php">VR application</a> for his innovative <a href="https://mevrstudy.uta.edu">Mechanical Engineering VR study program</a>. The application is designed to introduce students to Computer Aided Design (CAD) concepts within an immersive 3D virtual environment. The utilization of VR technology facilitates a focused interaction with CAD models, allowing students to engage in real-time exploration while following video lessons.
                 </p>
                 <p>
-                    It\'s going to be available for nearly all devices, with it being made for phone VR headsets with Google Cardboard and for PC and standalone VR headsets with SteamVR and Oculus (Meta). So, everyone can get access to the application.
+                    It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
                 </p>
                 <p>
-                    After a year of development, I feel comfortable and confident using Unity and programming in C#. The application is also well polished and ready to start being used by students to help with their learning.
+                    Over two years of dedicated development, I honed a high degree of proficiency in Unity and C# programming, bolstering my confidence in tackling complex projects within this framework. The application achieved a refined state, poised to significantly aid students in their learning journey. Although it was ready for deployment, the integration of educational content was pending due to my superior\'s other commitments. Nonetheless, I utilized this time to further polish the application and add quality of life features, ensuring an intuitive and enriching user experience upon its eventual deployment.
                 </p>
             </div>
         </div>
@@ -44,10 +44,7 @@
                     </p>
                 </center>
                 <p>
-                    Upon receiving my Pharmacy Technician Trainee Certification and was promoted to a Designated
-                    Hitter allowing me to work in the pharmacy as well. I would help organize prescriptions, run
-                    the pharmacy cash register, and train to become a Pharmacy Technician. Unfortunately, I had
-                    to quit because of the pandemic.
+                    Upon earning my Pharmacy Technician Trainee Certification, I was promoted to a Designated Hitter, enabling me to contribute within the pharmacy. My responsibilities included organizing prescriptions, operating the pharmacy cash register, and training towards becoming a Pharmacy Technician. Despite my enthusiasm and the progress made, I had to resign from this role after a month due to the pandemic.
                 </p>
             </div>
         </div>
@@ -66,8 +63,7 @@
                     </p>
                 </center>
                 <p>
-                    Worked with a team to provide superb customer service, operated the cash register, stocked
-                    the shelves, made photo orders, and other tasks.
+                    Collaborated with a team to deliver exceptional customer service, operated the cash register, maintained shelf inventory, processed photo orders, and handled various other tasks.
                 </p>
             </div>
         </div>

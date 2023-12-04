@@ -6,10 +6,10 @@
 
     <div>
         <h3 id="cad-model-viewer">
-            <a href="https://www.matthewgreen.gg/cad-model-viewer.php">CAD Model Viewer</a> <a href="#cad-model-viewer">#</a>
+            <a href="https://www.matthewgreen.gg/cad-model-viewer.php">CADModelViewer</a> <a href="#cad-model-viewer">#</a>
         </h3>
         <a href="https://www.matthewgreen.gg/cad-model-viewer.php">
-            <img src="media/cad-model-viewer/webp/preview.webp" alt="CAD Model Viewer Preview" style="width:100%">
+            <img src="media/cad-model-viewer/webp/preview.webp" alt="CADModelViewer Preview" style="width:100%">
         </a>
         <p>
             It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington.

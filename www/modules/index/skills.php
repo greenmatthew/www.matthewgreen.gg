@@ -19,11 +19,11 @@
     Technical Skills <a href="https://www.matthewgreen.gg/#technical-skills">#</a>
 </h3>
 <ul>
-    <li>C/C++</li>
-    <li>C#</li>
-    <li>Python</li>
-    <li>Unity Engine</li>
-    <li>Git</li>
+    <li>Unity Engine (Advanced)</li>
+    <li>Git (Advanced)</li>
+    <li>C# (Advanced/Expert)</li>
+    <li>C/C++ (Advanced; after some review)</li>
+    <li>Python (Advanced)</li>
 </ul>
 </div>
 ';
