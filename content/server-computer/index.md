@@ -3,7 +3,7 @@ type: project
 layout: project
 priority: 40
 title: "Server Computer"
-summary: "Test"
+summary: "A hobby of mine is building and working on an old server computer. I use it for various things such as hosting this website, a personal Git website, a Minecraft game server, and much more."
 previewImage:
     src: "server-computer/preview.jpg"
     useAutoFit: true

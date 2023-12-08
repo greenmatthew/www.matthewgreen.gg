@@ -3,7 +3,7 @@ type: project
 layout: project
 priority: 0
 title: "CADModelViewer"
-summary: "Test"
+summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
 previewImage:
     src: "cad-model-viewer/preview.png"
 ---
@@ -37,7 +37,7 @@ It is a learning application, made in Unity, intended to be a companion applicat
 It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
 
 {{< youtube id="0FrUqwAcmxs" autoplay="true" title="CADModelViewer Demo v1" >}}
-CADModelViewer Demo v1: If the video is not working try the [my YouTube upload](https://youtu.be/0FrUqwAcmxs) of it.
+CADModelViewer Demo v1: If the video is not working try my [YouTube upload](https://youtu.be/0FrUqwAcmxs) of it.
 
 {{< custom-header type="h2" id="lesson-system" text="Lesson System" >}}
 The cornerstone of the application is a feature we refer to as 'lessons', designed to facilitate student learning. These lessons are created by packaging models and/or a video into a Unity AssetBundle, which enables post-deployment downloading—eliminating the need for app updates to access new lessons. Upon launching the application, users encounter a menu where they can open, download, or delete lessons.

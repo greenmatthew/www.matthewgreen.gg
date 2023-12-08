@@ -3,7 +3,7 @@ type: project
 layout: project
 
 title: "Project Calamity"
-summary: "Test"
+summary: "This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans."
 previewImage:
     src: "project-calamity/preview.png"
 priority: 20

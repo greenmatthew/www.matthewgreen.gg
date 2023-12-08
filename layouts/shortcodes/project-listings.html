@@ -10,6 +10,9 @@
             {{ partial "display-preview-image.html" . }}
 
             <p> {{ .Summary }} </p>
+
+            <p>You can learn more about this project <a href="{{ .RelPermalink }}">here</a>.</p>
+
         {{ end }}
     {{ else }}
         {{ errorf "Priority not set for project '%s' (file: %s)" .Title .File.Path }}
