@@ -1,0 +1,31 @@
+<!-- layouts/partials/custom-header.html -->
+{{ $type := .type }}
+{{ if not $type }}
+    {{ errorf "Type is missing at some {{ partial \"custom-header.html\" ... }}." }}
+{{ end }}
+
+{{ $id := .id }}
+{{ if not $id }}
+    {{ errorf "Id is missing at some {{ partial \"custom-header.html\" ... }}." }}
+{{ end }}
+
+{{ $text := .text }}
+{{ if not $id }}
+    {{ errorf "Text is missing at some {{ partial \"custom-header.html\" ... }}." }}
+{{ end }}
+
+{{ if eq $type "h1" }}
+    <h1 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h1>
+{{ else if eq $type "h2" }}
+    <h2 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h2>
+{{ else if eq $type "h3" }}
+    <h3 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h3>
+{{ else if eq $type "h4" }}
+    <h4 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h4>
+{{ else if eq $type "h5" }}
+    <h5 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h5>
+{{ else if eq $type "h6" }}
+    <h6 id="{{ $id }}">{{ $text }} <a href="#{{ $id }}">#</a></h6>
+{{ else }}
+    {{ errorf "Type '%s' is invalid at some {{ partial \"custom-header.html\" ... }}." $type }}
+{{ end }}

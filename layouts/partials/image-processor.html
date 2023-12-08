@@ -1,0 +1,28 @@
+<!-- layouts/partials/image-processor.html -->
+{{ $src := .src }}
+
+{{ $href := .href | default "" }}
+
+{{ $img := resources.Get $src }}
+
+{{ if not $img }}
+    {{ errorf "Image not found: %s" $src }}
+{{ end }}
+
+{{ $fallbackUrl := $img.RelPermalink }}
+
+{{ $filter := images.Process "webp" }}
+{{ $imgWebp := $img.Filter $filter }}
+
+{{ if not $imgWebp }}
+    {{ errorf "WebP conversion failed for image: %s" $src }}
+{{ end }}
+
+{{ $defaultUrl := $imgWebp.RelPermalink }}
+
+<a href="{{ $href }}">
+    <picture>
+        <source srcset="{{ $defaultUrl }}" type="image/webp">
+        <img src="{{ $fallbackUrl }}" alt="{{ .alt }}" class="{{ .class }}">
+    </picture>
+</a>

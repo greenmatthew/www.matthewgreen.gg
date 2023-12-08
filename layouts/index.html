@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <!-- Custom content for the main index page -->
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/about-me" "moduleName" "About Me") }}
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/projects" "moduleName" "Projects") }}
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/skills" "moduleName" "Skills") }}
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/work-experience" "moduleName" "Work Experience") }}
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/education" "moduleName" "Education") }}
+  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/contact" "moduleName" "Contact") }}
+{{ end }}

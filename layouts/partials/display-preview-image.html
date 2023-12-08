@@ -1,0 +1,12 @@
+<!-- layouts/partials/display-preview-image.html -->
+{{ $href := .RelPermalink }}
+{{ with .Params.previewImage }}
+
+    {{ $class := "centered" }}
+    {{ if eq (.useAutoFit | default false) true }}
+        {{ $class = print $class " auto-fit" }}
+    {{ end }}
+
+    {{ partial "image-processor.html" (dict "src" .src "alt" (print $.Title " Preview") "class" $class "href" $href ) }}
+    
+{{ end }}

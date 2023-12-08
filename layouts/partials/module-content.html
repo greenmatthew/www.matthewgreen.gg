@@ -1,0 +1,13 @@
+<!-- layouts/partials/module-content.html -->
+{{ $context := .context }}
+{{ $pageRef := .pageRef }}
+{{ $moduleName := .moduleName }}
+{{ $page := $context.Site.GetPage (print $pageRef) }}
+{{ if $page }}
+    {{ partial "custom-header.html" (dict "type" "h2" "id" $page.Params.Id "text" $page.Title) }}
+    <div class="module-content">
+        {{ $page.Content }}
+    </div>
+{{ else }}
+    <div>No content found for module {{ $moduleName }}</div>
+{{ end }}

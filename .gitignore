@@ -1,3 +1,10 @@
-logs/
-www/media/cad-model-viewer/scenes/
-www/media/cad-model-viewer/lessons/
+# Hugo
+.hugo_build.lock
+public/
+resources/
+
+# Removing annoying Windows files
+**Thumbs.db
+
+# Remove CADModelViewer lessons
+static/media/cad-model-viewer/lessons

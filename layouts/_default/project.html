@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+
+    {{ partial "display-preview-image.html" . }}
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}

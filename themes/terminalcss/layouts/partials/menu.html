@@ -1,0 +1,11 @@
+<!-- layouts/partials/menu.html -->
+<nav class="terminal-menu">
+    <ul>
+        {{ range .page.Site.Menus.main }}
+            <li>
+                <a href="{{ $.page.Site.BaseURL }}{{ .PageRef }}">{{ .Name }}</a>
+                <meta property="position" content="{{ .Weight }}">
+            </li>
+        {{ end }}
+    </ul>
+</nav>
