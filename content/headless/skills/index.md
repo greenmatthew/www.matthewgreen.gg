@@ -18,5 +18,5 @@ priority: 20
 - Unity Engine (Advanced)
 - Git (Advanced)
 - C# (Advanced/Expert)
-- C/C++ (Advanced; after some review)
+- C/C++ (Advanced)
 - Python (Advanced)
