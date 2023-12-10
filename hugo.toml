@@ -1,7 +1,7 @@
 baseURL = 'https://www.matthewgreen.gg'
 languageCode = 'en-us'
 title = '''Matthew Green's Showcase'''
-theme = 'terminalcss'
+theme = 'hugo-terminal.css'
 [params]
     name = "Matthew Green"
     defaultDescription = "Hello, I am Matthew Green and this is a showcase of all my projects, skills, work experience, and education as well as my contact details."
