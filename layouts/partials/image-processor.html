@@ -1,9 +1,9 @@
 <!-- layouts/partials/image-processor.html -->
 {{ $src := .src }}
 
-{{ $href := .href | default "" }}
-
 {{ $img := resources.Get $src }}
+
+{{ $href := .href }}
 
 {{ if not $img }}
     {{ errorf "Image not found: %s" $src }}
@@ -20,9 +20,13 @@
 
 {{ $defaultUrl := $imgWebp.RelPermalink }}
 
+{{ if $href }}
 <a href="{{ $href }}">
+{{ end }}
     <picture>
         <source srcset="{{ $defaultUrl }}" type="image/webp">
         <img src="{{ $fallbackUrl }}" alt="{{ .alt }}" class="{{ .class }}">
     </picture>
+{{ if $href }}
 </a>
+{{ end }}
