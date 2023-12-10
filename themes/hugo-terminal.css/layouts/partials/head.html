@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />
 
-    {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+    {{ $css := resources.Get "css/terminal.css-dark.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 
     {{ $css := resources.Get "css/image.css" | resources.Minify | resources.Fingerprint }}
