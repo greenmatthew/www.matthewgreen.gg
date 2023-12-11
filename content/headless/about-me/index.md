@@ -5,8 +5,6 @@ title: "About Me"
 id: "about-me"
 priority: 0
 ---
-[//]: # (This is a comment to ensure proper Markdown rendering)
-
 {{< imageWebP src="headless/about-me/me-profile-pic-square.jpg" alt="Me" class="auto-fit centered" >}}
 
 Hello, I am Matthew Green, a 22-year-old computer science graduate from the University of Texas at Arlington, having earned my degree in December 2022. Having nurtured a passion for video game programming since high school, I am on a mission to turn this passion into a fulfilling career, where I can contribute to creating enthralling gaming experiences. Over the years, I've found myself naturally gravitating towards leadership roles in group projects, hinting at a potential pathway towards lead positions in the future.
