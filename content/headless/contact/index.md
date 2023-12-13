@@ -13,4 +13,4 @@ priority: 50
 
 [GitHub](https://github.com/greenmatthew)
 
-{{< linkedinbadge >}}
+{{< linkedin-badge >}}
