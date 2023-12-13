@@ -60,11 +60,11 @@ The bounty hunter's spaceship crash lands on the outskirts of the compound. In a
 
 *** ***Notice: In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.*** ***
 
-{{< imageWebP src="project-calamity/preview.png" alt="Project Calamity Environment 0" >}}
+{{< image src="project-calamity/preview.png" alt="Project Calamity Environment 0" >}}
 
-{{< imageWebP src="project-calamity/environment-1.png" alt="Project Calamity Environment 1" >}}
+{{< image src="project-calamity/environment-1.png" alt="Project Calamity Environment 1" >}}
 
-{{< imageWebP src="project-calamity/environment-2.png" alt="Project Calamity Environment 2" >}}
+{{< image src="project-calamity/environment-2.png" alt="Project Calamity Environment 2" >}}
 
 {{< custom-header type="h2" id="pms" text="Player Management Station (PMS)" >}}
 The Player Management Station (PMS) devices are a critical part of the gameplay loop and found all over the map. There are two different types of PMS: Alpha and Beta. They both have modules in them allowing the player to do certain things to help them survive. Beta PMS have less modules and reduced capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities and even more modules.
@@ -87,11 +87,11 @@ These stations are inspired by the Dark Souls franchise bon fires and the Dead S
 
 *** ***Notice: Both are inside the game with a model but completely lack basically all functionality. Only the Stash Module in the Alpha PMS is working.*** ***
 
-{{< imageWebP src="project-calamity/pms.png" alt="Project Calamity Alpha & Beta PMS" >}}
+{{< image src="project-calamity/pms.png" alt="Project Calamity Alpha & Beta PMS" >}}
 
-{{< imageWebP src="project-calamity/alpha-pms-open.png" alt="Project Calamity Alpha PMS" >}}
+{{< image src="project-calamity/alpha-pms-open.png" alt="Project Calamity Alpha PMS" >}}
 
-{{< imageWebP src="project-calamity/alpha-pms-stash-module.png" alt="Project Calamity Alpha PMS Stash Module" >}}
+{{< image src="project-calamity/alpha-pms-stash-module.png" alt="Project Calamity Alpha PMS Stash Module" >}}
 
 {{< custom-header type="h2" id="inventory-system" text="Inventory System" >}}
 The player's inventory contains multiple different slots for equipment.
@@ -107,9 +107,9 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 
 *** ***Notice: All the slots are in the game, except for the vest and backpack slots, however, there are no items other than a rifle and some example items and there is a fixed size storage container just called backpack. So, the whole inventory system provides nothing to the final build of the game. The only interaction with it is you immediately equip your rifle from an Alpha PMS's stash module.*** ***
 
-{{< imageWebP src="project-calamity/inventory.png" alt="Project Calamity Inventory" >}}
+{{< image src="project-calamity/inventory.png" alt="Project Calamity Inventory" >}}
 
-{{< imageWebP src="project-calamity/inventory-sorted.png" alt="Project Calamity Inventory Sorted" >}}
+{{< image src="project-calamity/inventory-sorted.png" alt="Project Calamity Inventory Sorted" >}}
 
 {{< custom-header type="h2" id="health-system" text="Health System" >}}
 - You have both armors and shields you can wear to stop or reduce damage take to the player.
@@ -127,9 +127,9 @@ There are different types of AI used by the different enemies in the game with d
 
 *** ***Notice: In the final build there is only a single firearm, found in the stash with a magazine item, but the magazine is nonfunctional, so the firearm just has infinite reloads for the purposes of the demo. Also the AI is very basic and just goes directly towards a player and attacks when in range. It has no sort of other logic now.*** ***
 
-{{< imageWebP src="project-calamity/enemies-0.png" alt="Project Calamity Enemies 0" >}}
+{{< image src="project-calamity/enemies-0.png" alt="Project Calamity Enemies 0" >}}
 
-{{< imageWebP src="project-calamity/enemies-1.png" alt="Project Calamity Enemies 1" >}}
+{{< image src="project-calamity/enemies-1.png" alt="Project Calamity Enemies 1" >}}
 
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.

@@ -7,6 +7,6 @@
         {{ $class = print $class " auto-fit" }}
     {{ end }}
 
-    {{ partial "image-processor.html" (dict "src" .src "alt" (print $.Title " Preview") "class" $class "href" $href ) }}
+    {{ partial "image.html" (dict "src" .src "alt" (print $.Title " Preview") "class" $class "href" $href ) }}
     
 {{ end }}

@@ -46,10 +46,10 @@ Take, for instance, a lesson focused on threaded holes: it might comprise a mode
 
 Looking ahead, the plan is to extend support for animations, with the aspiration of enabling direct imports from SolidWorks, a CAD modeling software, to enrich the learning experience.
 
-{{< imageWebP src="cad-model-viewer/scene-downloading.png" alt="CAD Model Viewer Downloading Scene" >}}
-{{< imageWebP src="cad-model-viewer/scene-opening.png" alt="CAD Model Viewer Opening Scene" >}}
-{{< imageWebP src="cad-model-viewer/scene-opened.png" alt="CAD Model Viewer Opened Scene" >}}
-{{< imageWebP src="cad-model-viewer/scene-playing.png" alt="CAD Model Viewer Playing Scene" >}}
+{{< image src="cad-model-viewer/scene-downloading.png" alt="CAD Model Viewer Downloading Scene" >}}
+{{< image src="cad-model-viewer/scene-opening.png" alt="CAD Model Viewer Opening Scene" >}}
+{{< image src="cad-model-viewer/scene-opened.png" alt="CAD Model Viewer Opened Scene" >}}
+{{< image src="cad-model-viewer/scene-playing.png" alt="CAD Model Viewer Playing Scene" >}}
 
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 After nearly two years of dedicated work on this app, it's in the most refined state to date.
