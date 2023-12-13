@@ -6,7 +6,10 @@
 {{ $privacyEnhanced := cond (eq (.Site.Params.youtubePrivacyEnhanced | default "false") "true") "www.youtube-nocookie.com" "www.youtube.com" }}
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
-{{ $centered := eq (.Get "centered" | default "false") "true" }}
+{{ $centered := eq (.Get "centered" | default "true") "true" }}
+{{ $caption := .Get "caption" | safeHTML }}
+
+<figure>
 
 {{ if $width }}
     {{ if not $height }}
@@ -40,3 +43,11 @@
     </div>    
 
 {{ end }}
+
+{{ if $caption }}
+    <figcaption>
+        {{ $caption }}
+    </figcaption>
+{{ end }}
+
+</figure>
