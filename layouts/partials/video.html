@@ -1,0 +1,37 @@
+<!-- layouts/partials/video.html -->
+{{ $src := .src }}
+{{ $fallbackSrc := .fallbackSrc }}
+{{ $class := .class }}
+{{ $caption := .caption }}
+{{ $controls := default true .controls }}
+{{ $autoplay := default false .autoplay }}
+{{ $loop := default false .loop }}
+{{ $muted := default false .muted }}
+{{ $lazyLoading := default false .lazyLoading }}
+
+{{ $width := .width }}
+{{ $height := .height }}
+
+{{ $video := resources.Get $src }}
+{{ $fallbackVideo := resources.Get $fallbackSrc }}
+
+{{ if not $video }}
+    {{ errorf "Video not found: %s" $src }}
+{{ end }}
+
+<figure>
+    <video
+        {{ if $width }} width="{{ $width }}" {{ end }}
+        {{ if $height }} height="{{ $height }}" {{ end }}
+        {{ if $controls }} controls {{ end }}
+        {{ if $autoplay }} autoplay {{ end }}
+        {{ if $loop }} loop {{ end }}
+        {{ if $muted }} muted {{ end }}
+        {{ if $lazyLoading }} loading="lazy" {{ end }}
+        {{ if $class }} class="{{ $class }}" {{ end }}>
+        <source src="{{ $video.Permalink }}" type="video/{{ $video.MediaType.SubType }}">
+        {{ if $fallbackVideo }} <source src="{{ $fallbackVideo.Permalink }}" type="video/{{ $fallbackVideo.MediaType.SubType }}"> {{ end }}
+        Your browser does not support the video tag.
+    </video>
+    {{ if $caption }} <figcaption> {{ $caption }} </figcaption> {{ end }}
+</figure>

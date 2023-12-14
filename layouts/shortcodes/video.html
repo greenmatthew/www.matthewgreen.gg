@@ -1,0 +1,10 @@
+<!-- layouts/shortcodes/video.html -->
+{{ partial "video.html"
+    (dict
+        "src" (.Get "src")
+        "fallbackSrc" (.Get "fallbackSrc")
+        "alt" (.Get "alt")
+        "class" (.Get "class")
+        "caption" (.Get "caption" | safeHTML)
+    )
+}}
