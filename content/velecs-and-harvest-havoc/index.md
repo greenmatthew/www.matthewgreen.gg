@@ -8,6 +8,18 @@ previewImage:
     src: "velecs-and-harvest-havoc/preview.png"
 ---
 
+{{< custom-header type="h2" id="notice" text="Notice" >}}
+The content of this page may be outdated. Velecs Engine and Harvest Havoc are actively being worked on, making it hard to keep this webpage perfectly up-to-date. If you want to see the most up-to-date information about these project, please check to see if there is anything new with the latest commits on the repositories below.
+
+{{< custom-header type="h2" id="links" text="Links" >}}
+- [Harvest Havoc on Personal Git Repo](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git)
+- [Harvest Havoc on Github Repo](https://github.com/greenmatthew/HarvestHavoc.git)
+
+**Note: Velecs Engine can found inside the Harvest Havoc repository as a submodule at libs/velecs/**
+
+- [Velecs Engine on Personal Git Repo](https://github.com/greenmatthew/VelecsEngineCPP.git)
+- [Velecs Engine on Github Repo](https://github.com/greenmatthew/VelecsEngineCPP.git)
+
 {{< custom-header type="h2" id="content" text="Content" >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
@@ -108,6 +120,7 @@ At this key point enters Harvest Havoc. Initially envisioned as a game, Harvest 
 
 {{< custom-header type="h3" id="harvest-havoc" text="Harvest Havoc" >}}
 
+**This section is still a work-in-progress. So it is empty for now.**
 
 {{< custom-header type="h2" id="technology-stack" text="Technology Stack" >}}
 - #### C++
