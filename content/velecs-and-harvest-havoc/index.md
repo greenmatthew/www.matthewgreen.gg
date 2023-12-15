@@ -15,7 +15,7 @@ The content of this page may be outdated. Velecs Engine and Harvest Havoc are ac
 - [Harvest Havoc on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git)
 - [Harvest Havoc on Github Repository](https://github.com/greenmatthew/HarvestHavoc.git)
 
-**Note: Velecs Engine can found inside the Harvest Havoc repository as a submodule at libs/velecs/**
+**Note: Velecs Engine can be found inside the Harvest Havoc repository as a submodule at libs/velecs/**
 
 - [Velecs Engine on Personal Git Website Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
 - [Velecs Engine on Github Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
@@ -77,23 +77,23 @@ Velecs represents my first venture into game engine development. Harnessing Vulk
 
     A scene-graph approach is employed for managing transforms. Positions, rotations, and scales of entities are relative to their parent entity, if one exists, providing a structured and intuitive way to handle object transformations.
 
-    {{< image src="velecs-and-harvest-havoc/scene-graph-code-example.png" alt="Velecs Scene Graph Code Example" class="centered" caption="Showing the code used for the scene graph video below." >}}
+{{< image src="velecs-and-harvest-havoc/scene-graph-code-example.png" alt="Velecs Scene Graph Code Example" class="centered" caption="Showing the code used for the scene graph video below." >}}
 
-    {{< video-gif src="velecs-and-harvest-havoc/scene-graph-example.mp4" width="960" alt="Velecs Scene Graph Example" class="centered" caption="This video demonstrates the use of scene graphs in the Velecs engine. Scene graphs are a hierarchical structure where the position, rotation, and scale of each entity are relative to their parent, if any. In the video, multiple entities are featured, including one labeled 'Player'. The camera is attached to the 'Player' entity, which rotates at a constant rate of 45 degrees per second. As the camera is attached to the player, it rotates with it, keeping the triangle consistently in view. This setup gives the appearance of other entities rotating around the player. Notably, backface culling is disabled, allowing the backs of the 2D meshes to be visible, further showcasing the engine's capabilities with scene graphs." >}}
+{{< video-gif src="velecs-and-harvest-havoc/scene-graph-example.mp4" width="500px" alt="Velecs Scene Graph Example" class="centered" caption="This video demonstrates the use of scene graphs in the Velecs engine. Scene graphs are a hierarchical structure where the position, rotation, and scale of each entity are relative to their parent, if any. In the video, multiple entities are featured, including one labeled 'Player'. The camera is attached to the 'Player' entity, which rotates at a constant rate of 45 degrees per second. As the camera is attached to the player, it rotates with it, keeping the triangle consistently in view. This setup gives the appearance of other entities rotating around the player. Notably, backface culling is disabled, allowing the backs of the 2D meshes to be visible, further showcasing the engine's capabilities with scene graphs." >}}
 
-    {{< line-break >}}
+{{< line-break >}}
 
 - Simple Input Polling
 
     Inspired by a technique I discovered in an Overwatch Seminar at GDC 2017, Velecs uses a singleton entity approach for input polling. This method, while simpler than my original complex input system, proved to be highly effective, easy to implement, and seamlessly integrated with Flecs. The singleton entity serves as a unique entity with a specific component for input, streamlining the process and reducing data-system coupling issues.
 
-    {{< youtube-extended id="W3aieHjyNvw" startAt="741" title="Overwatch Seminar at GDC 2017" width="360" centered="true" caption="This segment from the Overwatch Seminar at GDC 2017 inspired the singleton entity approach for the input system in Velecs, showcasing an efficient and convenient method for handling game inputs." >}}
+{{< youtube-extended id="W3aieHjyNvw" startAt="741" title="Overwatch Seminar at GDC 2017" width="360" centered="true" caption="This segment from the Overwatch Seminar at GDC 2017 inspired the singleton entity approach for the input system in Velecs, showcasing an efficient and convenient method for handling game inputs." >}}
 
-    {{< line-break >}}
+{{< line-break >}}
 
-    {{< image src="velecs-and-harvest-havoc/input-code-example.png" alt="Velecs Input System Code Example" class="centered" caption="Code snippet demonstrating the use of the input singleton component for player movement in Velecs." >}}
+{{< image src="velecs-and-harvest-havoc/input-code-example.png" alt="Velecs Input System Code Example" class="centered" caption="Code snippet demonstrating the use of the input singleton component for player movement in Velecs." >}}
 
-    {{< line-break >}}
+{{< line-break >}}
 
 - Easy and Quick Window Resizing
     

@@ -43,8 +43,12 @@ Highly inspired by other games of the same genres, most notably the Dead Space f
 
 *** ***Notice: Many of the originally planned features are missing or incomplete. Which is explained about in the conclusion section near the bottom. However, I will still describe these features below and state their status in the final build of the game.*** ***
 
-{{< youtube id="JKdABwatEUQ" autoplay="true" title="Project Calamity Demo" >}}
-Project Calamity Demo Video: Recorded by one of my team members for the project Will Kembel. If the video is not showing try my [YouTube upload](https://youtu.be/JKdABwatEUQ) of it. Or the [original from Will Kembel](https://youtu.be/olbn0plXHug).
+{{< youtube-extended
+    id="JKdABwatEUQ"
+    autoplay="true"
+    title="Project Calamity Demo"
+    caption="Recorded by one of my team members for the project Will Kembel. If my YouTube upload is not working try <a href='https://youtu.be/olbn0plXHug'>Will Kembel's original upload of the demo</a>."
+>}}
 
 {{< custom-header type="h2" id="story" text="Story" >}}
 You take control of a bounty hunter who just got his biggest contract. Unfortunately, after a failed attempt to eliminate the target he crash landed on a prison mining colony. You need to gather the resources and items needed to repair his ship to finish his contract and get revenge for getting shot down.
@@ -65,22 +69,29 @@ The bounty hunter's spaceship crash lands on the outskirts of the compound. In a
 {{< image src="project-calamity/environment-1.png" alt="Project Calamity Environment 1" >}}
 
 {{< image src="project-calamity/environment-2.png" alt="Project Calamity Environment 2" >}}
-
 {{< custom-header type="h2" id="pms" text="Player Management Station (PMS)" >}}
 The Player Management Station (PMS) devices are a critical part of the gameplay loop and found all over the map. There are two different types of PMS: Alpha and Beta. They both have modules in them allowing the player to do certain things to help them survive. Beta PMS have less modules and reduced capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities and even more modules.
 
 {{< custom-header type="h2" id="beta-pms" text="Beta PMS" >}}
 - Suit Upgrade Module - Allowing upgrading of armor and movement speed.
+
 - Weapon Upgrade Module - Allowing upgrading of weapons.
+
 - Crafting Module - Allowing the crafting of items from other items obtained.
+
 - Quests Module - Where you can accept quests and turn in quest items and collect finished quests' rewards.
 
 {{< custom-header type="h2" id="alpha-pms" text="Alpha PMS" >}}
 - All the same modules from the Beta PMS, but these modules can push and pull items into or from the Stash Module.
+
 - Stash Module - A place to store items for later use.
+
 - Transportation Module - Can be used to transport to any other discovered Alpha PMS.
+
 - Market Module - Allows the selling of items for credits and the purchase of item recipes for credits to unlock crafting recipes in the Crafting Module.
+
 - Memory Module - Allows the saving and loading of game states. As well as exiting the game gracefully.
+
 - Upon using this type of PMS all the enemies will respawn on the map, however you will also heal, and your shield will fully charge if you have one equipped.
 
 These stations are inspired by the Dark Souls franchise bon fires and the Dead Space upgrade stations. They are basically a mix of the two, with the additional crafting module being directly inspired by Subnautica.
@@ -92,15 +103,20 @@ These stations are inspired by the Dark Souls franchise bon fires and the Dead S
 {{< image src="project-calamity/alpha-pms-open.png" alt="Project Calamity Alpha PMS" >}}
 
 {{< image src="project-calamity/alpha-pms-stash-module.png" alt="Project Calamity Alpha PMS Stash Module" >}}
-
 {{< custom-header type="h2" id="inventory-system" text="Inventory System" >}}
 The player's inventory contains multiple different slots for equipment.
 - Primary Weapon Slot - Can be used to equip long guns only.
+
 - Secondary Weapon Slot - Can be used to equip long guns or pistols.
+
 - Shield Slot - When equipped provides a pool of health that soaks all damage till the pool hits zero. Then all damage will be applied to the player's health instead.
+
 - Armor Slot - When equipped provides damage reduction from enemies' attacks.
+
 - Vest Slot - When equipped it has limited space with a restriction of only magazines, ammunition, grenades, and medical supplies items being allowed inside. There are different types of vests that can be equipped in this slot with pros and cons to each of them.
+
 - Backpack Slot - When equipped it has limited space but with no restrictions on what can be contained inside. There are different types of backpacks that can be equipped in this slot with pros and cons to each of them.
+
 - Credit Wallet - That displays how many credits you have.
 
 Both the vests and backpacks have internal storage inside them, where you can move and rotate items to fit and organize items in the contents of these storage items. Which was inspired by Escape From Tarkov's inventory system and is a direct copy except for some removed and additional slots.
@@ -110,10 +126,12 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 {{< image src="project-calamity/inventory.png" alt="Project Calamity Inventory" >}}
 
 {{< image src="project-calamity/inventory-sorted.png" alt="Project Calamity Inventory Sorted" >}}
-
 {{< custom-header type="h2" id="health-system" text="Health System" >}}
+
 - You have both armors and shields you can wear to stop or reduce damage take to the player.
+
 - You can upgrade your max health in the suit module.
+
 - Health is regenerated from health kits or resting at an Alpha PMS; however, health kits are incredibly rare to find and costly to craft.
 
 *** ***Notice: None of these features are in the final build. There is just 100 health points and is unrecoverable unless you restart the game.*** ***
@@ -130,7 +148,6 @@ There are different types of AI used by the different enemies in the game with d
 {{< image src="project-calamity/enemies-0.png" alt="Project Calamity Enemies 0" >}}
 
 {{< image src="project-calamity/enemies-1.png" alt="Project Calamity Enemies 1" >}}
-
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.
 
@@ -142,13 +159,21 @@ We certainly learned the importance of keeping a project scope small and increme
 Work needed to bring the game to a minimum viable product as it falls short of that.
 
 - Get enemy respawning and health regeneration upon using an Alpha PMS.
+
 - Make it so it is possible to die, currently nothing happens after your health reaches 0 or below.
+
 - Add in recipes for making ammunition and magazines for the only firearm, as well as the recipes for any intermediate parts needed for them.
+
 - Add in the crafting module to the PMS system.
+
 - Add in item drops from killing enemies.
+
 - Add in harvestable items around the map.
+
 - Add in the quest module to the PMS system. We have a quest system it just is not accessible currently.
+
 - Optimize the graphics, using LODs, and other techniques.
+
 - Add ability to save and load different game states to be able save progress.
 
 While that seems like a whole lot just to get to an MVP, we have most of the code already done for it and the code we don't have already should be easy to implement. The hardest issue would be optimization as we have never done it before.
@@ -156,12 +181,21 @@ While that seems like a whole lot just to get to an MVP, we have most of the cod
 After reaching an MVP, what we would want to add to make it more fun.
 
 - Add more intermediate part recipes for use in other recipes.
+
 - A handful more weapons to find and craft.
+
 - One or more vests, backpacks, armors, and shields to find or craft and to be able to equip them.
+
 - Recycler crafting module upgrade, which would allow you to recycle any applicable crafted or found items for half their raw ingredient items back.
+
 - Add humanoid enemies with firearms, that would drop ammunition, magazines, firearms, and other misc. items.
+
 - Add pickaxe and ore nodes with a finite amount to be harvested. These being a place to get large amounts of a particular ore.
+
 - Increase the size of the playable map.
+
 - Make buildings possible to enter as currently they are not.
+
 - Add caves.
+
 - Add more alien creature enemies.

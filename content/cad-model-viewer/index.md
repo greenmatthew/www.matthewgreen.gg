@@ -36,8 +36,7 @@ It is a learning application, made in Unity, intended to be a companion applicat
 
 It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
 
-{{< youtube id="0FrUqwAcmxs" autoplay="true" title="CADModelViewer Demo v1" >}}
-CADModelViewer Demo v1: If the video is not working try my [YouTube upload](https://youtu.be/0FrUqwAcmxs) of it.
+{{< youtube-extended id="0FrUqwAcmxs" title="CADModelViewer Demo v1" caption="" >}}
 
 {{< custom-header type="h2" id="lesson-system" text="Lesson System" >}}
 The cornerstone of the application is a feature we refer to as 'lessons', designed to facilitate student learning. These lessons are created by packaging models and/or a video into a Unity AssetBundle, which enables post-deployment downloading—eliminating the need for app updates to access new lessons. Upon launching the application, users encounter a menu where they can open, download, or delete lessons.
@@ -47,10 +46,12 @@ Take, for instance, a lesson focused on threaded holes: it might comprise a mode
 Looking ahead, the plan is to extend support for animations, with the aspiration of enabling direct imports from SolidWorks, a CAD modeling software, to enrich the learning experience.
 
 {{< image src="cad-model-viewer/scene-downloading.png" alt="CAD Model Viewer Downloading Scene" >}}
-{{< image src="cad-model-viewer/scene-opening.png" alt="CAD Model Viewer Opening Scene" >}}
-{{< image src="cad-model-viewer/scene-opened.png" alt="CAD Model Viewer Opened Scene" >}}
-{{< image src="cad-model-viewer/scene-playing.png" alt="CAD Model Viewer Playing Scene" >}}
 
+{{< image src="cad-model-viewer/scene-opening.png" alt="CAD Model Viewer Opening Scene" >}}
+
+{{< image src="cad-model-viewer/scene-opened.png" alt="CAD Model Viewer Opened Scene" >}}
+
+{{< image src="cad-model-viewer/scene-playing.png" alt="CAD Model Viewer Playing Scene" >}}
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 After nearly two years of dedicated work on this app, it's in the most refined state to date.
 

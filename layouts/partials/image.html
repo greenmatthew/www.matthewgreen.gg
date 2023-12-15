@@ -29,7 +29,7 @@
 {{ end }}
     <picture>
         <source srcset="{{ $defaultUrl }}" type="image/webp">
-        <img src="{{ $fallbackUrl }}" alt="{{ .alt }}" class="{{ .class }}">
+        <img src="{{ $fallbackUrl }}" alt="{{ .alt }}" class="centered responsive {{ .class }}">
     </picture>
 {{ if $href }}
 </a>
@@ -42,3 +42,5 @@
 {{ end }}
 
 </figure>
+
+<br />

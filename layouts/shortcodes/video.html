@@ -3,8 +3,12 @@
     (dict
         "src" (.Get "src")
         "fallbackSrc" (.Get "fallbackSrc")
+        "autoplay" false
+        "loop" false
+        "controls" false
+        "muted" false
+        "lazyLoading" true
         "alt" (.Get "alt")
-        "class" (.Get "class")
         "caption" (.Get "caption" | safeHTML)
     )
 }}
