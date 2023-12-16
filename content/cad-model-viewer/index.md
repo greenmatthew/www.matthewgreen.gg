@@ -36,7 +36,11 @@ It is a learning application, made in Unity, intended to be a companion applicat
 
 It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
 
-{{< youtube-extended id="0FrUqwAcmxs" title="CADModelViewer Demo v1" caption="" >}}
+{{< youtube-playlist
+    id="PLpi46z0QnwL0fFAPJJlend6jgpXqLrw9W"
+    title="CADModelViewer Demo Video"
+    caption="If you would like to see the Demo v1 video you can just click the forward arrow as this is a playlist or you can click <a href='https://youtu.be/0FrUqwAcmxs'>here</a>."
+>}}
 
 {{< custom-header type="h2" id="lesson-system" text="Lesson System" >}}
 The cornerstone of the application is a feature we refer to as 'lessons', designed to facilitate student learning. These lessons are created by packaging models and/or a video into a Unity AssetBundle, which enables post-deployment downloading—eliminating the need for app updates to access new lessons. Upon launching the application, users encounter a menu where they can open, download, or delete lessons.
