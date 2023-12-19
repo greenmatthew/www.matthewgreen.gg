@@ -98,7 +98,15 @@ Now, the app has reached a milestone where it mirrors the initial vision that wa
     - 'Trigger' or 'Screen Press' - Interact with UI
 
 {{< custom-header type="h2" id="developer-tutorials" text="Developer Tutorials" >}}
+
+{{< youtube-playlist
+    id="PL6PRkJTMYWn2NLR9_9sObfgX2RnSE-tWZ"
+    title="CADModelViewer Developer Tutorials"
+    caption="A YouTube playlist of all the Developer tutorials."
+>}}
+
 - [YouTube Channel](https://www.youtube.com/@MatthewGreenUTA)
+- [Developer Tutorials Playlist](https://youtube.com/playlist?list=PL6PRkJTMYWn2NLR9_9sObfgX2RnSE-tWZ&si=NCy5MkIZpJGuzwwt)
 - [How to install Unity and Open CADModelViewer with GitHub repo](https://youtu.be/SWgSGMGT6zE)
 - [How to create a lesson for CADModelViewer](https://youtu.be/DU2TdbVnWuE)
 - [How to build CADModelViewer in Unity](https://youtu.be/5mVli2j72rQ)
