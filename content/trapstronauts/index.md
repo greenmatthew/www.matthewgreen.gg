@@ -39,7 +39,7 @@ A motif of the game is that the players are always able to compete and harass ot
 
 {{< youtube-extended
     id="mKnVCvUbzQI"
-    autoplay="true"
+    autoplay="false"
     title="Trapstronauts Demo Video"
     caption="Note: This video was recorded was over remote streaming service, so there are some audio artifacting and cuts."
 >}}

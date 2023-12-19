@@ -45,7 +45,7 @@ Highly inspired by other games of the same genres, most notably the Dead Space f
 
 {{< youtube-extended
     id="JKdABwatEUQ"
-    autoplay="true"
+    autoplay="false"
     title="Project Calamity Demo"
     caption="Recorded by one of my team members for the project Will Kembel. If my YouTube upload is not working try <a href='https://youtu.be/olbn0plXHug'>Will Kembel's original upload of the demo</a>."
 >}}
