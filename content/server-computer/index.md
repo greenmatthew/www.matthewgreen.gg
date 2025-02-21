@@ -7,7 +7,7 @@ summary: "A hobby of mine is building and working on an old server computer. I u
 previewImage:
     src: "server-computer/preview.jpg"
     class: "auto-fit"
-priority: 500
+priority: 600
 ---
 {{< custom-header type="h2" id="content" text="Content" >}}
 - [Summary](#summary)
