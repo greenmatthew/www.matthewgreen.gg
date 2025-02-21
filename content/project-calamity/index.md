@@ -6,7 +6,7 @@ title: "Project Calamity"
 summary: "This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans."
 previewImage:
     src: "project-calamity/preview.png"
-priority: 20
+priority: 400
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
 - [UTA Senior Designs Blog](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)

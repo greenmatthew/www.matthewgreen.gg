@@ -1,7 +1,7 @@
 ---
 type: project
 layout: project
-priority: 10
+priority: 300
 title: "Trapstronauts"
 summary: "A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back-to-back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult."
 previewImage:

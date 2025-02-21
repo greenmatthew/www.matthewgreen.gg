@@ -7,7 +7,7 @@ summary: "The site you are looking at right now."
 previewImage:
     src: "server-computer/preview.jpg"
     class: "auto-fit"
-priority: 40
+priority: 500
 ---
 
 {{< custom-header type="h2" id="the-journey" text="The Journey" >}}

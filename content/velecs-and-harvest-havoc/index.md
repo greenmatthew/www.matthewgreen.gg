@@ -2,7 +2,7 @@
 type: project
 layout: project
 
-priority: 5
+priority: 200
 title: "Velecs Engine & Harvest Havoc"
 summary: "Velecs Engine is a game engine developed entirely from scratch, harnessing the power of C++ alongside Vulkan for its high-performance graphics rendering capabilities. Currently, I am creating Harvest Havoc, a game that presently serves as a technical demonstration of the engine’s capabilities. Both are in active and parallel development."
 previewImage:

@@ -1,7 +1,7 @@
 ---
 type: project
 layout: project
-priority: 0
+priority: 100
 title: "CADModelViewer"
 summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
 previewImage:
