@@ -7,7 +7,9 @@ priority: 0
 ---
 {{< image src="headless/about-me/me-profile-pic-square.jpg" alt="Me" class="auto-fit centered" >}}
 
-Hello, I'm Matthew Green, a 23-year-old Software Engineer. I began programming 7.5 years ago after taking a Computer Programming & Game Design course in high school, which sparked my passion for game development. From that moment, I knew exactly what I wanted to do. After graduating high school, I attended the University of Texas at Arlington to earn my Bachelor's Degree in Computer Science.
+Hello, I'm Matthew Green—a 23-year-old Software Engineer with a passion for both tech and a well-rounded lifestyle. When I'm not immersed in coding or game development, you'll find me playing video games, diving into Dungeons & Dragons sessions, rock climbing, or hitting the tennis courts. I also love collecting physical copies of movies and TV series, and I keep busy with self-hosting projects and managing my homelab.
+
+I began programming 7.5 years ago after taking a Computer Programming & Game Design course in high school, which sparked my passion for game development. From that moment, I knew exactly what I wanted to do. After graduating high school, I attended the University of Texas at Arlington to earn my Bachelor's Degree in Computer Science.
 
 During my time at UTA, I honed my skills through a range of projects. I collaborated on the development of two games—[Trapstronauts](https://www.matthewgreen.gg/trapstronauts/) and [Project Calamity](https://www.matthewgreen.gg/project-calamity/)—as part of my coursework. However, my most significant experience was a paid, part-time role where I spent 1.5 years developing a [VR application](https://www.matthewgreen.gg/cad-model-viewer/) in collaboration with an engineering professor. This project was designed as a learning tool for Mechanical Engineering students studying Computer-Aided Design (CAD). These projects not only deepened my expertise in Unity, C#, and even Godot, but also provided invaluable real-world experience.
 
