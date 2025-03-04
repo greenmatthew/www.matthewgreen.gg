@@ -1,8 +1,9 @@
 {{ define "main" }}
-  <!-- Custom content for the main index page -->
-  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/about-me") }}
-  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/projects") }}
-  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/skills") }}
-  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/work-experience") }}
-  {{ partial "module-content.html" (dict "context" . "pageRef" "headless/education") }}
+  <!-- Dynamically load all module pages sorted by priority -->
+  {{ $modulePages := where .Site.RegularPages "Section" "modules" }}
+  
+  <!-- Sort them by priority and render each one -->
+  {{ range sort $modulePages "Params.priority" "asc" }}
+    {{ partial "module.html" (dict "context" $ "currentPage" . ) }}
+  {{ end }}
 {{ end }}

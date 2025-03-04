@@ -1,10 +1,11 @@
 ---
-type: module-main
-
 title: "Skills"
 id: "skills"
-priority: 20
+priority: 200  # Higher numbers appear later
+type: "module"
+draft: false # Swap to false to actually make the module display
 ---
+
 {{< custom-header type="h3" id="soft-skills" text="Soft Skills" >}}
 - Collaboration
 - Communication

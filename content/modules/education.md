@@ -1,10 +1,11 @@
 ---
-type: module-main
-
 title: "Education"
 id: "education"
-priority: 40
+priority: 400  # Higher numbers appear later
+type: "module"
+draft: false # Swap to false to actually make the module display
 ---
+
 {{< terminal-css/timeline >}}
 
     {{< terminal-css/card header="University of Texas at Arlington" >}}

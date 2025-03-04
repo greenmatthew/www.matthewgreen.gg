@@ -1,10 +1,11 @@
 ---
-type: module-main
-
 title: "Work Experience"
 id: "work-experience"
-priority: 30
+priority: 300  # Higher numbers appear later
+type: "module"
+draft: false # Swap to false to actually make the module display
 ---
+
 {{< terminal-css/timeline >}}
 
     {{< terminal-css/card header="Unity / VR / Game Console Engineer" >}}
