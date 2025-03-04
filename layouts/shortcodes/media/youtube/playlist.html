@@ -16,6 +16,8 @@ Args:
         The title attribute for the iframe. Defaults to "YouTube Video".
     caption (str, optional):
         An optional caption to display below the embedded playlist.
+    attribution (str, optional):
+        Optional copyright attribution text to display after the caption.
     (Site Param) youtubePrivacyEnhanced (bool, optional):
         If set to "true" in your site parameters, the playlist will be embedded using
         the YouTube privacy-enhanced domain (www.youtube-nocookie.com). Defaults to true.
@@ -26,6 +28,9 @@ Usage Examples:
         
     With autoplay and custom title:
         {{< media/youtube/playlist id="YOUR_PLAYLIST_ID" autoplay="true" title="My Playlist" >}}
+        
+    With attribution:
+        {{< media/youtube/playlist id="YOUR_PLAYLIST_ID" caption="My favorite videos" attribution="Playlist - © Channel Name" >}}
 
 Note:
     The iframe URL is constructed to include the playlist ID, autoplay setting, and start time.
@@ -36,7 +41,8 @@ Note:
 {{ $autoplay := cond (eq (.Get "autoplay" | default "false") "true") "1" "0" }}
 {{ $title := .Get "title" | default "YouTube Video" }}
 {{ $privacyEnhanced := cond (eq (.Site.Params.youtubePrivacyEnhanced | default "true") "true") "www.youtube-nocookie.com" "www.youtube.com" }}
-{{ $caption := .Get "caption" | safeHTML }}
+{{ $caption := .Get "caption" }}
+{{ $attribution := .Get "attribution" }}
 
 <figure>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -51,11 +57,10 @@ Note:
         </iframe>
     </div>    
 
-    {{ if $caption }}
+    {{ if or $caption $attribution }}
     <figcaption>
-        {{ $caption }}
+        {{ with $caption }}{{ . | safeHTML }}{{ end }}
+        {{ with $attribution }}<span class="copyright">{{ . | safeHTML }}</span>{{ end }}
     </figcaption>
     {{ end }}
 </figure>
-
-<br />

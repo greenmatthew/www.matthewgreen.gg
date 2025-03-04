@@ -37,11 +37,10 @@ priority: 400
 This is a video game project made for the 2022 Summer & Fall semester CSE Senior Design I & II courses at the University of Texas at Arlington.
 
 {{< custom-header type="h2" id="summary" text="Summary" >}}
-This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans.
 
-Highly inspired by other games of the same genres, most notably the Dead Space franchise and others like it such as the Resident Evil franchise and The Callisto Protocol for the setting, horror atmosphere, and some parts of the gameplay. Then the gameplay being further enhanced with small parts borrowed from other games: Dark Souls franchise, Subnautica, Chernobylite, Escape From Tarkov, and SWAT4.
-
-*** ***Notice: Many of the originally planned features are missing or incomplete. Which is explained about in the conclusion section near the bottom. However, I will still describe these features below and state their status in the final build of the game.*** ***
+{{< terminal-css/alert type="error" >}}
+    Many of the originally planned features are missing or incomplete. Which is explained about in the conclusion section near the bottom. However, I will still describe these features below and state their status in the final build of the game.
+{{< /terminal-css/alert >}}
 
 {{< media/youtube/video
     id="JKdABwatEUQ"
@@ -50,29 +49,74 @@ Highly inspired by other games of the same genres, most notably the Dead Space f
     caption="Recorded by one of my team members for the project Will Kembel. If my YouTube upload is not working try <a href='https://youtu.be/olbn0plXHug'>Will Kembel's original upload of the demo</a>."
 >}}
 
+This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans.
+
+Highly inspired by other games of the same genres, most notably the Dead Space franchise and others like it such as the Resident Evil franchise and The Callisto Protocol for the setting, horror atmosphere, and some parts of the gameplay. Then the gameplay being further enhanced with small parts borrowed from other games: Dark Souls franchise, Subnautica, Chernobylite, Escape From Tarkov, and SWAT4.
+
 {{< custom-header type="h2" id="story" text="Story" >}}
 You take control of a bounty hunter who just got his biggest contract. Unfortunately, after a failed attempt to eliminate the target he crash landed on a prison mining colony. You need to gather the resources and items needed to repair his ship to finish his contract and get revenge for getting shot down.
 
 The mining colony is home to alien creatures, robots, and humanoid lowlifes, prisoners, and employees for the evil corporation in charge of the colony. As you explore more and finish more quests for people around the planet as well as missions for the corporation itself, you begin to learn more about the corporation's sinister plans for the mining on this planet. Will you try and stop them, or do you want to join them for your own selfish benefit?
 
 {{< custom-header type="h2" id="setting" text="Setting" >}}
+
+{{< terminal-css/alert type="error" >}}
+    In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.
+{{< /terminal-css/alert >}}
+
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="project-calamity/preview.png"
+            alt="Project Calamity Environment 0"
+        >}}
+
+        {{< media/image
+            src="project-calamity/environment-1.png"
+            alt="Project Calamity Environment 1"
+        >}}
+        
+        {{< media/image
+            src="project-calamity/environment-2.png"
+            alt="Project Calamity Environment 2"
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
+
 The planet's surface is mainly dirt and rock, but there are small amounts of resource rich flora across the surface. With many dangerous creatures and robots roaming the surface and caves also worth searching for resources. There are caves littered all around the surface, all plentifully filled with raw ores waiting to be mined; copper, titanium, iron, gold, silver, and more, however, the corporation does not seem to be mining these particularly common but useful ores right outside their compound.
 
 There is a massive compound on the equator of the planet, owned by the corporation. Inside there is many different buildings and areas. Living quarters for prisoners, guards, engineers, and all sorts of other workers. Office spaces. Laboratories. Vehicle bays for spaceships and land vehicles. One gigantically tall building, where the top executives running the planet live and manage the planet. Then finally one massive quarry in the center of the compound, so far down you can't see anything at the bottom with large elevators that take people such as prisoners and guards down to the bottom to mine.
 
 The bounty hunter's spaceship crash lands on the outskirts of the compound. In a hot spot of caves and plenty and flora and fauna to fulfill upgrading your gear and start repairs on your ship, if you're willing to do a little exploring around.
 
+{{< custom-header type="h2" id="pms" text="Player Management Station (PMS)" >}}
 
 {{< terminal-css/alert type="error" >}}
-    In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.
+    Both the Alpha and Beta PMS are inside the game with a model but completely lack basically all functionality. Only the Stash Module in the Alpha PMS is working.
 {{< /terminal-css/alert >}}
 
-{{< image src="project-calamity/preview.png" alt="Project Calamity Environment 0" >}}
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="project-calamity/pms.png"
+            alt="Project Calamity Alpha & Beta PMS"
+            caption="Alpha & Beta PMS"
+        >}}
 
-{{< image src="project-calamity/environment-1.png" alt="Project Calamity Environment 1" >}}
+        {{< media/image
+            src="project-calamity/alpha-pms-open.png"
+            alt="Project Calamity Alpha PMS"
+            caption="Alpha PMS Modules"
+        >}}
 
-{{< image src="project-calamity/environment-2.png" alt="Project Calamity Environment 2" >}}
-{{< custom-header type="h2" id="pms" text="Player Management Station (PMS)" >}}
+        {{< media/image
+            src="project-calamity/alpha-pms-stash-module.png"
+            alt="Project Calamity Alpha PMS Stash Module"
+            caption="Alpha PMS Stash Module"
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
+
 The Player Management Station (PMS) devices are a critical part of the gameplay loop and found all over the map. There are two different types of PMS: Alpha and Beta. They both have modules in them allowing the player to do certain things to help them survive. Beta PMS have less modules and reduced capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities and even more modules.
 
 {{< custom-header type="h2" id="beta-pms" text="Beta PMS" >}}
@@ -99,14 +143,27 @@ The Player Management Station (PMS) devices are a critical part of the gameplay 
 
 These stations are inspired by the Dark Souls franchise bon fires and the Dead Space upgrade stations. They are basically a mix of the two, with the additional crafting module being directly inspired by Subnautica.
 
-*** ***Notice: Both are inside the game with a model but completely lack basically all functionality. Only the Stash Module in the Alpha PMS is working.*** ***
-
-{{< image src="project-calamity/pms.png" alt="Project Calamity Alpha & Beta PMS" >}}
-
-{{< image src="project-calamity/alpha-pms-open.png" alt="Project Calamity Alpha PMS" >}}
-
-{{< image src="project-calamity/alpha-pms-stash-module.png" alt="Project Calamity Alpha PMS Stash Module" >}}
 {{< custom-header type="h2" id="inventory-system" text="Inventory System" >}}
+
+{{< terminal-css/alert type="error" >}}
+    All the slots are in the game, except for the vest and backpack slots, however, there are no items other than a rifle and some example items and there is a fixed size storage container just called backpack. So, the whole inventory system provides nothing to the final build of the game. The only interaction with it is you immediately equip your rifle from an Alpha PMS's stash module.
+{{< /terminal-css/alert >}}
+
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="project-calamity/inventory.png"
+            alt="Project Calamity Inventory"
+            caption="Inventory"
+        >}}
+        {{< media/image
+            src="project-calamity/inventory-sorted.png"
+            alt="Project Calamity Inventory Sorted"
+            caption="Inventory Sorted"
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
+
 The player's inventory contains multiple different slots for equipment.
 - Primary Weapon Slot - Can be used to equip long guns only.
 
@@ -124,11 +181,6 @@ The player's inventory contains multiple different slots for equipment.
 
 Both the vests and backpacks have internal storage inside them, where you can move and rotate items to fit and organize items in the contents of these storage items. Which was inspired by Escape From Tarkov's inventory system and is a direct copy except for some removed and additional slots.
 
-*** ***Notice: All the slots are in the game, except for the vest and backpack slots, however, there are no items other than a rifle and some example items and there is a fixed size storage container just called backpack. So, the whole inventory system provides nothing to the final build of the game. The only interaction with it is you immediately equip your rifle from an Alpha PMS's stash module.*** ***
-
-{{< image src="project-calamity/inventory.png" alt="Project Calamity Inventory" >}}
-
-{{< image src="project-calamity/inventory-sorted.png" alt="Project Calamity Inventory Sorted" >}}
 {{< custom-header type="h2" id="health-system" text="Health System" >}}
 
 - You have both armors and shields you can wear to stop or reduce damage take to the player.
@@ -140,17 +192,32 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 *** ***Notice: None of these features are in the final build. There is just 100 health points and is unrecoverable unless you restart the game.*** ***
 
 {{< custom-header type="h2" id="combat" text="Combat" >}}
+
+{{< terminal-css/alert type="error" >}}
+    In the final build there is only a single firearm, found in the stash with a magazine item, but the magazine is nonfunctional, so the firearm just has infinite reloads for the purposes of the demo. Also the AI is very basic and just goes directly towards a player and attacks when in range. It has no sort of other logic currently.
+{{< /terminal-css/alert >}}
+
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="project-calamity/enemies-0.png"
+            alt="Project Calamity Enemies 0"
+            caption="Example Enemy 1"
+        >}}
+        {{< media/image
+            src="project-calamity/enemies-1.png"
+            alt="Project Calamity Enemies 1"
+            caption="Example Enemy 2"
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
+
 There is a decent selection of different firearms that you can obtain or craft throughout the progression of the game. Some require ammunition cartridges and magazines. While others use energy and require batteries and capacitors. All these weapons have different fire modes or a mixture of fire modes, those being semi-automatic, fully-automatic, and three-round burst as well as some of the energy weapons shoot out a beam continuously for a short amount of time.
 
 Magazines must be loaded with cartridges, unlike most other games. You can do this by combining the magazine and the cartridges. It will automatically fill up the magazine to full capacity if you have enough cartridges or else it just fills the magazine as much as it can. You can also only reload the firearms using the magazines if you have a magazine in your vest. Same goes for throwing a grenade it must be in a vest to use. Both features are inspired from Escape From Tarkov.
 
 There are different types of AI used by the different enemies in the game with different levels of intellect and tactics. Animal creatures generally are not that smart and will attack head on and will fight to the death. While humanoids are usually smarter and will use cover, flee if they feel they are losing a fight, and if in a group will leverage that against you by working together.
 
-*** ***Notice: In the final build there is only a single firearm, found in the stash with a magazine item, but the magazine is nonfunctional, so the firearm just has infinite reloads for the purposes of the demo. Also the AI is very basic and just goes directly towards a player and attacks when in range. It has no sort of other logic now.*** ***
-
-{{< image src="project-calamity/enemies-0.png" alt="Project Calamity Enemies 0" >}}
-
-{{< image src="project-calamity/enemies-1.png" alt="Project Calamity Enemies 1" >}}
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.
 

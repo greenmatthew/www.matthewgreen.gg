@@ -3,16 +3,29 @@
     {{ if isset .Params "priority" }}
         {{ $priority := .Params.priority }}
         {{ if ge $priority 0 }}
-            {{/*  <p>Debug: Found a project page titled '{{ .Title }}' with priority '{{ $priority }}'</p>  */}}
-
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ $pageLink := .RelPermalink }}
+            <h3><a href="{{ $pageLink }}">{{ .Title }}</a></h3>
             
-            {{ partial "display-preview-image.html" . }}
+            {{ with .Params.previewImage }}
+                {{ if .src }}
+                    {{ $imageParams := dict 
+                        "src" .src 
+                        "size" "medium"
+                        "lightbox" "false"
+                        "link" $pageLink
+                    }}
+                    
+                    {{ with .attribution }}
+                        {{ $imageParams = merge $imageParams (dict "attribution" .) }}
+                    {{ end }}
+                    
+                    {{ partial "media/image.html" $imageParams }}
+                {{ end }}
+            {{ end }}
 
-            <p> {{ .Summary }} </p>
+            <p>{{ .Summary }}</p>
 
             <p>You can learn more about this project <a href="{{ .RelPermalink }}">here</a>.</p>
-
         {{ end }}
     {{ else }}
         {{ errorf "Priority not set for project '%s' (file: %s)" .Title .File.Path }}

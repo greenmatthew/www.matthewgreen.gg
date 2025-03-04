@@ -1,7 +1,17 @@
 {{ define "main" }}
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 
-    {{ partial "display-preview-image.html" . }}
+    {{ with .Params.PreviewImage }}
+        {{ if .src }}
+            {{ $imageParams := dict "src" .src "size" "medium" }}
+            
+            {{ with .attribution }}
+                {{ $imageParams = merge $imageParams (dict "attribution" .) }}
+            {{ end }}
+            
+            {{ partial "media/image.html" $imageParams }}
+        {{ end }}
+    {{ end }}
 
     <div class="content">
         {{ .Content }}

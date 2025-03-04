@@ -6,6 +6,13 @@ theme = 'hugo-terminal.css'
     name = "Matthew Green"
     defaultDescription = "Hello, I am Matthew Green and this is a showcase of all my projects, skills, work experience, and education as well as my contact details."
     defaultKeywords = ["Matthew", "Alan", "Green", "Programmer", "Video", "Game", "Developer", "Unity", "C", "C++", "C#", "Git", "games", "Computer", "Science", "Bachelor's", "Degree", "computers", "software", "VR"]
+    
+    [params.social]
+        email = "dev@matthewgreen.gg"
+        github = "greenmatthew"
+        linkedin = "matthewalangreen"
+        gitea = "https://git.matthewgreen.gg/mgreen"
+
 
 [main]
     [[menus.main]]

@@ -33,9 +33,6 @@ previewImage:
 This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at the University of Texas at Arlington.
 
 {{< custom-header type="h2" id="summary" text="Summary" >}}
-It is a local multiplayer party game, made in Godot Engine 3, which draws heavy inspirations from another video game called Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme. First, 2-4 players vote on a map. Then a proportional voting system chooses at random evenly between each players' vote and then the players then proceed to play multiple rounds on it. The players all have the same goal of getting to the finish line as soon as possible. However, there is a catch, at the beginning of each round the players all choose and place a single item from a random assortment of items. Depending on what they choose it can either make it easier or harder to get to the finish line. The traps as well as environmental hazards on the map can kill players and stop them from making it to the finish. At the end of a round, players are awarded points for what they did that round. Once a player earns a certain number of points they win, and the rest of the players lose.
-
-A motif of the game is that the players are always able to compete and harass other players through different game functionalities, even before they are racing for points. Which makes it the perfect game to play with a group of friends to laugh over.
 
 {{< media/youtube/video
     id="mKnVCvUbzQI"
@@ -44,68 +41,122 @@ A motif of the game is that the players are always able to compete and harass ot
     caption="Note: This video was recorded was over remote streaming service, so there are some audio artifacting and cuts."
 >}}
 
+It is a local multiplayer party game, made in Godot Engine 3, which draws heavy inspirations from another video game called Ultimate Chicken Horse. We borrow the game loop from that title and fit it around a new sci-fi theme. First, 2-4 players vote on a map. Then a proportional voting system chooses at random evenly between each players' vote and then the players then proceed to play multiple rounds on it. The players all have the same goal of getting to the finish line as soon as possible. However, there is a catch, at the beginning of each round the players all choose and place a single item from a random assortment of items. Depending on what they choose it can either make it easier or harder to get to the finish line. The traps as well as environmental hazards on the map can kill players and stop them from making it to the finish. At the end of a round, players are awarded points for what they did that round. Once a player earns a certain number of points they win, and the rest of the players lose.
+
+A motif of the game is that the players are always able to compete and harass other players through different game functionalities, even before they are racing for points. Which makes it the perfect game to play with a group of friends to laugh over.
+
+
 {{< custom-header type="h2" id="points-system" text="Points System" >}}
+
+{{< media/image
+    src="trapstronauts/points-system.png"
+    alt="Trapstronauts Points System"
+    caption="Points System"
+    size="medium"
+>}}
+
 There are many ways to get points, some events give you more points than others:
+
 - Getting to the finish line, as long as one person perished before making it to the finish line.
 - Being the only person to finish.
 - Being the first person to finish, if not the only person to finish.
 - Kills from traps you have placed.
 - Post-mortem arrival to the finish line.
 
-{{< image src="trapstronauts/points-system.png" alt="Trapstronauts Points System" >}}
+
 {{< custom-header type="h2" id="maps" text="Maps" >}}
 There are multiple maps included with the demo build.
 
-{{< image
-    src="trapstronauts/map-hub-labelled.png"
-    alt="Trapstronauts Spaceship (Hub) Map"
-    caption="Spaceship (Hub): This is where the players start when they load up the game. The players spawn in separate bedrooms. Here they can vote on a map then go to the portal room and start the game once enough players are in there."
->}}
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/map-hub-labelled.png"
+            alt="Trapstronauts Spaceship (Hub) Map"
+            caption="Spaceship (Hub): This is where the players start when they load up the game. The players spawn in separate bedrooms. Here they can vote on a map then go to the portal room and start the game once enough players are in there."
+        >}}
+    {{< /media/gallery-row >}}
 
-{{< image
-    src="trapstronauts/map-sawmill-labelled.png"
-    alt="Trapstronauts Sawmill Map"
-    caption="Sawmill: This is a simple but fun map, where there is a sawmill in the center. You can choose the safer option to go over it if it is not blocked or covered in traps from players' item placements. You can also go through the sawmill which has two floors in it. Both floors have two saws with a button in the middle. If a player stands on the button in the middle, the saws speed up making it harder to get through the sawmill."
->}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/map-sawmill-labelled.png"
+            alt="Trapstronauts Sawmill Map"
+            caption="Sawmill: This is a simple but fun map, where there is a sawmill in the center. You can choose the safer option to go over it if it is not blocked or covered in traps from players' item placements. You can also go through the sawmill which has two floors in it. Both floors have two saws with a button in the middle. If a player stands on the button in the middle, the saws speed up making it harder to get through the sawmill."
+        >}}
+    {{< /media/gallery-row >}}
+    
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/map-valley-labelled.png"
+            alt="Trapstronauts Valley Map"
+            caption="Valley: The players start on the left bank of a steep valley with the finish line up above on the right bank. If they fall into the pit between the two banks they perish. At first this is unavoidable, so they must build their way up using platforms and traps."
+        >}}
+    {{< /media/gallery-row >}}
+    
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/map-cliffs-labelled.png"
+            alt="Trapstronauts Cliffs Map"
+            caption="Cliffs: This is very similar to valley, but a lot smaller. It is the best map for a quick game."
+        >}}
+    {{< /media/gallery-row >}}
+    
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/map-canyon-labelled.png"
+            alt="Trapstronauts Canyon Map"
+            caption="Canyon: The players start on the left bank of a canyon and the finish is in the bottom right cave inside the canyon. There are two hidden paths on the outskirts of the map that players can discover and use to get around traps and platforms in the way."
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
 
-{{< image
-    src="trapstronauts/map-valley-labelled.png"
-    alt="Trapstronauts Valley Map"
-    caption="Valley: The players start on the left bank of a steep valley with the finish line up above on the right bank. If they fall into the pit between the two banks they perish. At first this is unavoidable, so they must build their way up using platforms and traps."
->}}
-
-
-{{< image
-    src="trapstronauts/map-cliffs-labelled.png"
-    alt="Trapstronauts Cliffs Map"
-    caption="Cliffs: This is very similar to valley, but a lot smaller. It is the best map for a quick game."
->}}
-
-
-{{< image
-    src="trapstronauts/map-canyon-labelled.png"
-    alt="Trapstronauts Canyon Map"
-    caption="Canyon: The players start on the left bank of a canyon and the finish is in the bottom right cave inside the canyon. There are two hidden paths on the outskirts of the map that players can discover and use to get around traps and platforms in the way."
->}}
 
 {{< custom-header type="h2" id="voting-system" text="Voting System" >}}
+
+{{< media/image
+    src="trapstronauts/voting-system.png"
+    alt="Trapstronauts Voting System"
+    size="medium"
+>}}
+
 The players vote on which map they want, however, instead of a majority vote winning, it is proportionally selected at random. Meaning each vote has an equal chance of being randomly selected. For example, if two players voted on Sawmill and one voted on Valley, then it would be a two-thirds chance of being Sawmill and one-thirds chance of being Valley, once the players start the game at the portal room.
 
-{{< image src="trapstronauts/voting-system.png" alt="Trapstronauts Voting System" >}}
+
 {{< custom-header type="h2" id="placement-system" text="Placement System" >}}
+
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
+            src="trapstronauts/placement-system-0.png"
+            alt="Trapstronauts Placement System 0"
+            caption="Selecting Items Phase"
+        >}}
+
+        {{< media/image
+            src="trapstronauts/placement-system-1.png"
+            alt="Trapstronauts Placement System 1"
+            caption="Placing Items Phase"
+        >}}
+        
+        {{< media/image
+            src="trapstronauts/placement-system-2.png"
+            alt="Trapstronauts Placement System 2"
+            caption="Items Persist Once Playing"
+        >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
+
 At the start of every round, the players get a random assortment of items, which can be platforms, traps, and bombs, but they must choose quickly and wisely. Once an item has been selected you are locked in and no one else can choose that item. After all the players have chosen an item, then they all at once try and place their items where they'd like to. Then after all items are placed they race to the finish.
 
 The platforms are for making or blocking paths to the finish line. Then for the traps they can kill players making it harder to get to the finish but can also sometimes be used as a platform. Finally, there is the bombs, which blow up a small areas of placed items, which is useful for if the map is impossible or if a player wants to remove a group of items. Most players usually have their own path to get to the finish through the map and they place items to make their path easier or to make others' paths harder to navigate without dying.
 
-{{< image src="trapstronauts/placement-system-0.png" alt="Trapstronauts Placement System 0" >}}
 
-{{< image src="trapstronauts/placement-system-1.png" alt="Trapstronauts Placement System 1" >}}
-
-{{< image src="trapstronauts/placement-system-2.png" alt="Trapstronauts Placement System 2" >}}
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
+
 The final demo build was genuinely fun to play with some friends. Although it did have more bugs in it then we would like to admit. Overall, it was a remarkable success. If it had more content it really be a contender for publishing on Steam or other digital game vendors.
 
+
 {{< custom-header type="h2" id="future-work" text="Future Work" >}}
+
 If we were to keep working on the game there is many things we would have liked to add.
 - Finish the hub map. It was missing many features from the original vision of the game.
 

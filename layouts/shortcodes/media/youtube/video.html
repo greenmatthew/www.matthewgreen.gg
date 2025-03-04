@@ -17,6 +17,8 @@ Args:
         The title attribute for the iframe. Defaults to "YouTube Video".
     caption (str, optional):
         Optional caption text to display below the video.
+    attribution (str, optional):
+        Optional copyright attribution text to display after the caption.
 
 Site Parameter:
     youtubePrivacyEnhanced (bool, optional):
@@ -30,6 +32,9 @@ Usage Examples:
 
     With custom start time and autoplay enabled:
         {{< media/youtube/video id="VIDEO_ID" startAt="30" autoplay="true" title="My Video" >}}
+    
+    With attribution:
+        {{< media/youtube/video id="VIDEO_ID" caption="Demo video" attribution="Video - © Company Name" >}}
 
 Note:
     The video embed is wrapped in a <figure> element.
@@ -40,7 +45,8 @@ Note:
 {{ $autoplay := cond (eq (.Get "autoplay" | default "false") "true") "1" "0" }}
 {{ $title := .Get "title" | default "YouTube Video" }}
 {{ $privacyEnhanced := cond (eq (.Site.Params.youtubePrivacyEnhanced | default "false") "true") "www.youtube-nocookie.com" "www.youtube.com" }}
-{{ $caption := .Get "caption" | safeHTML }}
+{{ $caption := .Get "caption" }}
+{{ $attribution := .Get "attribution" }}
 
 <figure>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -55,11 +61,10 @@ Note:
         </iframe>
     </div>    
 
-    {{ if $caption }}
+    {{ if or $caption $attribution }}
     <figcaption>
-        {{ $caption }}
+        {{ with $caption }}{{ . | safeHTML }}{{ end }}
+        {{ with $attribution }}<span class="copyright">{{ . | safeHTML }}</span>{{ end }}
     </figcaption>
     {{ end }}
 </figure>
-
-<br />

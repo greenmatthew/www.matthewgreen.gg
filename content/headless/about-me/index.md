@@ -5,7 +5,7 @@ title: "About Me"
 id: "about-me"
 priority: 0
 ---
-{{< image src="headless/about-me/me-profile-pic-square.jpg" alt="Me" class="auto-fit centered" >}}
+{{< media/image src="headless/about-me/me-profile-pic-square.jpg" alt="Me" size="small" >}}
 
 Hello, I'm Matthew Green—a 23-year-old Software Engineer with a passion for both tech and a well-rounded lifestyle. When I'm not immersed in coding or game development, you'll find me playing video games, diving into Dungeons & Dragons sessions, rock climbing, or hitting the tennis courts. I also love collecting physical copies of movies and TV series, and I keep busy with self-hosting projects and managing my homelab.
 

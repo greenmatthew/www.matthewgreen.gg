@@ -6,6 +6,7 @@ title: "CADModelViewer"
 summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
 previewImage:
     src: "cad-model-viewer/preview.png"
+    attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
 - [Personal Git Website Repo](https://git.matthewgreen.gg/mgreen/CADModelViewer.git)
@@ -40,6 +41,7 @@ It has been developed to be compatible with a wide range of devices including Go
     id="PLpi46z0QnwL0fFAPJJlend6jgpXqLrw9W"
     title="CADModelViewer Demo Video"
     caption="If you would like to see the Demo v1 video you can just click the forward arrow as this is a playlist or you can click <a href='https://youtu.be/0FrUqwAcmxs'>here</a>."
+    attribution="Video Content - © University of Texas at Arlington. All rights reserved."
 >}}
 
 {{< custom-header type="h2" id="lesson-system" text="Lesson System" >}}
@@ -49,35 +51,39 @@ Take, for instance, a lesson focused on threaded holes: it might comprise a mode
 
 Looking ahead, the plan is to extend support for animations, with the aspiration of enabling direct imports from SolidWorks, a CAD modeling software, to enrich the learning experience.
 
-{{< gallery >}}
-    {{< gallery-row >}}
-        {{< image
+{{< media/gallery >}}
+    {{< media/gallery-row >}}
+        {{< media/image
             src="cad-model-viewer/scene-downloading.png"
             alt="CAD Model Viewer Downloading Scene"
-            caption="Downloading a Lesson"
+            caption="Downloading a Lesson."
+            attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
 
-        {{< image
+        {{< media/image
             src="cad-model-viewer/scene-opening.png"
             alt="CAD Model Viewer Opening Scene"
-            caption="Opening a Lesson"
+            caption="Opening a Lesson."
+            attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
-    {{< /gallery-row >}}
+    {{< /media/gallery-row >}}
 
-    {{< gallery-row >}}
-        {{< image
+    {{< media/gallery-row >}}
+        {{< media/image
             src="cad-model-viewer/scene-opened.png"
-            alt="CAD Model Viewer Opened Scene"
-            caption="Opened Lesson"
+            alt="CAD Model Viewer Opened Scene."
+            caption="Opened Lesson."
+            attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
 
-        {{< image
+        {{< media/image
             src="cad-model-viewer/scene-playing.png"
             alt="CAD Model Viewer Playing Scene"
-            caption="Interacting with Lesson"
+            caption="Interacting with Lesson."
+            attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
-    {{< /gallery-row >}}
-{{< /gallery >}}
+    {{< /media/gallery-row >}}
+{{< /media/gallery >}}
 
 
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
@@ -127,6 +133,7 @@ Now, the app has reached a milestone where it mirrors the initial vision that wa
     id="PL6PRkJTMYWn2NLR9_9sObfgX2RnSE-tWZ"
     title="CADModelViewer Developer Tutorials"
     caption="A YouTube playlist of all the Developer tutorials."
+    attribution="Image Content - © University of Texas at Arlington. All rights reserved."
 >}}
 
 - [YouTube Channel](https://www.youtube.com/@MatthewGreenUTA)
