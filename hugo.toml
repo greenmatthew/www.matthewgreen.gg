@@ -40,11 +40,6 @@ theme = 'hugo-terminal.css'
         pageRef = '#education'
         weight = 50
 
-    [[menus.main]]
-        name = 'Contact'
-        pageRef = '#contact'
-        weight = 60
-
 [module]
     [module.hugoVersion]
         extended = false
