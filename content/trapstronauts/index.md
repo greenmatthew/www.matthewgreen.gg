@@ -37,7 +37,7 @@ It is a local multiplayer party game, made in Godot Engine 3, which draws heavy 
 
 A motif of the game is that the players are always able to compete and harass other players through different game functionalities, even before they are racing for points. Which makes it the perfect game to play with a group of friends to laugh over.
 
-{{< youtube-extended
+{{< media/youtube/video
     id="mKnVCvUbzQI"
     autoplay="false"
     title="Trapstronauts Demo Video"

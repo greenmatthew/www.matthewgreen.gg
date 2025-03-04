@@ -36,7 +36,7 @@ It is a learning application, made in Unity, intended to be a companion applicat
 
 It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
 
-{{< youtube-playlist
+{{< media/youtube/playlist
     id="PLpi46z0QnwL0fFAPJJlend6jgpXqLrw9W"
     title="CADModelViewer Demo Video"
     caption="If you would like to see the Demo v1 video you can just click the forward arrow as this is a playlist or you can click <a href='https://youtu.be/0FrUqwAcmxs'>here</a>."
@@ -49,13 +49,37 @@ Take, for instance, a lesson focused on threaded holes: it might comprise a mode
 
 Looking ahead, the plan is to extend support for animations, with the aspiration of enabling direct imports from SolidWorks, a CAD modeling software, to enrich the learning experience.
 
-{{< image src="cad-model-viewer/scene-downloading.png" alt="CAD Model Viewer Downloading Scene" >}}
+{{< gallery >}}
+    {{< gallery-row >}}
+        {{< image
+            src="cad-model-viewer/scene-downloading.png"
+            alt="CAD Model Viewer Downloading Scene"
+            caption="Downloading a Lesson"
+        >}}
 
-{{< image src="cad-model-viewer/scene-opening.png" alt="CAD Model Viewer Opening Scene" >}}
+        {{< image
+            src="cad-model-viewer/scene-opening.png"
+            alt="CAD Model Viewer Opening Scene"
+            caption="Opening a Lesson"
+        >}}
+    {{< /gallery-row >}}
 
-{{< image src="cad-model-viewer/scene-opened.png" alt="CAD Model Viewer Opened Scene" >}}
+    {{< gallery-row >}}
+        {{< image
+            src="cad-model-viewer/scene-opened.png"
+            alt="CAD Model Viewer Opened Scene"
+            caption="Opened Lesson"
+        >}}
 
-{{< image src="cad-model-viewer/scene-playing.png" alt="CAD Model Viewer Playing Scene" >}}
+        {{< image
+            src="cad-model-viewer/scene-playing.png"
+            alt="CAD Model Viewer Playing Scene"
+            caption="Interacting with Lesson"
+        >}}
+    {{< /gallery-row >}}
+{{< /gallery >}}
+
+
 {{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
 After nearly two years of dedicated work on this app, it's in the most refined state to date.
 
@@ -99,7 +123,7 @@ Now, the app has reached a milestone where it mirrors the initial vision that wa
 
 {{< custom-header type="h2" id="developer-tutorials" text="Developer Tutorials" >}}
 
-{{< youtube-playlist
+{{< media/youtube/playlist
     id="PL6PRkJTMYWn2NLR9_9sObfgX2RnSE-tWZ"
     title="CADModelViewer Developer Tutorials"
     caption="A YouTube playlist of all the Developer tutorials."

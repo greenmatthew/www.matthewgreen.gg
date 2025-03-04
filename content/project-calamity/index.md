@@ -43,7 +43,7 @@ Highly inspired by other games of the same genres, most notably the Dead Space f
 
 *** ***Notice: Many of the originally planned features are missing or incomplete. Which is explained about in the conclusion section near the bottom. However, I will still describe these features below and state their status in the final build of the game.*** ***
 
-{{< youtube-extended
+{{< media/youtube/video
     id="JKdABwatEUQ"
     autoplay="false"
     title="Project Calamity Demo"
@@ -62,7 +62,10 @@ There is a massive compound on the equator of the planet, owned by the corporati
 
 The bounty hunter's spaceship crash lands on the outskirts of the compound. In a hot spot of caves and plenty and flora and fauna to fulfill upgrading your gear and start repairs on your ship, if you're willing to do a little exploring around.
 
-*** ***Notice: In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.*** ***
+
+{{< terminal-css/alert type="error" >}}
+    In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.
+{{< /terminal-css/alert >}}
 
 {{< image src="project-calamity/preview.png" alt="Project Calamity Environment 0" >}}
 

@@ -82,13 +82,13 @@ Velecs represents my first venture into game engine development. Harnessing Vulk
 
 {{< image src="velecs-and-harvest-havoc/scene-graph-code-example.png" alt="Velecs Scene Graph Code Example" class="centered" caption="Showing the code used for the scene graph video below." >}}
 
-{{< video-gif src="velecs-and-harvest-havoc/scene-graph-example.mp4" width="500px" alt="Velecs Scene Graph Example" class="centered" caption="This video demonstrates the use of scene graphs in the Velecs engine. Scene graphs are a hierarchical structure where the position, rotation, and scale of each entity are relative to their parent, if any. In the video, multiple entities are featured, including one labeled 'Player'. The camera is attached to the 'Player' entity, which rotates at a constant rate of 45 degrees per second. As the camera is attached to the player, it rotates with it, keeping the triangle consistently in view. This setup gives the appearance of other entities rotating around the player. Notably, backface culling is disabled, allowing the backs of the 2D meshes to be visible, further showcasing the engine's capabilities with scene graphs." >}}
+{{< media/video-gif src="velecs-and-harvest-havoc/scene-graph-example.mp4" width="500px" alt="Velecs Scene Graph Example" class="centered" caption="This video demonstrates the use of scene graphs in the Velecs engine. Scene graphs are a hierarchical structure where the position, rotation, and scale of each entity are relative to their parent, if any. In the video, multiple entities are featured, including one labeled 'Player'. The camera is attached to the 'Player' entity, which rotates at a constant rate of 45 degrees per second. As the camera is attached to the player, it rotates with it, keeping the triangle consistently in view. This setup gives the appearance of other entities rotating around the player. Notably, backface culling is disabled, allowing the backs of the 2D meshes to be visible, further showcasing the engine's capabilities with scene graphs." >}}
 
 - Simple Input Polling
 
     Inspired by a technique I discovered in an Overwatch Seminar at GDC 2017, Velecs uses a singleton entity approach for input polling. This method, while simpler than my original complex input system, proved to be highly effective, easy to implement, and seamlessly integrated with Flecs. The singleton entity serves as a unique entity with a specific component for input, streamlining the process and reducing data-system coupling issues.
 
-{{< youtube-extended id="W3aieHjyNvw" startAt="741" title="Overwatch Seminar at GDC 2017" width="360" centered="true" caption="This segment from the Overwatch Seminar at GDC 2017 inspired the singleton entity approach for the input system in Velecs, showcasing an efficient and convenient method for handling game inputs." >}}
+{{< media/youtube/video id="W3aieHjyNvw" startAt="741" title="Overwatch Seminar at GDC 2017" width="360" centered="true" caption="This segment from the Overwatch Seminar at GDC 2017 inspired the singleton entity approach for the input system in Velecs, showcasing an efficient and convenient method for handling game inputs." >}}
 
 {{< image src="velecs-and-harvest-havoc/input-code-example.png" alt="Velecs Input System Code Example" class="centered" caption="Code snippet demonstrating the use of the input singleton component for player movement in Velecs." >}}
 
@@ -176,7 +176,7 @@ The game's central theme revolves around survival in a hostile environment, echo
 {{< custom-header type="h3" id="harvest-havoc-conclusion" text="Conclusion" >}}
 Developing the Velecs Engine to be functional and user-friendly has been a substantial undertaking. As a result, progress on Harvest Havoc has been slow, but it has at least begun. Currently, the game features nametags, several primitive 2D shaped meshes, and the initial stages of resource harvesting, starting with Iron Ore. I am also in the early phases of implementing an inventory system. As this is an ongoing project, the information here may become outdated; there might be more gameplay features added since this writing.
 
-{{< youtube-playlist
+{{< media/youtube/playlist
     id="PLpi46z0QnwL1tIE-JxsjaGmEKhV100oyS"
     autoplay="false"
     title="Harvest Havoc Latest Demo Video"

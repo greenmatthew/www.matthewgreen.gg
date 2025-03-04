@@ -1,0 +1,61 @@
+{{/*
+Shortcode: media/youtube/playlist
+
+Description:
+    Embeds a YouTube playlist using an iframe.
+    This shortcode constructs the URL based on provided parameters,
+    and uses YouTube's privacy-enhanced mode by default.
+
+Args:
+    id (str, required):
+        The ID of the YouTube playlist to embed.
+    autoplay (bool, optional):
+        If "true", the playlist will start playing automatically.
+        Defaults to "false".
+    title (str, optional):
+        The title attribute for the iframe. Defaults to "YouTube Video".
+    caption (str, optional):
+        An optional caption to display below the embedded playlist.
+    (Site Param) youtubePrivacyEnhanced (bool, optional):
+        If set to "true" in your site parameters, the playlist will be embedded using
+        the YouTube privacy-enhanced domain (www.youtube-nocookie.com). Defaults to true.
+
+Usage Examples:
+    Basic usage:
+        {{< media/youtube/playlist id="YOUR_PLAYLIST_ID" >}} 
+        
+    With autoplay and custom title:
+        {{< media/youtube/playlist id="YOUR_PLAYLIST_ID" autoplay="true" title="My Playlist" >}}
+
+Note:
+    The iframe URL is constructed to include the playlist ID, autoplay setting, and start time.
+    Privacy-enhanced mode is enabled by default via the site's parameters.
+*/}}
+
+{{ $id := .Get "id" }}
+{{ $autoplay := cond (eq (.Get "autoplay" | default "false") "true") "1" "0" }}
+{{ $title := .Get "title" | default "YouTube Video" }}
+{{ $privacyEnhanced := cond (eq (.Site.Params.youtubePrivacyEnhanced | default "true") "true") "www.youtube-nocookie.com" "www.youtube.com" }}
+{{ $caption := .Get "caption" | safeHTML }}
+
+<figure>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe
+            src="https://{{ $privacyEnhanced }}/embed/videoseries?list={{ $id }}&autoplay={{ $autoplay }}"
+            title="{{ $title }}"
+            class="centered"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>    
+
+    {{ if $caption }}
+    <figcaption>
+        {{ $caption }}
+    </figcaption>
+    {{ end }}
+</figure>
+
+<br />

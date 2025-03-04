@@ -1,0 +1,65 @@
+{{/*
+Shortcode: media/youtube/video
+
+Description:
+    Embeds a single YouTube video using an iframe.
+    This "extended" version constructs the embed URL for an individual video,
+    allowing you to specify a start time and autoplay settings.
+
+Args:
+    id (str, required):
+        The YouTube video ID to embed.
+    startAt (str, optional):
+        The start time (in seconds) for the video. Defaults to "0".
+    autoplay (bool, optional):
+        If "true", the video will start playing automatically. Defaults to "false".
+    title (str, optional):
+        The title attribute for the iframe. Defaults to "YouTube Video".
+    caption (str, optional):
+        Optional caption text to display below the video.
+
+Site Parameter:
+    youtubePrivacyEnhanced (bool, optional):
+        If set to "true" in your site's parameters, the video is embedded using
+        the privacy-enhanced domain (www.youtube-nocookie.com). Otherwise, it defaults
+        to www.youtube.com. In this shortcode, the default is "false".
+
+Usage Examples:
+    Basic usage:
+        {{< media/youtube/video id="VIDEO_ID" >}}
+
+    With custom start time and autoplay enabled:
+        {{< media/youtube/video id="VIDEO_ID" startAt="30" autoplay="true" title="My Video" >}}
+
+Note:
+    The video embed is wrapped in a <figure> element.
+    The iframe is contained within a div that enforces a responsive 16:9 aspect ratio.
+*/}}
+{{ $id := .Get "id" }}
+{{ $startAt := .Get "startAt" | default "0" }}
+{{ $autoplay := cond (eq (.Get "autoplay" | default "false") "true") "1" "0" }}
+{{ $title := .Get "title" | default "YouTube Video" }}
+{{ $privacyEnhanced := cond (eq (.Site.Params.youtubePrivacyEnhanced | default "false") "true") "www.youtube-nocookie.com" "www.youtube.com" }}
+{{ $caption := .Get "caption" | safeHTML }}
+
+<figure>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe
+            src="https://{{ $privacyEnhanced }}/embed/{{ $id }}?start={{ $startAt }}&autoplay={{ $autoplay }}"
+            title="{{ $title }}"
+            class="centered"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>    
+
+    {{ if $caption }}
+    <figcaption>
+        {{ $caption }}
+    </figcaption>
+    {{ end }}
+</figure>
+
+<br />
