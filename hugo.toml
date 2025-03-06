@@ -2,6 +2,10 @@ baseURL = 'https://www.matthewgreen.gg'
 languageCode = 'en-us'
 title = '''Matthew Green's Showcase'''
 theme = 'hugo-terminal.css'
+
+# Disable specific kinds of pages
+disableKinds = ["section"]
+
 [params]
     name = "Matthew Green"
     defaultDescription = "Hello, I am Matthew Green and this is a showcase of all my projects, skills, work experience, and education as well as my contact details."
@@ -12,7 +16,6 @@ theme = 'hugo-terminal.css'
         github = "greenmatthew"
         linkedin = "matthewalangreen"
         gitea = "https://git.matthewgreen.gg/mgreen"
-
 
 [main]
     [[menus.main]]
@@ -49,3 +52,12 @@ theme = 'hugo-terminal.css'
     [privacy.youtube]
         disable = false
         privacyEnhanced = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[taxonomies]
+
+[permalinks]
+  modules = "/:filename/"
