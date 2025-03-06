@@ -1,0 +1,25 @@
+<!-- layouts/shortcodes/media/image.html -->
+{{/*
+Shortcode: media/image - Wrapper for media/image partial
+
+Parameters:
+  src (string)          : The source path for the image.
+  alt (string)          : Alternative text for the image.
+  caption (string)      : Optional caption text.
+  attribution (string)  : Optional copyright attribution text.
+  size (string)         : Optional size indicator (large/medium/small/auto).
+  lightbox (bool)       : If "true", wraps the image in a link for lightbox.
+  link (string)         : Optional URL to link the image to (overrides lightbox).
+  class (string)        : Optional additional CSS classes.
+*/}}
+
+{{ partial "media/image.html" (dict 
+  "src" (.Get "src") 
+  "alt" (.Get "alt") 
+  "caption" (.Get "caption")
+  "attribution" (.Get "attribution") 
+  "size" (.Get "size") 
+  "lightbox" (.Get "lightbox")
+  "link" (.Get "link")
+  "class" (.Get "class")
+) }}

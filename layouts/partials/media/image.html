@@ -1,0 +1,65 @@
+<!-- layouts/partials/media/image.html -->
+{{/* 
+Partial: media/image.html
+
+Parameters (passed as a dictionary):
+  src (string)          : The source path for the image.
+  alt (string)          : Alternative text for the image.
+  caption (string)      : Optional caption text.
+  attribution (string)  : Optional copyright attribution text.
+  size (string)         : Optional size indicator (large/medium/small/auto).
+  lightbox (bool)       : If "true", wraps the image in a link for lightbox.
+  link (string)         : Optional URL to link the image to (overrides lightbox).
+  class (string)        : Optional additional CSS classes.
+*/}}
+
+{{ $src := .src }}
+{{ $alt := .alt | default "Image" }}
+{{ $caption := .caption }}
+{{ $attribution := .attribution }}
+{{ $size := .size | default "auto" }}
+{{ $lightbox := .lightbox | default "true" }}
+{{ $link := .link }}
+{{ $class := .class }}
+
+{{ $hasLink := $link }}
+{{ $lightboxEnabled := eq $lightbox "true" }}
+
+{{ if and $hasLink $lightboxEnabled }}
+  {{ warnf "Image '%s': Both link and lightbox=true provided. Link will be used. Set lightbox=\"false\" to suppress this warning." $src }}
+{{ end }}
+
+{{ $img := resources.Get $src }}
+{{ if not $img }}
+  {{ errorf "Image not found: %s" $src }}
+{{ end }}
+
+{{ $fallbackUrl := $img.RelPermalink }}
+{{ $filter := images.Process "webp" }}
+{{ $imgWebp := $img.Filter $filter }}
+{{ if not $imgWebp }}
+  {{ errorf "WebP conversion failed for image: %s" $src }}
+{{ end }}
+{{ $defaultUrl := $imgWebp.RelPermalink }}
+
+<figure class="image image-{{ $size }} {{ $class }}">
+  {{ if $hasLink }}
+    <a href="{{ $link }}" title="{{ $alt }}" class="image-link">
+  {{ else if $lightboxEnabled }}
+    <a href="{{ $fallbackUrl }}" class="lightbox-url lightbox-image" title="{{ path.Base $src }}">
+  {{ end }}
+    <picture>
+      <source srcset="{{ $defaultUrl }}" type="image/webp">
+      <img src="{{ $fallbackUrl }}" alt="{{ $alt }}" class="responsive">
+    </picture>
+  {{ if or $hasLink $lightboxEnabled }}
+    </a>
+  {{ end }}
+
+  {{ if or $caption $attribution }}
+    <figcaption>
+      {{ with $caption }}{{ . | safeHTML }}{{ end }}
+      {{ with $attribution }}<span class="copyright">{{ . | safeHTML }}</span>{{ end }}
+    </figcaption>
+  {{ end }}
+</figure>

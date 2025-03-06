@@ -1,0 +1,70 @@
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+  
+/* Common styles for both image and video elements */
+.image,
+.video {
+    margin: 0 auto;
+    max-width: 100%; /* Explicitly set max-width to contain the children */
+    margin-bottom: 1.5rem; /* Add space below all media elements */
+}
+
+.image-large,
+.video-large {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.image-medium,
+.video-medium {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.image-small,
+.video-small {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.image-auto,
+.video-auto {
+    flex: 1;
+}
+
+/* This is critical - make ALL nested elements respect the container width */
+.image a,
+.image picture,
+.image img,
+.video video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep your border radius */
+.image img,
+.video video {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Override any .responsive class that might be causing issues */
+.image img.responsive,
+.video video.responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.copyright {
+    display: block;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.5em;
+    font-style: italic;
+}
