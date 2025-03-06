@@ -1,0 +1,20 @@
+/* Section spacing and dividers */
+section {
+    margin-bottom: 1rem; /* Space between sections */
+    padding-bottom: 1rem; /* Internal padding */
+    border-bottom: 1px solid #eee; /* Light divider line */
+}
+  
+section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; /* Remove divider from last section */
+}
+
+/* Remove margin from last element in sections */
+section > *:last-child,
+section p:last-child,
+section > div:last-child > *:last-child,
+section .module-content > *:last-child {
+    margin-bottom: 0;
+}
