@@ -2,25 +2,72 @@
 Shortcode: media/video
 
 Description:
+    Embeds a video player with customizable behavior.
+    This shortcode serves as a wrapper for the media/video.html partial.
 
 Args:
+    src (string, required):
+        The source path for the primary video file.
+    fallbackSrc (string, optional):
+        Optional source path for a fallback video in a different format.
+    alt (string, optional):
+        Alternative description for accessibility.
+    caption (string, optional):
+        Caption text to display below the video.
+    width (string, optional):
+        Custom width for the video (e.g., "500px").
+    height (string, optional):
+        Custom height for the video.
+    class (string, optional):
+        Additional CSS classes to apply to the video.
+    lightbox (bool, optional):
+        If "true", clicking the video opens it in a lightbox. Defaults to "false".
+    link (string, optional):
+        Optional URL to link the video to (overrides lightbox).
 
 Usage Examples:
+    Basic usage:
+        {{< media/video src="videos/example.mp4" >}}
+        
+    With fallback format and caption:
+        {{< media/video 
+            src="videos/example.mp4" 
+            fallbackSrc="videos/example.webm" 
+            caption="My example video" 
+        >}}
+        
+    With lightbox enabled:
+        {{< media/video 
+            src="videos/example.mp4" 
+            lightbox="true" 
+        >}}
+        
+    With custom link:
+        {{< media/video 
+            src="videos/example.mp4" 
+            link="https://example.com" 
+        >}}
 
 Note:
+    This video player has controls enabled by default, autoplay disabled,
+    and loop disabled, with lazy loading enabled.
+    For a video that plays automatically and loops (like a GIF), use
+    the media/video-gif shortcode instead.
 */}}
 
-<!-- layouts/shortcodes/video.html -->
-{{ partial "video.html"
+{{ partial "media/video.html"
     (dict
         "src" (.Get "src")
         "fallbackSrc" (.Get "fallbackSrc")
         "autoplay" false
         "loop" false
-        "controls" false
+        "controls" true
         "muted" false
         "lazyLoading" true
         "alt" (.Get "alt")
         "caption" (.Get "caption" | safeHTML)
+        "lightbox" (.Get "lightbox" | default "true")
+        "link" (.Get "link")
+        "context" .Page
     )
 }}

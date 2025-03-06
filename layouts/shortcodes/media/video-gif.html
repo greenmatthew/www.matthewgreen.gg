@@ -1,5 +1,51 @@
-<!-- layouts/shortcodes/video-gif.html -->
-{{ partial "video.html"
+{{/*
+Shortcode: media/video-gif
+
+Description:
+    Embeds a video that behaves like a GIF - autoplaying, looping, and muted.
+    This provides better compression than actual GIFs while maintaining
+    similar functionality.
+
+Args:
+    src (string, required):
+        The source path for the primary video file.
+    fallbackSrc (string, optional):
+        Optional source path for a fallback video in a different format.
+    alt (string, optional):
+        Alternative description for accessibility.
+    caption (string, optional):
+        Caption text to display below the video.
+    width (string, optional):
+        Custom width for the video (e.g., "500px").
+    height (string, optional):
+        Custom height for the video.
+    class (string, optional):
+        Additional CSS classes to apply to the video.
+    lightbox (bool, optional):
+        If "true", clicking the video opens it in a lightbox. Defaults to "false".
+    link (string, optional):
+        Optional URL to link the video to (overrides lightbox).
+
+Usage Examples:
+    Basic usage:
+        {{< media/video-gif src="videos/animation.mp4" >}}
+        
+    With caption:
+        {{< media/video-gif src="videos/animation.mp4" caption="My animation" >}}
+        
+    With lightbox enabled:
+        {{< media/video-gif 
+            src="videos/animation.mp4" 
+            lightbox="true" 
+        >}}
+
+Note:
+    Unlike standard videos, video-gifs are automatically set to autoplay,
+    loop continuously, have controls hidden, and are muted by default
+    to provide a GIF-like experience with better performance.
+*/}}
+
+{{ partial "media/video.html"
     (dict
         "src" (.Get "src")
         "fallbackSrc" (.Get "fallbackSrc")
@@ -10,5 +56,8 @@
         "lazyLoading" true
         "alt" (.Get "alt")
         "caption" (.Get "caption" | safeHTML)
+        "lightbox" (.Get "lightbox" | default "true")
+        "link" (.Get "link")
+        "context" .Page
     )
 }}

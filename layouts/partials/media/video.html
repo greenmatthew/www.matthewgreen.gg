@@ -1,0 +1,106 @@
+<!-- layouts/partials/media/video.html -->
+{{/* 
+Partial: media/video.html
+
+Parameters (passed as a dictionary):
+  src (string)          : The source path for the primary video file.
+  fallbackSrc (string)  : Optional source path for a fallback video in a different format.
+  caption (string)      : Optional caption text to display below the video.
+  alt (string)          : Alternative text description for the video.
+  controls (bool)       : Whether to display video controls. Defaults to true.
+  autoplay (bool)       : Whether the video should autoplay. Defaults to false.
+  loop (bool)           : Whether the video should loop. Defaults to false.
+  muted (bool)          : Whether the video should be muted. Defaults to false.
+  lazyLoading (bool)    : Whether to enable lazy loading. Defaults to false.
+  lightbox (bool)       : Whether to enable lightbox for video. Defaults to false.
+  link (string)         : Optional URL to link the video to (overrides lightbox).
+  context (page)        : Optional page context for page bundle resources.
+*/}}
+
+{{ $src := .src }}
+{{ $fallbackSrc := .fallbackSrc }}
+{{ $caption := .caption }}
+{{ $alt := .alt | default "Video" }}
+{{ $controls := default true .controls }}
+{{ $autoplay := default false .autoplay }}
+{{ $loop := default false .loop }}
+{{ $muted := default false .muted }}
+{{ $lazyLoading := default false .lazyLoading }}
+{{ $lightbox := default false .lightbox }}
+{{ $link := .link }}
+{{ $context := .context }}
+
+{{ $hasLink := $link }}
+{{ $lightboxEnabled := eq $lightbox "true" }}
+
+{{ if and $hasLink $lightboxEnabled }}
+  {{ warnf "Video '%s': Both link and lightbox=true provided. Link will be used. Set lightbox=\"false\" to suppress this warning." $src }}
+{{ end }}
+
+{{ $video := false }}
+{{ $fallbackVideo := false }}
+
+{{/* First check if we have a page context and try to find video in page bundle */}}
+{{ if $context }}
+  {{ $fileName := path.Base $src }}
+  {{ with $context.Resources.GetMatch $fileName }}
+    {{ $video = . }}
+  {{ else }}
+    {{/* If file name alone didn't match, try with the full path */}}
+    {{ with $context.Resources.GetMatch $src }}
+      {{ $video = . }}
+    {{ end }}
+  {{ end }}
+  
+  {{/* Try to find fallback video in page bundle if provided */}}
+  {{ if $fallbackSrc }}
+    {{ $fallbackFileName := path.Base $fallbackSrc }}
+    {{ with $context.Resources.GetMatch $fallbackFileName }}
+      {{ $fallbackVideo = . }}
+    {{ else }}
+      {{/* If file name alone didn't match, try with the full path */}}
+      {{ with $context.Resources.GetMatch $fallbackSrc }}
+        {{ $fallbackVideo = . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* If not found in page bundle or no context provided, try global assets */}}
+{{ if not $video }}
+  {{ $video = resources.Get $src }}
+{{ end }}
+
+{{ if and (not $fallbackVideo) $fallbackSrc }}
+  {{ $fallbackVideo = resources.Get $fallbackSrc }}
+{{ end }}
+
+{{ if not $video }}
+  {{ errorf "Video not found: %s (checked page bundle with name '%s' and global assets)" $src (path.Base $src) }}
+{{ end }}
+
+<figure class="video">
+  {{ if $hasLink }}
+    <a href="{{ $link }}" title="{{ $alt }}" class="video-link">
+  {{ else if $lightboxEnabled }}
+    <a href="{{ $video.Permalink }}" class="lightbox-url lightbox-video" title="{{ path.Base $src }}">
+  {{ end }}
+  
+  <video
+      {{ if $controls }} controls {{ end }}
+      {{ if $autoplay }} autoplay {{ end }}
+      {{ if $loop }} loop {{ end }}
+      {{ if $muted }} muted {{ end }}
+      {{ if $lazyLoading }} loading="lazy" {{ end }}
+      class="centered responsive">
+      <source src="{{ $video.Permalink }}" type="video/{{ $video.MediaType.SubType }}">
+      {{ if $fallbackVideo }} <source src="{{ $fallbackVideo.Permalink }}" type="video/{{ $fallbackVideo.MediaType.SubType }}"> {{ end }}
+      Your browser does not support the video tag.
+  </video>
+  
+  {{ if or $hasLink $lightboxEnabled }}
+    </a>
+  {{ end }}
+  
+  {{ if $caption }} <figcaption>{{ $caption | safeHTML }}</figcaption> {{ end }}
+</figure>
