@@ -8,7 +8,7 @@ draft: true  # Set to true to hide this project from production
 summary: "Brief description of the Project Calamity project."
 # Preview image for listings
 previewImage:
-  src: "projects/project-calamity/preview.png"
+  src: "project-calamity/preview.png"
   alt: "Project Calamity Preview"
 ---
 
