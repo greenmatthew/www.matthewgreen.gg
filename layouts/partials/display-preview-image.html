@@ -1,8 +1,0 @@
-<!-- layouts/partials/display-preview-image.html -->
-{{ $href := .RelPermalink }}
-
-{{ with .Params.previewImage }}
-
-{{ partial "image.html" (dict "src" .src "alt" (print $.Title " Preview") "class" .class "href" $href ) }}
-
-{{ end }}
