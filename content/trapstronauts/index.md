@@ -1,11 +1,15 @@
 ---
-type: project
-layout: project
-priority: 300
 title: "Trapstronauts"
+id: "trapstronauts"
+priority: 300  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back-to-back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult."
+# Preview image for listings
 previewImage:
     src: "trapstronauts/preview.png"
+    alt: "Trapstonauts Preview"
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
 - [Matthew's Personal Git Repo](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git)

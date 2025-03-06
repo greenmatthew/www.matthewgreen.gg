@@ -1,11 +1,15 @@
 ---
-type: project
-layout: project
-priority: 100
-title: "CADModelViewer"
+title: "CAD Model Viewer"
+id: "cad-model-viewer"
+priority: 100  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
+# Preview image for listings
 previewImage:
     src: "cad-model-viewer/preview.png"
+    alt: "CAD Model Viewer Preview"
     attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}

@@ -1,9 +1,9 @@
 ---
 title: "Test Project"
 id: "test-project"
-priority: 0  # Controls order in listings (lower numbers appear first)
+priority: -100  # Controls order in listings (lower numbers appear first)
 type: "project"
-draft: true  # Set to true to hide this project from production
+draft: false  # Set to true to hide this project from production
 
 summary: "Brief description of the Test Project project."
 # Preview image for listings

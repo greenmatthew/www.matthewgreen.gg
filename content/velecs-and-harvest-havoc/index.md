@@ -1,12 +1,15 @@
 ---
-type: project
-layout: project
-
-priority: 200
 title: "Velecs Engine & Harvest Havoc"
+id: "velecs-engine-and-harvest-havoc"
+priority: 200  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "Velecs Engine is a game engine developed entirely from scratch, harnessing the power of C++ alongside Vulkan for its high-performance graphics rendering capabilities. Currently, I am creating Harvest Havoc, a game that presently serves as a technical demonstration of the engine’s capabilities. Both are in active and parallel development."
+# Preview image for listings
 previewImage:
     src: "velecs-and-harvest-havoc/preview.png"
+    alt: "Velecs Engine & Harvest Havoc Preview"
 ---
 
 {{< custom-header type="h2" id="notice" text="Notice" >}}

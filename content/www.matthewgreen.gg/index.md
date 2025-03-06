@@ -1,13 +1,16 @@
 ---
-type: project
-layout: project
-
 title: "www.matthewgreen.gg"
+id: "www.matthewgreen.gg"
+priority: 500  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "The site you are looking at right now."
+# Preview image for listings
 previewImage:
     src: "server-computer/preview.jpg"
+    alt: "www.matthewgreen.gg Preview"
     class: "auto-fit"
-priority: 500
 ---
 
 {{< custom-header type="h2" id="the-journey" text="The Journey" >}}

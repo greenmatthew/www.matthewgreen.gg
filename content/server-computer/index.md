@@ -1,13 +1,16 @@
 ---
-type: project
-layout: project
-
 title: "Server Computer"
+id: "server-computer"
+priority: 600  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "A hobby of mine is building and working on an old server computer. I use it for various things such as hosting this website, a personal Git website, a Minecraft game server, and much more."
+# Preview image for listings
 previewImage:
     src: "server-computer/preview.jpg"
+    alt: "Server Computer Preview"
     class: "auto-fit"
-priority: 600
 ---
 {{< custom-header type="h2" id="content" text="Content" >}}
 - [Summary](#summary)

@@ -1,12 +1,15 @@
 ---
-type: project
-layout: project
-
 title: "Project Calamity"
+id: "project-calamity"
+priority: 400  # Controls order in listings (lower numbers appear first)
+type: "project"
+draft: false  # Set to true to hide this project from production
+
 summary: "This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans."
+# Preview image for listings
 previewImage:
     src: "project-calamity/preview.png"
-priority: 400
+    alt: "Project Calamity Preview"
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
 - [UTA Senior Designs Blog](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)
