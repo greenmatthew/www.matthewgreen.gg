@@ -1,3 +1,6 @@
 [submodule "themes/hugo-terminal.css"]
 	path = themes/hugo-terminal.css
 	url = https://github.com/greenmatthew/hugo-terminal.css.git
+[submodule "static/dnd-near"]
+	path = static/dnd-near
+	url = https://git.matthewgreen.gg/mgreen/dnd-near.git
