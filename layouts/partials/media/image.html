@@ -11,6 +11,8 @@ Parameters (passed as a dictionary):
   lightbox (bool)       : If "true", wraps the image in a link for lightbox.
   link (string)         : Optional URL to link the image to (overrides lightbox).
   class (string)        : Optional additional CSS classes.
+  page (object)         : The page context from which this partial is called. Required for accessing page
+                          bundle resources and proper error reporting.
 */}}
 
 {{ $src := .src }}
@@ -80,23 +82,47 @@ Parameters (passed as a dictionary):
     {{ end }}
 {{ end }}
 
-{{ $fallbackUrl := $img.RelPermalink }}
-{{ $filter := images.Process "webp" }}
-{{ $imgWebp := $img.Filter $filter }}
-{{ if not $imgWebp }}
-  {{ errorf "WebP conversion failed for image: %s" $src }}
+{{ $originalUrl := $img.RelPermalink }}
+<!-- Create resized versions of the original image -->
+{{ $imageSizes := slice "480" "768" "1024" "1366" "1920" }}
+{{ $resizedImages := slice }}
+
+<!-- Create WebP versions for each size -->
+{{ $resizedWebP := slice }}
+
+<!-- Create the original WebP version -->
+{{ $webpOriginal := $img.Filter (images.Process "webp") }}
+
+<!-- Generate different sizes for both original and WebP -->
+{{ range $imageSizes }}
+  {{ $width := . }}
+  {{ $resized := $img.Resize (printf "%sx" $width) }}
+  {{ $resizedImages = $resizedImages | append $resized }}
+  
+  {{ $webp := $resized.Filter (images.Process "webp") }}
+  {{ $resizedWebP = $resizedWebP | append $webp }}
 {{ end }}
-{{ $defaultUrl := $imgWebp.RelPermalink }}
 
 <figure class="image image-{{ $size }} {{ $class }}">
   {{ if $hasLink }}
     <a href="{{ $link }}" title="{{ $alt }}" class="image-link">
   {{ else if $lightboxEnabled }}
-    <a href="{{ $fallbackUrl }}" class="lightbox-url lightbox-image" title="{{ path.Base $src }}">
+    <a href="{{ $originalUrl }}" class="lightbox-url lightbox-image" title="{{ path.Base $src }}">
   {{ end }}
     <picture>
-      <source srcset="{{ $defaultUrl }}" type="image/webp">
-      <img src="{{ $fallbackUrl }}" alt="{{ $alt }}" class="responsive">
+      <!-- WebP sources with srcset -->
+      <source 
+        type="image/webp" 
+        srcset="{{ range $index, $webp := $resizedWebP }}{{ if $index }}, {{ end }}{{ $webp.RelPermalink }} {{ index $imageSizes $index }}w{{ end }}, {{ $webpOriginal.RelPermalink }} {{ $img.Width }}w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 85vw, (max-width: 1200px) 75vw, (max-width: 1600px) 50vw, 33vw">
+      
+      <!-- Original format sources with srcset -->
+      <source 
+        srcset="{{ range $index, $resized := $resizedImages }}{{ if $index }}, {{ end }}{{ $resized.RelPermalink }} {{ index $imageSizes $index }}w{{ end }}, {{ $originalUrl }} {{ $img.Width }}w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 85vw, (max-width: 1200px) 75vw, (max-width: 1600px) 50vw, 33vw">
+      
+      <!-- Fallback image - using original format for maximum compatibility -->
+      <img src="{{ $originalUrl }}" alt="{{ $alt }}" class="responsive">
     </picture>
   {{ if or $hasLink $lightboxEnabled }}
     </a>
