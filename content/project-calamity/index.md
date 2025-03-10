@@ -8,7 +8,7 @@ draft: false  # Set to true to hide this project from production
 summary: "This is a sci-fi horror tactical FPS role playing game, made in Unity, where you take control of a bounty hunter who has crash landed on a mining colony planet, filled with horrific and violent alien creatures and people trying to kill you. Collect and craft items to help you survive and finish quests as you undercover the story of this planet and its humanoid inhabitants and their secret plans."
 # Preview image for listings
 previewImage:
-    src: "project-calamity/preview.png"
+    src: "media/preview.png"
     alt: "Project Calamity Preview"
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
@@ -70,17 +70,17 @@ The mining colony is home to alien creatures, robots, and humanoid lowlifes, pri
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="project-calamity/preview.png"
+            src="media/preview.png"
             alt="Project Calamity Environment 0"
         >}}
 
         {{< media/image
-            src="project-calamity/environment-1.png"
+            src="media/environment-1.png"
             alt="Project Calamity Environment 1"
         >}}
         
         {{< media/image
-            src="project-calamity/environment-2.png"
+            src="media/environment-2.png"
             alt="Project Calamity Environment 2"
         >}}
     {{< /media/gallery-row >}}
@@ -101,19 +101,19 @@ The bounty hunter's spaceship crash lands on the outskirts of the compound. In a
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="project-calamity/pms.png"
+            src="media/pms.png"
             alt="Project Calamity Alpha & Beta PMS"
             caption="Alpha & Beta PMS"
         >}}
 
         {{< media/image
-            src="project-calamity/alpha-pms-open.png"
+            src="media/alpha-pms-open.png"
             alt="Project Calamity Alpha PMS"
             caption="Alpha PMS Modules"
         >}}
 
         {{< media/image
-            src="project-calamity/alpha-pms-stash-module.png"
+            src="media/alpha-pms-stash-module.png"
             alt="Project Calamity Alpha PMS Stash Module"
             caption="Alpha PMS Stash Module"
         >}}
@@ -155,12 +155,12 @@ These stations are inspired by the Dark Souls franchise bon fires and the Dead S
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="project-calamity/inventory.png"
+            src="media/inventory.png"
             alt="Project Calamity Inventory"
             caption="Inventory"
         >}}
         {{< media/image
-            src="project-calamity/inventory-sorted.png"
+            src="media/inventory-sorted.png"
             alt="Project Calamity Inventory Sorted"
             caption="Inventory Sorted"
         >}}
@@ -203,12 +203,12 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="project-calamity/enemies-0.png"
+            src="media/enemies-0.png"
             alt="Project Calamity Enemies 0"
             caption="Example Enemy 1"
         >}}
         {{< media/image
-            src="project-calamity/enemies-1.png"
+            src="media/enemies-1.png"
             alt="Project Calamity Enemies 1"
             caption="Example Enemy 2"
         >}}

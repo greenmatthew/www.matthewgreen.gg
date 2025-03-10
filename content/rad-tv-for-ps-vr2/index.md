@@ -26,7 +26,7 @@ previewImage:
 {{< custom-header type="h3" id="documentation" text="Documentation" >}}
 
 {{< media/image
-    src="rad-tv-for-ps-vr2/documentation_preview.png"
+    src="documentation_preview.png"
     alt="Rad TV for PS5 / PS VR2 Documentation"
     attribution="Image Content - © Little Star Media, Inc. All rights reserved."
     size="medium"

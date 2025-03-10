@@ -8,7 +8,7 @@ draft: false  # Set to true to hide this project from production
 summary: "A local multiplayer party game where 2-4 players vote on a map. Then race to the finish in back-to-back rounds, whilst placing items before the start of each round. These items either making the chosen map easier or more difficult."
 # Preview image for listings
 previewImage:
-    src: "trapstronauts/preview.png"
+    src: "media/preview.png"
     alt: "Trapstonauts Preview"
 ---
 {{< custom-header type="h2" id="links" text="Links" >}}
@@ -53,7 +53,7 @@ A motif of the game is that the players are always able to compete and harass ot
 {{< custom-header type="h2" id="points-system" text="Points System" >}}
 
 {{< media/image
-    src="trapstronauts/points-system.png"
+    src="media/points-system.png"
     alt="Trapstronauts Points System"
     caption="Points System"
     size="medium"
@@ -74,7 +74,7 @@ There are multiple maps included with the demo build.
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/map-hub-labelled.png"
+            src="media/map-hub-labelled.png"
             alt="Trapstronauts Spaceship (Hub) Map"
             caption="Spaceship (Hub): This is where the players start when they load up the game. The players spawn in separate bedrooms. Here they can vote on a map then go to the portal room and start the game once enough players are in there."
         >}}
@@ -82,7 +82,7 @@ There are multiple maps included with the demo build.
 
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/map-sawmill-labelled.png"
+            src="media/map-sawmill-labelled.png"
             alt="Trapstronauts Sawmill Map"
             caption="Sawmill: This is a simple but fun map, where there is a sawmill in the center. You can choose the safer option to go over it if it is not blocked or covered in traps from players' item placements. You can also go through the sawmill which has two floors in it. Both floors have two saws with a button in the middle. If a player stands on the button in the middle, the saws speed up making it harder to get through the sawmill."
         >}}
@@ -90,7 +90,7 @@ There are multiple maps included with the demo build.
     
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/map-valley-labelled.png"
+            src="media/map-valley-labelled.png"
             alt="Trapstronauts Valley Map"
             caption="Valley: The players start on the left bank of a steep valley with the finish line up above on the right bank. If they fall into the pit between the two banks they perish. At first this is unavoidable, so they must build their way up using platforms and traps."
         >}}
@@ -98,7 +98,7 @@ There are multiple maps included with the demo build.
     
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/map-cliffs-labelled.png"
+            src="media/map-cliffs-labelled.png"
             alt="Trapstronauts Cliffs Map"
             caption="Cliffs: This is very similar to valley, but a lot smaller. It is the best map for a quick game."
         >}}
@@ -106,7 +106,7 @@ There are multiple maps included with the demo build.
     
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/map-canyon-labelled.png"
+            src="media/map-canyon-labelled.png"
             alt="Trapstronauts Canyon Map"
             caption="Canyon: The players start on the left bank of a canyon and the finish is in the bottom right cave inside the canyon. There are two hidden paths on the outskirts of the map that players can discover and use to get around traps and platforms in the way."
         >}}
@@ -117,7 +117,7 @@ There are multiple maps included with the demo build.
 {{< custom-header type="h2" id="voting-system" text="Voting System" >}}
 
 {{< media/image
-    src="trapstronauts/voting-system.png"
+    src="media/voting-system.png"
     alt="Trapstronauts Voting System"
     size="medium"
 >}}
@@ -130,19 +130,19 @@ The players vote on which map they want, however, instead of a majority vote win
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="trapstronauts/placement-system-0.png"
+            src="media/placement-system-0.png"
             alt="Trapstronauts Placement System 0"
             caption="Selecting Items Phase"
         >}}
 
         {{< media/image
-            src="trapstronauts/placement-system-1.png"
+            src="media/placement-system-1.png"
             alt="Trapstronauts Placement System 1"
             caption="Placing Items Phase"
         >}}
         
         {{< media/image
-            src="trapstronauts/placement-system-2.png"
+            src="media/placement-system-2.png"
             alt="Trapstronauts Placement System 2"
             caption="Items Persist Once Playing"
         >}}

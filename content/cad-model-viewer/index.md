@@ -8,7 +8,7 @@ draft: false  # Set to true to hide this project from production
 summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
 # Preview image for listings
 previewImage:
-    src: "cad-model-viewer/preview.png"
+    src: "media/preview.png"
     alt: "CAD Model Viewer Preview"
     attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
@@ -58,14 +58,14 @@ Looking ahead, the plan is to extend support for animations, with the aspiration
 {{< media/gallery >}}
     {{< media/gallery-row >}}
         {{< media/image
-            src="cad-model-viewer/scene-downloading.png"
+            src="media/scene-downloading.png"
             alt="CAD Model Viewer Downloading Scene"
             caption="Downloading a Lesson."
             attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
 
         {{< media/image
-            src="cad-model-viewer/scene-opening.png"
+            src="media/scene-opening.png"
             alt="CAD Model Viewer Opening Scene"
             caption="Opening a Lesson."
             attribution="Image Content - © University of Texas at Arlington. All rights reserved."
@@ -74,14 +74,14 @@ Looking ahead, the plan is to extend support for animations, with the aspiration
 
     {{< media/gallery-row >}}
         {{< media/image
-            src="cad-model-viewer/scene-opened.png"
+            src="media/scene-opened.png"
             alt="CAD Model Viewer Opened Scene."
             caption="Opened Lesson."
             attribution="Image Content - © University of Texas at Arlington. All rights reserved."
         >}}
 
         {{< media/image
-            src="cad-model-viewer/scene-playing.png"
+            src="media/scene-playing.png"
             alt="CAD Model Viewer Playing Scene"
             caption="Interacting with Lesson."
             attribution="Image Content - © University of Texas at Arlington. All rights reserved."

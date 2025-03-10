@@ -34,33 +34,50 @@ Parameters (passed as a dictionary):
     {{ errorf "Error: page context is null! This shouldn't happen - check your partial/shortcode invocation." }}
 {{ end }}
 
-{{ $pagePath := $page.File.Path | default "unknown page" }}
 {{ $img := false }}
 
-{{/* Try page bundle first */}}
-{{ if $page }}
-    {{ with $page.Resources.Get $src }}
-        {{ $img = . }}
-    {{ end }}
+{{/* Check if $src is a URL */}}
+{{ $isRemote := false }}
+{{ if hasPrefix (lower $src) "http://" }}
+    {{ $isRemote = true }}
+{{ else if hasPrefix (lower $src) "https://" }}
+    {{ $isRemote = true }}
 {{ end }}
 
-{{/* If not found in page bundle, try global assets */}}
-{{ if not $img }}
-    {{ with resources.Get $src }}
-        {{ $img = . }}
-    {{ end }}
-{{ end }}
-
-{{/* If not found locally, try remote */}}
-{{ if not $img }}
+{{/* If $src is remote */}}
+{{ if $isRemote }}
     {{ with resources.GetRemote $src }}
         {{ $img = . }}
     {{ end }}
-{{ end }}
 
-{{/* If image still not found, provide detailed error */}}
-{{ if not $img }}
-    {{ errorf "Image '%s' was not found! Checked: page bundle for '%s', global assets, and remote sources. Page: %s" $src $src $pagePath }}
+    {{ if not $img }}
+        {{ errorf "Remote image '%s' was not found!" $src }}
+    {{ end }}
+{{/* If $src is not remote */}}
+{{ else }}
+    {{/* Get page path for error reporting */}}
+    {{ $pagePath := "" }}
+    {{ if $page }}
+        {{ $pagePath = $page.File.Path | default "unknown page" }}
+    {{ end }}
+    
+    {{/* Try page bundle first */}}
+    {{ if $page }}
+        {{ with $page.Resources.Get $src }}
+            {{ $img = . }}
+        {{ end }}
+    {{ end }}
+
+    {{/* If not found in page bundle, try global assets */}}
+    {{ if not $img }}
+        {{ with resources.Get $src }}
+            {{ $img = . }}
+        {{ end }}
+    {{ end }}
+
+    {{ if not $img }}
+        {{ errorf "Image '%s' was not found! Checked relative to page bundle and in global assets. Page: %s" $src $pagePath }}
+    {{ end }}
 {{ end }}
 
 {{ $fallbackUrl := $img.RelPermalink }}

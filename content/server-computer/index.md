@@ -8,7 +8,7 @@ draft: false  # Set to true to hide this project from production
 summary: "A hobby of mine is building and working on an old server computer. I use it for various things such as hosting this website, a personal Git website, a Minecraft game server, and much more."
 # Preview image for listings
 previewImage:
-    src: "server-computer/preview.jpg"
+    src: "preview.jpg"
     alt: "Server Computer Preview"
     class: "auto-fit"
 ---
