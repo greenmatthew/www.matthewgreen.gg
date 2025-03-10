@@ -4,16 +4,18 @@
         {{ $priority := .Params.priority }}
         {{ if ge $priority 0 }}
             {{ $pageLink := .RelPermalink }}
+            {{ $currentPage := . }}
             <h3><a href="{{ $pageLink }}">{{ .Title }}</a></h3>
             
             {{ with .Params.previewImage }}
                 {{ if .src }}
-                    {{ $imageParams := dict 
+                    {{ $imageParams := (dict 
                         "src" .src 
                         "size" "medium"
                         "lightbox" "false"
                         "link" $pageLink
-                    }}
+                        "page" $currentPage
+                    ) }}
                     
                     {{ with .attribution }}
                         {{ $imageParams = merge $imageParams (dict "attribution" .) }}

@@ -7,7 +7,7 @@ draft: false  # Set to true to hide this project from production
 
 summary: "Developed and maintained the PlayStation VR2 (PSVR2) version of Rad TV for PS5, a hybrid media streaming application—the first of its kind on the PS5."
 previewImage:
-    src: "rad-tv-for-ps-vr2/preview.png"
+    src: "preview.png"
     alt: "Rad TV for PS VR2 Preview"
     attribution: "Image Content - © Little Star Media, Inc. All rights reserved."
 ---
@@ -33,3 +33,8 @@ previewImage:
 >}}
 
 I refined every piece of documentation within the ['Getting Started - Subscribers, Viewers'](https://docs.rad.live/rad/getting-started-subscribers-viewers) section. I also crafted the ['Rad TV for PS5 / PS VR2'](https://docs.rad.live/rad/getting-started-subscribers-viewers/rad-tv-for-ps5-ps-vr2) subsection entirely from scratch. Note that this documentation covers two different applications combined into one; at the time of writing, only the PS VR2 version—which I worked on—has dedicated documentation, while the PS5 standard version does not. I was meticulous in creating and maintaining this documentation so that users could easily find detailed, useful information to make their experience with the PS VR2 app as seamless as possible. Additionally, I updated the changelog page with every public release—often including screenshots of new features—to ensure that users were well informed about the updates and how to access them.
+
+{{< media/image
+    src="https://upload.wikimedia.org/wikipedia/commons/6/68/Solid_black.png"
+    size="medium"
+>}}

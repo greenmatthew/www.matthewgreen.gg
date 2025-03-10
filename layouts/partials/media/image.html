@@ -21,6 +21,7 @@ Parameters (passed as a dictionary):
 {{ $lightbox := .lightbox | default "true" }}
 {{ $link := .link }}
 {{ $class := .class }}
+{{ $page := .page }}
 
 {{ $hasLink := $link }}
 {{ $lightboxEnabled := eq $lightbox "true" }}
@@ -29,9 +30,37 @@ Parameters (passed as a dictionary):
   {{ warnf "Image '%s': Both link and lightbox=true provided. Link will be used. Set lightbox=\"false\" to suppress this warning." $src }}
 {{ end }}
 
-{{ $img := resources.Get $src }}
+{{ if not $page }}
+    {{ errorf "Error: page context is null! This shouldn't happen - check your partial/shortcode invocation." }}
+{{ end }}
+
+{{ $pagePath := $page.File.Path | default "unknown page" }}
+{{ $img := false }}
+
+{{/* Try page bundle first */}}
+{{ if $page }}
+    {{ with $page.Resources.Get $src }}
+        {{ $img = . }}
+    {{ end }}
+{{ end }}
+
+{{/* If not found in page bundle, try global assets */}}
 {{ if not $img }}
-  {{ errorf "Image not found: %s" $src }}
+    {{ with resources.Get $src }}
+        {{ $img = . }}
+    {{ end }}
+{{ end }}
+
+{{/* If not found locally, try remote */}}
+{{ if not $img }}
+    {{ with resources.GetRemote $src }}
+        {{ $img = . }}
+    {{ end }}
+{{ end }}
+
+{{/* If image still not found, provide detailed error */}}
+{{ if not $img }}
+    {{ errorf "Image '%s' was not found! Checked: page bundle for '%s', global assets, and remote sources. Page: %s" $src $src $pagePath }}
 {{ end }}
 
 {{ $fallbackUrl := $img.RelPermalink }}
