@@ -20,7 +20,12 @@ draft: false # Swap to false to actually make the module display
         </center>
         <ul>
             <li>GPA: 3.287</li>
-            <li>Notable Courses Taken: Game Design, Computer Graphics, Computer Networks, Linear Algebra, Computational Methods, Calculus I & II, Physics I & II, Artificial Intelligence, Machine Learning, Senior Design I & II, Database Systems I & II, Software Engineering</li>
+            <li>
+                Notable Courses Taken:
+                <ul>
+                    <li>Game Design, Computer Graphics, Computer Networks, Linear Algebra, Computational Methods, Artificial Intelligence, Machine Learning, Senior Design I & II, Database Systems I & II, Software Engineering</li>
+                </ul>
+            </li>
         </ul>
     {{< /terminal-css/card >}}
 
@@ -37,7 +42,20 @@ draft: false # Swap to false to actually make the module display
         <ul>
             <li>GPA: 4.000</li>
             <li>Magna Cum Laude Graduate</li>
-            <li>Ranked 25th Percentile</li>
+            <li>Graduated with <a href="https://tx01000797.schoolwires.net/cms/lib/TX01000797/Centricity/Domain/4926/HB5_Endorsements.pdf">Multiple Endorsements</a> including STEM endorsement.</li>
+            <li>Top 25% of graduating class</li>
+            <li>
+                Notable courses that earned college credit through AP/Dual Credit Courses:
+                <ul>
+                    <li>Physics I & II and Calculus I & II</li>
+                </ul>
+            </li>
+            <li>
+                Other notable courses:
+                <ul>
+                    <li>Computer Programming & Game Design I & II and AP Computer Science: Principles</li>
+                </ul>
+            </li>
         </ul>
     {{< /terminal-css/card >}}
 
