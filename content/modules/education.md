@@ -8,16 +8,17 @@ draft: false # Swap to false to actually make the module display
 
 {{< terminal-css/timeline >}}
 
-    {{< terminal-css/card header="University of Texas at Arlington" >}}
-        <center>
-            <p>
-                Aug. 2019 - Dec. 2022
-                <br>
-                Bachelor of Science in Computer Science
-                <br>
-                Arlington, TX
-            </p>
-        </center>
+    {{< terminal-css/card
+        header="Customer Service Associate"
+        subheader="<p>Aug. 2019 - Feb. 2020</p><p><b>Walgreens</b></p><p>North Richland Hills, TX</p>" >}}
+        <p>
+            Provided excellent customer service in a fast-paced retail environment, assisting customers while handling transactions, managing shelf inventory, processing photo orders, and performing various other store operations as needed.
+        </p>
+    {{< /terminal-css/card >}}
+    
+    {{< terminal-css/card
+        header="University of Texas at Arlington"
+        subheader="<p>Aug. 2019 - Dec. 2022</p><p><b>Bachelor of Science in Computer Science</b></p><p>Arlington, TX</p>" >}}
         <ul>
             <li>GPA: 3.287</li>
             <li>
@@ -29,16 +30,9 @@ draft: false # Swap to false to actually make the module display
         </ul>
     {{< /terminal-css/card >}}
 
-    {{< terminal-css/card header="Birdville High School" >}}
-        <center>
-            <p>
-                Aug. 2015 - May 2019
-                <br>
-                High School Diploma
-                <br>
-                North Richland Hills, TX
-            </p>
-        </center>
+    {{< terminal-css/card
+        header="Birdville High School"
+        subheader="<p>Aug. 2015 - May 2019</p><p><b>High School Diploma</b></p><p>North Richland Hills, TX</p>" >}}
         <ul>
             <li>GPA: 4.000</li>
             <li>Magna Cum Laude Graduate</li>
