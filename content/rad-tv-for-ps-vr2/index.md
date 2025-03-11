@@ -7,7 +7,7 @@ draft: false  # Set to true to hide this project from production
 
 summary: "Developed and maintained the PlayStation VR2 (PSVR2) version of Rad TV for PS5, a hybrid media streaming application—the first of its kind on the PS5."
 previewImage:
-    src: "preview.png"
+    src: "media/preview.png"
     alt: "Rad TV for PS VR2 Preview"
     attribution: "Image Content - © Little Star Media, Inc. All rights reserved."
 ---
@@ -26,7 +26,7 @@ previewImage:
 {{< custom-header type="h3" id="documentation" text="Documentation" >}}
 
 {{< media/image
-    src="documentation_preview.png"
+    src="media/documentation_preview.png"
     alt="Rad TV for PS5 / PS VR2 Documentation"
     attribution="Image Content - © Little Star Media, Inc. All rights reserved."
     size="medium"
