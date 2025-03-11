@@ -16,15 +16,14 @@ previewImage:
     Disclaimer: As I am no longer employed by this company, I cannot guarantee that the current application or its associated documentation will remain unchanged or continue to reflect the quality of work I delivered.
 {{< /terminal-css/alert >}}
 
-{{< custom-header type="h2" id="links" text="Links" >}}
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [Rad TV for Web](https://radtv.com/)
 - [Rad TV Documentation](https://docs.rad.live/rad)
     - [Rad TV for PS5 / PS VR2 Documentation](https://docs.rad.live/rad/getting-started-subscribers-viewers/rad-tv-for-ps5-ps-vr2)
 
-{{< custom-header type="h3" id="summary" text="Summary" >}}
+{{< heading-link type="h2" >}} Summary {{< /heading-link >}}
 
-{{< custom-header type="h3" id="documentation" text="Documentation" >}}
-
+{{< heading-link type="h2" >}} Documentation {{< /heading-link >}}
 {{< media/image
     src="media/documentation_preview.png"
     alt="Rad TV for PS5 / PS VR2 Documentation"
