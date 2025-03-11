@@ -6,7 +6,7 @@ type: "module"
 draft: false # Swap to false to actually make the module display
 ---
 
-{{< custom-header type="h3" id="soft-skills" text="Soft Skills" >}}
+### Soft Skills
 - Collaboration
 - Communication
 - Troubleshooting
@@ -15,7 +15,7 @@ draft: false # Swap to false to actually make the module display
 - Documentation
 - Organization
 
-{{< custom-header type="h3" id="technical-skills" text="Technical Skills" >}}
+### Technical Skills
 - Unity Engine (Advanced)
 - Git (Advanced)
 - C# (Advanced/Expert)

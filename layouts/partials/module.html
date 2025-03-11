@@ -3,7 +3,7 @@
 {{ $page := .currentPage }}
 
 <section id="{{ $page.Params.id }}" class="module {{ with $page.Params.class }}{{ . }}{{ end }}">
-    {{ partial "custom-header.html" (dict "type" "h2" "id" $page.Params.id "text" $page.Title) }}
+    {{ partial "heading-link.html" (dict "type" "h2" "id" $page.Params.id "Inner" $page.Title)}}
     
     <div class="module-content">
         {{ $page.Content }}
