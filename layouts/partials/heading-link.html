@@ -27,12 +27,12 @@ Note:
 
 {{ $type := .type }}
 {{ if not $type }}
-    {{ errorf "Type is missing at some {{ partial \"custom-header.html\" ... }}." }}
+    {{ errorf "Type is missing at some {{ partial \"heading-link.html\" ... }}." }}
 {{ end }}
 
 {{ $text := .Inner }}
 {{ if not $text }}
-    {{ errorf "Inner content is missing at some {{ partial \"custom-header.html\" ... }}." }}
+    {{ errorf "Inner content is missing at some {{ partial \"heading-link.html\" ... }}." }}
 {{ end }}
 
 {{ $id := .id | default (anchorize $text) }}
@@ -52,5 +52,5 @@ Note:
 {{ else if eq $type "h6" }}
     <h6 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h6>
 {{ else }}
-    {{ errorf "Type '%s' is invalid at some {{ partial \"custom-header.html\" ... }}." $type }}
+    {{ errorf "Type '%s' is invalid at some {{ partial \"heading-link.html\" ... }}." $type }}
 {{ end }}

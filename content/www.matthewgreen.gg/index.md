@@ -13,7 +13,7 @@ summary: "The site you are looking at right now."
 #     class: "auto-fit"
 ---
 
-{{< custom-header type="h2" id="the-journey" text="The Journey" >}}
+{{< heading-link type="h2" >}} The Journey {{< /heading-link >}}
 While I had some basic knowledge of HTML and CSS from a high school course, I assumed website hosting would be easy… little did I know.
 
 I started by searching for a theme and landed on this particular [terminal theme](https://terminalcss.xyz/dark/) that you see now. Once I had that, I knew exactly what HTML tags were available and how they would look. I then started building the index and other pages, but quickly found it frustrating to repeat elements like the header and footer. As someone who values DRY (Don't Repeat Yourself) programming, I realized that writing raw HTML wasn't going to cut it.

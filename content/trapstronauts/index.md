@@ -11,11 +11,11 @@ previewImage:
     src: "media/preview.png"
     alt: "Trapstonauts Preview"
 ---
-{{< custom-header type="h2" id="links" text="Links" >}}
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [Matthew's Personal Git Repo](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git)
 - [Github Repo](https://github.com/greenmatthew/Trapstronauts)
 
-{{< custom-header type="h2" id="content" text="Content" >}}
+{{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
     - Demo Video
@@ -33,10 +33,10 @@ previewImage:
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 
-{{< custom-header type="h2" id="purpose" text="Purpose" >}}
+{{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at the University of Texas at Arlington.
 
-{{< custom-header type="h2" id="summary" text="Summary" >}}
+{{< heading-link type="h2" >}} Summary {{< /heading-link >}}
 
 {{< media/youtube/video
     id="mKnVCvUbzQI"
@@ -50,7 +50,7 @@ It is a local multiplayer party game, made in Godot Engine 3, which draws heavy 
 A motif of the game is that the players are always able to compete and harass other players through different game functionalities, even before they are racing for points. Which makes it the perfect game to play with a group of friends to laugh over.
 
 
-{{< custom-header type="h2" id="points-system" text="Points System" >}}
+{{< heading-link type="h2" >}} Points System {{< /heading-link >}}
 
 {{< media/image
     src="media/points-system.png"
@@ -68,7 +68,7 @@ There are many ways to get points, some events give you more points than others:
 - Post-mortem arrival to the finish line.
 
 
-{{< custom-header type="h2" id="maps" text="Maps" >}}
+{{< heading-link type="h2" >}} Maps {{< /heading-link >}}
 There are multiple maps included with the demo build.
 
 {{< media/gallery >}}
@@ -114,7 +114,7 @@ There are multiple maps included with the demo build.
 {{< /media/gallery >}}
 
 
-{{< custom-header type="h2" id="voting-system" text="Voting System" >}}
+{{< heading-link type="h2" >}} Voting System {{< /heading-link >}}
 
 {{< media/image
     src="media/voting-system.png"
@@ -125,7 +125,7 @@ There are multiple maps included with the demo build.
 The players vote on which map they want, however, instead of a majority vote winning, it is proportionally selected at random. Meaning each vote has an equal chance of being randomly selected. For example, if two players voted on Sawmill and one voted on Valley, then it would be a two-thirds chance of being Sawmill and one-thirds chance of being Valley, once the players start the game at the portal room.
 
 
-{{< custom-header type="h2" id="placement-system" text="Placement System" >}}
+{{< heading-link type="h2" >}} Placement System {{< /heading-link >}}
 
 {{< media/gallery >}}
     {{< media/gallery-row >}}
@@ -154,12 +154,12 @@ At the start of every round, the players get a random assortment of items, which
 The platforms are for making or blocking paths to the finish line. Then for the traps they can kill players making it harder to get to the finish but can also sometimes be used as a platform. Finally, there is the bombs, which blow up a small areas of placed items, which is useful for if the map is impossible or if a player wants to remove a group of items. Most players usually have their own path to get to the finish through the map and they place items to make their path easier or to make others' paths harder to navigate without dying.
 
 
-{{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
+{{< heading-link type="h2" >}} Conclusion {{< /heading-link >}}
 
 The final demo build was genuinely fun to play with some friends. Although it did have more bugs in it then we would like to admit. Overall, it was a remarkable success. If it had more content it really be a contender for publishing on Steam or other digital game vendors.
 
 
-{{< custom-header type="h2" id="future-work" text="Future Work" >}}
+{{< heading-link type="h2" >}} Future Work {{< /heading-link >}}
 
 If we were to keep working on the game there is many things we would have liked to add.
 - Finish the hub map. It was missing many features from the original vision of the game.

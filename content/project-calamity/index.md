@@ -11,13 +11,13 @@ previewImage:
     src: "media/preview.png"
     alt: "Project Calamity Preview"
 ---
-{{< custom-header type="h2" id="links" text="Links" >}}
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [UTA Senior Designs Blog](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)
 - [Matthew's Personal Git Repo](https://git.matthewgreen.gg/mgreen/ProjectCalamity.git)
 - [Github Repo](https://github.com/greenmatthew/ProjectCalamity)
 - [Matthew's Initial Ideas Document](https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf)
 
-{{< custom-header type="h2" id="content" text="Content" >}}
+{{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
     - Demo Video
@@ -36,10 +36,10 @@ previewImage:
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 
-{{< custom-header type="h2" id="purpose" text="Purpose" >}}
+{{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 This is a video game project made for the 2022 Summer & Fall semester CSE Senior Design I & II courses at the University of Texas at Arlington.
 
-{{< custom-header type="h2" id="summary" text="Summary" >}}
+{{< heading-link type="h2" >}} Summary {{< /heading-link >}}
 
 {{< terminal-css/alert type="error" >}}
     Many of the originally planned features are missing or incomplete. Which is explained about in the conclusion section near the bottom. However, I will still describe these features below and state their status in the final build of the game.
@@ -56,12 +56,12 @@ This is a sci-fi horror tactical FPS role playing game, made in Unity, where you
 
 Highly inspired by other games of the same genres, most notably the Dead Space franchise and others like it such as the Resident Evil franchise and The Callisto Protocol for the setting, horror atmosphere, and some parts of the gameplay. Then the gameplay being further enhanced with small parts borrowed from other games: Dark Souls franchise, Subnautica, Chernobylite, Escape From Tarkov, and SWAT4.
 
-{{< custom-header type="h2" id="story" text="Story" >}}
+{{< heading-link type="h2" >}} Story {{< /heading-link >}}
 You take control of a bounty hunter who just got his biggest contract. Unfortunately, after a failed attempt to eliminate the target he crash landed on a prison mining colony. You need to gather the resources and items needed to repair his ship to finish his contract and get revenge for getting shot down.
 
 The mining colony is home to alien creatures, robots, and humanoid lowlifes, prisoners, and employees for the evil corporation in charge of the colony. As you explore more and finish more quests for people around the planet as well as missions for the corporation itself, you begin to learn more about the corporation's sinister plans for the mining on this planet. Will you try and stop them, or do you want to join them for your own selfish benefit?
 
-{{< custom-header type="h2" id="setting" text="Setting" >}}
+{{< heading-link type="h2" >}} Setting {{< /heading-link >}}
 
 {{< terminal-css/alert type="error" >}}
     In the current build, there is no compound nor any caves to find. Just a few buildings and a few aggressive alien creatures sprinkled around the map.
@@ -92,7 +92,7 @@ There is a massive compound on the equator of the planet, owned by the corporati
 
 The bounty hunter's spaceship crash lands on the outskirts of the compound. In a hot spot of caves and plenty and flora and fauna to fulfill upgrading your gear and start repairs on your ship, if you're willing to do a little exploring around.
 
-{{< custom-header type="h2" id="pms" text="Player Management Station (PMS)" >}}
+{{< heading-link type="h2" >}} Player Management Station (PMS) {{< /heading-link >}}
 
 {{< terminal-css/alert type="error" >}}
     Both the Alpha and Beta PMS are inside the game with a model but completely lack basically all functionality. Only the Stash Module in the Alpha PMS is working.
@@ -122,7 +122,7 @@ The bounty hunter's spaceship crash lands on the outskirts of the compound. In a
 
 The Player Management Station (PMS) devices are a critical part of the gameplay loop and found all over the map. There are two different types of PMS: Alpha and Beta. They both have modules in them allowing the player to do certain things to help them survive. Beta PMS have less modules and reduced capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities and even more modules.
 
-{{< custom-header type="h2" id="beta-pms" text="Beta PMS" >}}
+{{< heading-link type="h2" >}} Beta PMS {{< /heading-link >}}
 - Suit Upgrade Module - Allowing upgrading of armor and movement speed.
 
 - Weapon Upgrade Module - Allowing upgrading of weapons.
@@ -131,7 +131,7 @@ The Player Management Station (PMS) devices are a critical part of the gameplay 
 
 - Quests Module - Where you can accept quests and turn in quest items and collect finished quests' rewards.
 
-{{< custom-header type="h2" id="alpha-pms" text="Alpha PMS" >}}
+{{< heading-link type="h2" >}} Alpha PMS {{< /heading-link >}}
 - All the same modules from the Beta PMS, but these modules can push and pull items into or from the Stash Module.
 
 - Stash Module - A place to store items for later use.
@@ -146,7 +146,7 @@ The Player Management Station (PMS) devices are a critical part of the gameplay 
 
 These stations are inspired by the Dark Souls franchise bon fires and the Dead Space upgrade stations. They are basically a mix of the two, with the additional crafting module being directly inspired by Subnautica.
 
-{{< custom-header type="h2" id="inventory-system" text="Inventory System" >}}
+{{< heading-link type="h2" >}} Inventory System {{< /heading-link >}}
 
 {{< terminal-css/alert type="error" >}}
     All the slots are in the game, except for the vest and backpack slots, however, there are no items other than a rifle and some example items and there is a fixed size storage container just called backpack. So, the whole inventory system provides nothing to the final build of the game. The only interaction with it is you immediately equip your rifle from an Alpha PMS's stash module.
@@ -184,7 +184,7 @@ The player's inventory contains multiple different slots for equipment.
 
 Both the vests and backpacks have internal storage inside them, where you can move and rotate items to fit and organize items in the contents of these storage items. Which was inspired by Escape From Tarkov's inventory system and is a direct copy except for some removed and additional slots.
 
-{{< custom-header type="h2" id="health-system" text="Health System" >}}
+{{< heading-link type="h2" >}} Health System {{< /heading-link >}}
 
 - You have both armors and shields you can wear to stop or reduce damage take to the player.
 
@@ -194,7 +194,7 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 
 *** ***Notice: None of these features are in the final build. There is just 100 health points and is unrecoverable unless you restart the game.*** ***
 
-{{< custom-header type="h2" id="combat" text="Combat" >}}
+{{< heading-link type="h2" >}} Combat {{< /heading-link >}}
 
 {{< terminal-css/alert type="error" >}}
     In the final build there is only a single firearm, found in the stash with a magazine item, but the magazine is nonfunctional, so the firearm just has infinite reloads for the purposes of the demo. Also the AI is very basic and just goes directly towards a player and attacks when in range. It has no sort of other logic currently.
@@ -221,14 +221,14 @@ Magazines must be loaded with cartridges, unlike most other games. You can do th
 
 There are different types of AI used by the different enemies in the game with different levels of intellect and tactics. Animal creatures generally are not that smart and will attack head on and will fight to the death. While humanoids are usually smarter and will use cover, flee if they feel they are losing a fight, and if in a group will leverage that against you by working together.
 
-{{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
+{{< heading-link type="h2" >}} Conclusion {{< /heading-link >}}
 While Senior Design is two whole semesters, the first semester is nearly all documentation and planning, then the second is actually working on the project but also more documentation. While we understand the value of documentation we felt the planning and documentation was awkward and mostly a waste of time, because it had general engineering focus. The class did not feel suited for making a video game even though it was an allowed option. This cost us a lot of valuable development time.
 
 We also faced many other problems, such as scope creep, all but one team member had experience using Unity and C#, and underestimating our final semester's workloads and other responsibilities impact on how much we could get done. These aforementioned issues lead to the final build of the game being a shell of what it was supposed to be and short of a minimum viable product. It was missing many of the planned features and the that were implemented were only partially functional.
 
 We certainly learned the importance of keeping a project scope small and incrementally adding to the scope as features are finished, not before. As well as the importance of being truthful to ourselves on our skills and amount of work we can complete. In fact, this is the whole point of Senior Design; to learn about project pitfalls before enter industry.
 
-{{< custom-header type="h2" id="future-work" text="Future Work" >}}
+{{< heading-link type="h2" >}} Future Work {{< /heading-link >}}
 Work needed to bring the game to a minimum viable product as it falls short of that.
 
 - Get enemy respawning and health regeneration upon using an Alpha PMS.

@@ -11,11 +11,10 @@ previewImage:
     src: "media/preview.png"
     alt: "Velecs Engine & Harvest Havoc Preview"
 ---
-
-{{< custom-header type="h2" id="notice" text="Notice" >}}
+{{< heading-link type="h2" >}} Notice {{< /heading-link >}}
 The content of this page may be outdated. Velecs Engine and Harvest Havoc are actively being worked on, making it hard to keep this webpage perfectly up-to-date. If you want to see the most up-to-date information about these projects, please check to see if there is anything new by checking the latest commits on the repositories below.
 
-{{< custom-header type="h2" id="links" text="Links" >}}
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [Harvest Havoc's Latest Releases on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc/releases)
 - [Harvest Havoc's Latest Releases on Github Repository](https://github.com/greenmatthew/HarvestHavoc/releases)
 - [Harvest Havoc on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git)
@@ -26,7 +25,7 @@ The content of this page may be outdated. Velecs Engine and Harvest Havoc are ac
 - [Velecs Engine on Personal Git Website Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
 - [Velecs Engine on Github Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
 
-{{< custom-header type="h2" id="content" text="Content" >}}
+{{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Velecs Engine](#velecs)
     - [Name](#velecs-name)
@@ -43,18 +42,18 @@ The content of this page may be outdated. Velecs Engine and Harvest Havoc are ac
 - [Learning](#learning)
 - [Conclusion](#conclusion)
 
-{{< custom-header type="h2" id="purpose" text="Purpose" >}}
+{{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 I initiated this project with two main objectives in mind: to refine my C++ programming skills and to venture into the realm of graphics programming. My choice of C++ was heavily guided by its prevalent demand in the game development sector, reflecting what employers typically look for. In fact, every aspect of this project was tailored to align with potential employer expectations, a strategy that influenced not only the version of C++ I used but also the overall approach to building the project. While these choices were made with industry standards in mind, they diverge from what I might have selected for a purely personal project.
 
-{{< custom-header type="h2" id="velecs" text="Velecs Engine" >}}
+{{< heading-link type="h2" >}} Velecs Engine {{< /heading-link >}}
 
-{{< custom-header type="h3" id="velecs-name" text="Name" >}}
+{{< heading-link type="h3" >}} Name {{< /heading-link >}}
 The journey to the name 'Velecs' (pronounced 'vel-leks' (/vɛl-lɛks/)) began with the initial concept of 'VelocityECS Engine', symbolizing a high-performance engine capable of handling numerous ECS processes efficiently. This name evolved through stages: from 'VelocityECS' to 'VelECS', and finally to 'Velecs'. The name 'Velecs' not only retains the essence of its origins – signifying speed and efficiency – but also stands out as a unique and stylish moniker, capturing the innovative spirit of the engine.
 
-{{< custom-header type="h3" id="velecs-summary" text="Summary" >}}
+{{< heading-link type="h3" >}} Summary {{< /heading-link >}}
 Velecs represents my first venture into game engine development. Harnessing Vulkan for rendering, it was envisioned as a highly configurable engine tailored to the diverse requirements of different gaming projects. Its design philosophy hinges on flexibility, allowing developers the choice between using pre-built solutions akin to Unity's project templates or devising bespoke implementations.
 
-{{< custom-header type="h3" id="velecs-revised-focus-and-future-direction" text="Revised Focus and Future Direction" >}}
+{{< heading-link type="h3" >}} Revised Focus and Future Direction {{< /heading-link >}}
 
 - Shift in Development Focus
 
@@ -69,7 +68,7 @@ Velecs represents my first venture into game engine development. Harnessing Vulk
     Transitioning to Rust is not just about realizing a dream game project; it also opens doors for more personal projects and possibly wider adoption. The immediate goal, however, is to complete a compelling tech demo with the current version of velecs. This will lay the groundwork for future development, potentially in Rust, and will serve as a stepping stone towards achieving my broader objectives in game development.
 
 
-{{< custom-header type="h3" id="velecs-features" text="Features of Velecs Engine" >}}
+{{< heading-link type="h3" >}} Features of Velecs Engine {{< /heading-link >}}
 
 - 3D and 2D Compatibility
 
@@ -120,7 +119,7 @@ Velecs represents my first venture into game engine development. Harnessing Vulk
     
     An immediate mode GUI system is already implemented in Velecs. Dear ImGui, a powerful and efficient library for creating graphical user interfaces, has been integrated to provide intuitive and customizable UI elements.
 
-{{< custom-header type="h3" id="velecs-technology-stack" text="Technology Stack" >}}
+{{< heading-link type="h3" >}} Technology Stack {{< /heading-link >}}
 - #### C++
   My decision to use C++ for this project was influenced by its prevalent demand in the game development industry, particularly with the rising popularity of Unreal Engine, especially since the release of UE5. Many proprietary game engines also favor C++, cementing its status as a go-to language for game development. As for the version, I opted for C++17. While C++20 offers appealing features like modules that could reduce code duplication, I chose C++17 due to its widespread adoption and support, including its status as Unreal Engine's minimum supported version. This made C++17 a more pragmatic choice, ensuring compatibility and relevance within the current game development landscape.
 
@@ -154,7 +153,7 @@ Velecs represents my first venture into game engine development. Harnessing Vulk
 - #### [ImGuizmo](https://github.com/CedricGuillemet/ImGuizmo)
     ImGuizmo is integrated and ready for use, particularly if I venture into creating a game editor in the future.
 
-{{< custom-header type="h3" id="velecs-conclusion" text="Conclusion" >}}
+{{< heading-link type="h3" >}} Conclusion {{< /heading-link >}}
 
 The development of the Velecs Engine has been an enlightening journey, marked by significant challenges and substantial growth. Since its inception, the engine has evolved considerably, with major strides in integrating advanced features like Flecs and continuously adapting to new learning. Each phase of development has necessitated thoughtful reorganizations and enhancements of the codebase.
 
@@ -162,7 +161,7 @@ Currently in its early stages, Velecs has reached a critical juncture. It is equ
 
 At this key point enters Harvest Havoc. Initially envisioned as a game, Harvest Havoc has evolved into a pivotal technical demonstration for Velecs Engine. Its development is a practical application of the engine, serving as an essential test of its capabilities in a real-world context. Harvest Havoc will not only demonstrate the current potential of Velecs Engine but also act as a catalyst for its ongoing refinement and a beacon for its future trajectory.
 
-{{< custom-header type="h3" id="velecs-future-work" text="Future Work" >}}
+{{< heading-link type="h3" >}} Future Work {{< /heading-link >}}
 - #### Fix Z-Depth Buffers and Manage Z-Fighting
     Currently, the z-depth does not affect which mesh is rendered on top. Additionally, there is no mechanism to decide which mesh is rendered on top when multiple meshes have the same z-value.
 
@@ -177,16 +176,16 @@ At this key point enters Harvest Havoc. Initially envisioned as a game, Harvest 
 
 ---
 
-{{< custom-header type="h2" id="harvest-havoc" text="Harvest Havoc" >}}
+{{< heading-link type="h2" >}} Harvest Havoc {{< /heading-link >}}
 
-{{< custom-header type="h3" id="harvest-havoc-summary" text="Summary" >}}
+{{< heading-link type="h3" >}} Summary {{< /heading-link >}}
 Harvest Havoc is a game I am developing, primarily serving as a tech demo for the Velecs Engine. It's inspired by the factory building or resource management automation genre, known for titles like Factorio and Satisfactory. However, my recent encounter with Vectorio, a simpler game in the same genre, was particularly inspiring. Its straightforward graphics, consisting of basic shapes and vector images, highlighted an approach that aligns perfectly with my strengths and interests. As a software engineer more attuned to programming and game design, the idea of creating a game without the need for complex art was appealing. It seemed like a fun and suitable challenge, allowing me to focus on the aspects I enjoy most: developing game mechanics and honing my C++ skills, while not being bogged down by the intricacies of art creation.
 
 In this vein, Harvest Havoc is crafted with simplicity in mind, utilizing basic 2D meshes and vertex colors for its visual elements. This approach sidesteps the need for elaborate art and lets me concentrate on creating clear and engaging gameplay. To aid in-game clarity, I plan to make extensive use of nametags, further supported by the distinct colors, shapes, and sizes of models, ensuring each element is easily distinguishable and adds to the overall player experience.
 
 The game's central theme revolves around survival in a hostile environment, echoing the gritty, military-industrial atmosphere of Factorio and Vectorio. In Harvest Havoc, building and managing an industrial base is intertwined with an ongoing arms race for survival. Players are constantly challenged to advance their technology and expand their defenses to prevent being overrun by alien threats. This “build to survive” ethos is a driving force in the game, compelling players to strategically balance industrial growth with robust defensive measures against the ever-present danger posed by enemy "nests."
 
-{{< custom-header type="h3" id="harvest-havoc-conclusion" text="Conclusion" >}}
+{{< heading-link type="h3" >}} Conclusion {{< /heading-link >}}
 Developing the Velecs Engine to be functional and user-friendly has been a substantial undertaking. As a result, progress on Harvest Havoc has been slow, but it has at least begun. Currently, the game features nametags, several primitive 2D shaped meshes, and the initial stages of resource harvesting, starting with Iron Ore. I am also in the early phases of implementing an inventory system. As this is an ongoing project, the information here may become outdated; there might be more gameplay features added since this writing.
 
 {{< media/youtube/playlist
@@ -196,7 +195,7 @@ Developing the Velecs Engine to be functional and user-friendly has been a subst
     caption="The current latest build of Harvest Havoc. The game is still in active development, I will try and keep updating this playlist with newer videos as I add more features and content."
 >}}
 
-{{< custom-header type="h3" id="harvest-havoc-future-work" text="Future Work" >}}
+{{< heading-link type="h3" >}} Future Work {{< /heading-link >}}
 
 - #### Machines
     Currently, the game only allows manual mining of iron ore. Future developments will introduce machinery for automation. This includes miners to harvest ore, smelters to process iron ore into iron bars, and crafters for constructing various items, adding depth and complexity to resource management.
@@ -233,7 +232,7 @@ Developing the Velecs Engine to be functional and user-friendly has been a subst
 - #### Save & Loading System
     Of course, you'll want your meticulously built factory to persist between gaming sessions. A robust save and loading system will ensure your progress is always safely stored - because, let's face it, in the very, **VERY** rare event of a bug in my perfectly coded game, you wouldn’t want your hard work to vanish into thin air.
 
-{{< custom-header type="h3" id="harvest-havoc-future-work" text="Future Work" >}}
+{{< heading-link type="h3" >}} Future Work {{< /heading-link >}}
 - #### Machines
     Right now all you can do is manually mine iron ore. There is nothing to automate this. There is not even anything to do with the iron ore yet. There is no smelters to process it into iron bars, and no crafter to construct it into something.
 - #### Conveyor Belts
@@ -258,7 +257,7 @@ Developing the Velecs Engine to be functional and user-friendly has been a subst
 
 ---
 
-{{< custom-header type="h2" id="learning" text="Learning" >}}
+{{< heading-link type="h2" >}} Learning {{< /heading-link >}}
 Working on the Velecs Engine project has been a deeply satisfying experience. There's something uniquely rewarding about designing system architectures from scratch and then seeing them come to life through incremental development. Along the way, I've encountered numerous what I'd call 'Oh, that's why that's like that' moments, which have been both enlightening and gratifying.
 
 A prime example of this was while implementing the render pipeline and shaders. It was during this process that I truly grasped why game engines like Unity offer multiple render pipelines, such as the Universal and High Definition Render Pipelines. The choice of pipeline and its implications on materials suddenly made perfect sense.
