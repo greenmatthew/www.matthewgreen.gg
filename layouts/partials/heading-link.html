@@ -1,0 +1,56 @@
+<!-- layouts/partials/heading-link.html -->
+{{/* 
+Partial: heading-link.html
+
+Description:
+    Creates a heading element (h1-h6) with an anchor link that appears on hover.
+    The anchor link is positioned in the left margin and becomes visible when
+    hovering over the heading, making it easy for users to get a direct link
+    to a specific section of content.
+
+Parameters (passed as a dictionary):
+  type (string, required):
+      The heading type, must be one of: "h1", "h2", "h3", "h4", "h5", "h6".
+  id (string, optional):
+      Custom ID for the heading. If not provided, an ID will be automatically
+      generated from the heading text using the anchorize function.
+  Inner (string, required):
+      The heading text content. This is passed from the shortcode's inner content.
+
+Usage example:
+    {{ partial "heading-link.html" (dict "type" "h2" "id" "custom-id" "Inner" "My Heading") }}
+
+Note:
+    This partial is typically used through the heading-link shortcode rather than
+    being called directly in templates.
+*/}}
+
+{{ $type := .type }}
+{{ if not $type }}
+    {{ errorf "Type is missing at some {{ partial \"custom-header.html\" ... }}." }}
+{{ end }}
+
+{{ $text := .Inner }}
+{{ if not $text }}
+    {{ errorf "Inner content is missing at some {{ partial \"custom-header.html\" ... }}." }}
+{{ end }}
+
+{{ $id := .id | default (anchorize $text) }}
+
+{{ $anchorLink := printf `<a class="header-anchor" href="#%s">#</a>` $id }}
+
+{{ if eq $type "h1" }}
+    <h1 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h1>
+{{ else if eq $type "h2" }}
+    <h2 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h2>
+{{ else if eq $type "h3" }}
+    <h3 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h3>
+{{ else if eq $type "h4" }}
+    <h4 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h4>
+{{ else if eq $type "h5" }}
+    <h5 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h5>
+{{ else if eq $type "h6" }}
+    <h6 id="{{ $id }}">{{ $anchorLink | safeHTML }}{{ $text }}</h6>
+{{ else }}
+    {{ errorf "Type '%s' is invalid at some {{ partial \"custom-header.html\" ... }}." $type }}
+{{ end }}

@@ -1,3 +1,42 @@
+/* Anchor links in headers */
+.header-anchor {
+    opacity: 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: opacity 0.2s;
+    position: absolute;
+    left: -1.0em; /* Places it in the margin */
+    /* padding-right: 0.5em; */
+}
+
+@media (max-width: 768px) {
+    .header-anchor {
+        opacity: 0.5; /* Always somewhat visible on mobile */
+        left: -0.75em;   /* Closer to content on narrow screens */
+    }
+}
+  
+h1:hover .header-anchor,
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor,
+h5:hover .header-anchor,
+h6:hover .header-anchor,
+.header-anchor:focus {
+    opacity: 1;
+}
+  
+/* Ensure header positions are relative for absolute positioning of anchors */
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+}
+  
+/* Make sure there's enough space in the container for the margin anchor */
+.container {
+    position: relative;
+    padding-left: 1.5em; /* Add padding to accommodate the anchor */
+}
+
 /* Section spacing and dividers */
 section {
     margin-bottom: 1rem; /* Space between sections */

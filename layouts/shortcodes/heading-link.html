@@ -1,0 +1,34 @@
+<!-- layouts/shortcodes/heading-link.html -->
+{{/*
+Shortcode: heading-link
+
+Description:
+    Creates a heading with an anchor link that appears on hover in the left margin.
+    This makes it easy for users to get a direct link to a specific section of content.
+
+Args:
+    type (string, required):
+        The heading type to use. Must be one of: "h1", "h2", "h3", "h4", "h5", "h6".
+    id (string, optional):
+        Custom ID for the heading. If not provided, an ID will be automatically
+        generated from the heading text using the anchorize function.
+
+Usage Examples:
+    Basic usage:
+        {{< heading-link type="h2" >}}
+            My Section Title
+        {{< /heading-link >}}
+        
+    With custom ID:
+        {{< heading-link type="h3" id="custom-section-id" >}}
+            My Section Title
+        {{< /heading-link >}}
+
+Note:
+    The inner content of the shortcode becomes the text of the heading.
+    The anchor link will only appear when hovering over the heading.
+*/}}
+
+{{ $type := .Get "type" }}
+{{ $id := .Get "id" }}
+{{ partial "heading-link.html" (dict "type" $type "id" $id "Inner" .Inner) }}
