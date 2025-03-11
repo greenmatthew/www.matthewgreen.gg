@@ -20,7 +20,7 @@ draft: false # Swap to false to actually make the module display
         header="University of Texas at Arlington"
         subheader="<p>Aug. 2019 - Dec. 2022</p><p><b>Bachelor of Science in Computer Science</b></p><p>Arlington, TX</p>" >}}
         <ul>
-            <li>GPA: 3.287</li>
+            <li>GPA: 3.3</li>
             <li>
                 Notable Courses Taken:
                 <ul>
@@ -34,7 +34,7 @@ draft: false # Swap to false to actually make the module display
         header="Birdville High School"
         subheader="<p>Aug. 2015 - May 2019</p><p><b>High School Diploma</b></p><p>North Richland Hills, TX</p>" >}}
         <ul>
-            <li>GPA: 4.000</li>
+            <li>GPA: 4.0</li>
             <li>Magna Cum Laude Graduate</li>
             <li>Graduated with <a href="https://tx01000797.schoolwires.net/cms/lib/TX01000797/Centricity/Domain/4926/HB5_Endorsements.pdf">Multiple Endorsements</a> including STEM endorsement.</li>
             <li>Top 25% of graduating class</li>
