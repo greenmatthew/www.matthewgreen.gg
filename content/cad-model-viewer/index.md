@@ -12,11 +12,11 @@ previewImage:
     alt: "CAD Model Viewer Preview"
     attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
-{{< custom-header type="h2" id="links" text="Links" >}}
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [Personal Git Website Repo](https://git.matthewgreen.gg/mgreen/CADModelViewer.git)
 - [GitHub Repo](https://github.com/greenmatthew/CADModelViewer.git)
 
-{{< custom-header type="h2" id="content" text="Content" >}}
+{{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
   - Demo Video
@@ -33,10 +33,10 @@ previewImage:
   - [Google Cardboard](#google-cardboard)
 - [Developer Tutorials](#developer-tutorials)
 
-{{< custom-header type="h2" id="purpose" text="Purpose" >}}
+{{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 I was engaged by [Dr. Raul Fernandez](https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me), from the Mechanical and Aerospace Engineering Department at the University of Texas at Arlington, to independently develop a [VR application](https://www.matthewgreen.gg/cad-model-viewer.php) for his innovative [Mechanical Engineering VR study program](https://mevrstudy.uta.edu). The application is designed to introduce students to Computer Aided Design (CAD) concepts within an immersive 3D virtual environment. The utilization of VR technology facilitates a focused interaction with CAD models, allowing students to engage in real-time exploration while following video lessons.
 
-{{< custom-header type="h2" id="summary" text="Summary" >}}
+{{< heading-link type="h2" >}} Summary {{< /heading-link >}}
 It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington. The benefits of this application and the fact that it is VR, is that it is more interactive, immersive, and easier to have complete focus on learning as you are completely isolated from the real world distractions when inside a VR headset, as opposed to a textbook or a 2D application.
 
 It has been developed to be compatible with a wide range of devices including Google Cardboard for Android, SteamVR for Windows, and Meta (Oculus) Quest devices. Future updates will extend compatibility to more operating systems within each platform, providing students with an array of choices for accessing the app.
@@ -48,7 +48,7 @@ It has been developed to be compatible with a wide range of devices including Go
     attribution="Video Content - © University of Texas at Arlington. All rights reserved."
 >}}
 
-{{< custom-header type="h2" id="lesson-system" text="Lesson System" >}}
+{{< heading-link type="h2" >}} Lesson System {{< /heading-link >}}
 The cornerstone of the application is a feature we refer to as 'lessons', designed to facilitate student learning. These lessons are created by packaging models and/or a video into a Unity AssetBundle, which enables post-deployment downloading—eliminating the need for app updates to access new lessons. Upon launching the application, users encounter a menu where they can open, download, or delete lessons.
 
 Take, for instance, a lesson focused on threaded holes: it might comprise a model displaying a threaded hole, another model presenting a cross-section of the first model, and a video explaining the concept of threaded holes. Students have the flexibility to pause and play the video, as well as translate, rotate, and scale the models, or even hide either or both models as needed.
@@ -90,7 +90,7 @@ Looking ahead, the plan is to extend support for animations, with the aspiration
 {{< /media/gallery >}}
 
 
-{{< custom-header type="h2" id="conclusion" text="Conclusion" >}}
+{{< heading-link type="h2" >}} Conclusion {{< /heading-link >}}
 After nearly two years of dedicated work on this app, it's in the most refined state to date.
 
 The application has been crafted to ensure compatibility across a diverse range of VR systems. Although comprehensive testing on various controllers has not been conducted, the app is designed to function seamlessly with any VR headset that supports SteamVR. Additionally, it's built to work with Google Cardboard on Android and Meta (formerly Oculus) Quest standalone VR headsets, even supporting hand tracking functionality.
@@ -99,7 +99,7 @@ Creating lessons is now a more streamlined process, and while uploading them to 
 
 Now, the app has reached a milestone where it mirrors the initial vision that was set for it. Fundamentally, it's complete; what remains is the addition of quality-of-life features and more content such as animations and extra backgrounds, which were not part of the original goal, to enhance the user experience further.
 
-{{< custom-header type="h2" id="future-work" text="Future Work" >}}
+{{< heading-link type="h2" >}} Future Work {{< /heading-link >}}
 - **Lesson Creation:** It's crucial for Dr. Fernandez to begin crafting real lessons for the application to enable student utilization.
 
 - **SolidWorks Assembly Import:** Enhance the capability to import entire SolidWorks assemblies into Unity, ensuring the proper rendering of textures and animations.
@@ -114,25 +114,7 @@ Now, the app has reached a milestone where it mirrors the initial vision that wa
 
 - **Settings Page Implementation:** Introduce a comprehensive settings page to accommodate various configurable options. A dedicated menu could facilitate adjustments such as selecting the dominant hand, toggling the laser pointer, modifying the menu height, and other preferences.
 
-{{< custom-header type="h2" id="controls" text="Controls" >}}
-- ### Oculus
-  - 'Trigger' - Interact with UI (or swapping between left and right controller for UI interaction)
-  - 'B' - Reset Camera
-- ### SteamVR (or Oculus headsets running SteamVR)
-  - #### Valve Index (Knuckles) Controllers
-    - 'Trigger' - Interact with UI (or swapping between left and right controller for UI interaction)
-    - 'B' - Reset Camera
-  - #### Oculus Touch Controllers
-    - 'Trigger' - Interact with UI (or swapping between left and right controller for UI interaction)
-    - 'B' or 'Y' - Reset Camera
-  - #### HTC Vive Controllers
-    - 'Trigger' - Interact with UI (or swapping between left and right controller for UI interaction)
-    - 'Menu' - Reset Camera
-- ### Google Cardboard
-    - 'Trigger' or 'Screen Press' - Interact with UI
-
-{{< custom-header type="h2" id="developer-tutorials" text="Developer Tutorials" >}}
-
+{{< heading-link type="h2" >}} Developer Tutorials {{< /heading-link >}}
 {{< media/youtube/playlist
     id="PL6PRkJTMYWn2NLR9_9sObfgX2RnSE-tWZ"
     title="CADModelViewer Developer Tutorials"
