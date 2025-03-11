@@ -12,15 +12,16 @@ draft: false # Swap to false to actually make the module display
         header="Unity / VR / Game Console Engineer"
         subheader="<p>Jan. 2024 - Feb. 2025</p><p><b>Rad TV</b></p><p>Remote</p>" >}}
         <p>
-            Developed and maintained the PlayStation VR2 (PSVR2) version of Rad TV for PS5, a hybrid media streaming application—the first of its kind on the PS5.
+            Independently developed and maintained the PlayStation VR2 (PSVR2) version of Rad TV for PS5, a hybrid media streaming application—the first of its kind on the PS5.
         </p>
         <ul>
-            <li>Independently brought an incomplete PS4 + PSVR port to a fully functional PSVR2 release.</li>
+            <li>Brought an incomplete PS4 + PSVR port to a fully functional PSVR2 release.</li>
             <li>Successfully navigated Sony's QA approval process, resolving compliance issues under tight deadlines. This was uniquely challenging as this was the first and only hybrid media application approved for release on PS5.</li>
             <li>Fixed user-reported bugs post-launch and implemented performance improvements.</li>
-            <li>Led major updates, including DLNA/UPnP support, expanding media accessibility.</li>
+            <li>Developed and deployed major updates, including DLNA/UPnP support, expanding media accessibility.</li>
+            <li>Built, uploaded, navigated submission processes, and published app updates through Sony's PlayStation Partners hub.</li>
+            <li>Created and maintained meticulous documentation, including user guides and changelogs, to ensure transparency and usability.</li>
             <li>Managed development tasks using Kanban-style boards to track progress.</li>
-            <li>Maintained meticulous documentation, including user guides and changelogs, to ensure transparency and usability.</li>
         </ul>
     {{< /terminal-css/card >}}
 
