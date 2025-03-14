@@ -20,19 +20,14 @@ previewImage:
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
-    - Demo Video
 - [Story](#story)
 - [Setting](#setting)
-    - Environment Screenshots
 - [Player Management Station (PMS)](#pms)
-    - PMS Screenshots
     - [Beta PMS](#beta-pms)
     - [Alpha PMS](#alpha-pms)
 - [Inventory System](#inventory-system)
-    - Inventory Screenshots
 - [Health System](#health-system)
 - [Combat](#combat)
-    - Enemies Screenshots
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 

@@ -18,18 +18,10 @@ previewImage:
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
-    - Demo Video
 - [Points System](#points-system)
 - [Maps](#maps)
-    - Spaceship (Hub) Screenshot
-    - Sawmill Screenshot
-    - Valley Screenshot
-    - Cliffs Screenshot
-    - Canyon Screenshot
 - [Voting System](#voting-system)
-    - Voting Screenshot
 - [Placement System](#placement-system)
-    - Placement Screenshots
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 
