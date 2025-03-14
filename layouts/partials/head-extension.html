@@ -1,5 +1,4 @@
-{{ $css := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
-
-{{ $css := resources.Get "css/media.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $css := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $css := resources.Get "css/media.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
