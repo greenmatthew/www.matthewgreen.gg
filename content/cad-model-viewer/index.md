@@ -19,18 +19,9 @@ previewImage:
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
 - [Summary](#summary)
-  - Demo Video
 - [Lesson System](#lesson-system)
-  - Lesson System Screenshots
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Controls](#controls)
-  - [Oculus](#oculus)
-  - [SteamVR (or Oculus headsets running SteamVR](#steamvr-or-oculus-headsets-running-steamvr)
-    - [Valve Index (Knuckles) Controllers)](#valve-index-knuckles-controllers)
-    - [Oculus Touch Controllers](#oculus-touch-controllers)
-    - [HTC Vive Controllers](#htc-vive-controllers)
-  - [Google Cardboard](#google-cardboard)
 - [Developer Tutorials](#developer-tutorials)
 
 {{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
