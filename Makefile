@@ -3,8 +3,9 @@
 HUGO = hugo
 PUBLIC_DIR = public
 LOCAL_IP = 192.168.0.221
+INSTALL_DIR = /mnt/data/nginx/config/www
 
-.PHONY: build test test-fast-render clean
+.PHONY: build test test-fast-render clean install
 
 # Build the site
 build:
@@ -21,3 +22,11 @@ test-fast-render:
 # Clean up the compiled site
 clean:
 	rm -rf $(PUBLIC_DIR)
+
+# Install to production directory
+install: build
+	@echo "Syncing to target directory..."
+	sudo rsync -av --delete $(PUBLIC_DIR)/ $(INSTALL_DIR)  # Note the trailing slash in PUBLIC_DIR
+	@echo "Setting appropriate permissions..."
+	sudo chown -R root:root $(INSTALL_DIR)
+	@echo "Installation complete!"
