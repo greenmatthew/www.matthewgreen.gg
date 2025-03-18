@@ -26,7 +26,7 @@ clean:
 # Install to production directory
 install: build
 	@echo "Syncing to target directory..."
-	sudo rsync -av --delete $(PUBLIC_DIR)/ $(INSTALL_DIR)  # Note the trailing slash in PUBLIC_DIR
+	sudo rsync -av --delete $(PUBLIC_DIR)/ $(INSTALL_DIR)
 	@echo "Setting appropriate permissions..."
 	sudo chown -R root:root $(INSTALL_DIR)
 	@echo "Installation complete!"

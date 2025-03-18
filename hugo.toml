@@ -1,4 +1,4 @@
-baseURL = 'https://www.matthewgreen.gg'
+baseURL = 'https://matthewgreen.gg'
 languageCode = 'en-us'
 title = '''Matthew Green's Showcase'''
 theme = 'hugo-terminal.css'
