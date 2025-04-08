@@ -13,7 +13,7 @@ disableKinds = ["section"]
     defaultKeywords = ["Matthew", "Alan", "Green", "portfolio", "resume", "software", "developer", "engineer", "programmer", "video", "game", "engine", "games", "Unity", "C#", "C", "C++", "Git", "VR", "Python", "console", "consoles", "PlayStation", "PlayStation 5", "PS5", "Docker", "Docker Compose", "TrueNAS SCALE", "networking", "computer networking", "user-interface", "user-interfaces", "GUI", "computer graphics", "documentation"]
     
     [params.social]
-        email = "dev@matthewgreen.gg"
+        email = "work@matthewgreen.gg"
         github = "greenmatthew"
         linkedin = "matthewalangreen"
         gitea = "https://git.matthewgreen.gg/mgreen"
