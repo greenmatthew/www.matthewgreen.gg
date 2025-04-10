@@ -11,9 +11,6 @@ previewImage:
     src: "media/preview.png"
     alt: "Velecs Engine & Harvest Havoc Preview"
 ---
-{{< heading-link type="h2" >}} Notice {{< /heading-link >}}
-The content of this page may be outdated. Velecs Engine and Harvest Havoc are actively being worked on, making it hard to keep this webpage perfectly up-to-date. If you want to see the most up-to-date information about these projects, please check to see if there is anything new by checking the latest commits on the repositories below.
-
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
 - [Harvest Havoc's Latest Releases on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc/releases)
 - [Harvest Havoc's Latest Releases on Github Repository](https://github.com/greenmatthew/HarvestHavoc/releases)
