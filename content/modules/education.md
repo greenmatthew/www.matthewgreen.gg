@@ -7,14 +7,6 @@ draft: false # Swap to false to actually make the module display
 ---
 
 {{< terminal-css/timeline >}}
-
-    {{< terminal-css/card
-        header="Customer Service Associate"
-        subheader="<p>Aug. 2019 - Feb. 2020</p><p><b>Walgreens</b></p><p>North Richland Hills, TX</p>" >}}
-        <p>
-            Provided excellent customer service in a fast-paced retail environment, assisting customers while handling transactions, managing shelf inventory, processing photo orders, and performing various other store operations as needed.
-        </p>
-    {{< /terminal-css/card >}}
     
     {{< terminal-css/card
         header="University of Texas at Arlington"
