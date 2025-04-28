@@ -1,6 +1,6 @@
 ---
 title: "Custom Game Engine & Tech Demo"
-id: "custom-game-engine-and-tech-demo"
+id: "game-engine-tech-demo"
 priority: 200  # Controls order in listings (lower numbers appear first)
 type: "project"
 draft: false  # Set to true to hide this project from production
