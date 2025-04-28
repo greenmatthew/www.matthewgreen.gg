@@ -12,8 +12,7 @@ previewImage:
     alt: "Trapstonauts Preview"
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
-- [Matthew's Personal Git Repo](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git)
-- [Github Repo](https://github.com/greenmatthew/Trapstronauts)
+- Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git) | [github.com](https://github.com/greenmatthew/Trapstronauts)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)

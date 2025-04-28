@@ -12,10 +12,9 @@ previewImage:
     alt: "Project Calamity Preview"
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
-- [UTA Senior Designs Blog](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)
-- [Matthew's Personal Git Repo](https://git.matthewgreen.gg/mgreen/ProjectCalamity.git)
-- [Github Repo](https://github.com/greenmatthew/ProjectCalamity)
-- [Matthew's Initial Ideas Document](https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf)
+- UTA Senior Design: [blog.uta.edu](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)
+- Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/ProjectCalamity.git) | [github.com](https://github.com/greenmatthew/ProjectCalamity)
+- Initial Ideas Document: [github.com](https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)

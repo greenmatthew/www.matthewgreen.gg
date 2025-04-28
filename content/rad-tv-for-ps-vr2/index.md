@@ -17,9 +17,10 @@ previewImage:
 {{< /terminal-css/alert >}}
 
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
-- [Rad TV for Web](https://radtv.com/)
-- [Rad TV Documentation](https://docs.rad.live/rad)
-    - [Rad TV for PS5 / PS VR2 Documentation](https://docs.rad.live/rad/getting-started-subscribers-viewers/rad-tv-for-ps5-ps-vr2)
+- Rad TV Website: [radtv.com](https://radtv.com/)
+- Documentation: 
+  - Main Documentation: [docs.rad.live](https://docs.rad.live/rad)
+  - PS5/PSVR2 Documentation: [docs.rad.live](https://docs.rad.live/rad/getting-started-subscribers-viewers/rad-tv-for-ps5-ps-vr2)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Image Gallery](#image-gallery)

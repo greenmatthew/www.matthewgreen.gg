@@ -13,8 +13,7 @@ previewImage:
     attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
-- [Personal Git Website Repo](https://git.matthewgreen.gg/mgreen/CADModelViewer.git)
-- [GitHub Repo](https://github.com/greenmatthew/CADModelViewer.git)
+- Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/CADModelViewer.git) | [github.com](https://github.com/greenmatthew/CADModelViewer.git)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)

@@ -12,6 +12,8 @@ summary: "The site you are looking at right now."
 #     alt: "www.matthewgreen.gg Preview"
 #     class: "auto-fit"
 ---
+{{< heading-link type="h2" >}} Links {{< /heading-link >}}
+- Website Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/www.matthewgreen.gg) | [github.com](https://github.com/greenmatthew/www.matthewgreen.gg)
 
 {{< heading-link type="h2" >}} The Journey {{< /heading-link >}}
 While I had some basic knowledge of HTML and CSS from a high school course, I assumed website hosting would be easy… little did I know.

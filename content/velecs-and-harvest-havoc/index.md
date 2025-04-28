@@ -1,26 +1,21 @@
 ---
-title: "Velecs Engine & Harvest Havoc"
-id: "velecs-engine-and-harvest-havoc"
+title: "Custom Game Engine & Tech Demo"
+id: "custom-game-engine-and-tech-demo"
 priority: 200  # Controls order in listings (lower numbers appear first)
 type: "project"
 draft: false  # Set to true to hide this project from production
 
-summary: "Velecs Engine is a game engine developed entirely from scratch, harnessing the power of C++ alongside Vulkan for its high-performance graphics rendering capabilities. Currently, I am creating Harvest Havoc, a game that presently serves as a technical demonstration of the engine’s capabilities. Both are in active and parallel development."
+summary: "Created a custom game engine from scratch using C++ and Vulkan for graphics rendering. The project evolved into a technical demonstration showcasing various engine capabilities. Initially began development on a game alongside the engine, but both projects ultimately served as technology demonstrations rather than completed products."
 # Preview image for listings
 previewImage:
     src: "media/preview.png"
-    alt: "Velecs Engine & Harvest Havoc Preview"
+    alt: "Custom Game Engine & Tech Demo Preview"
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
-- [Harvest Havoc's Latest Releases on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc/releases)
-- [Harvest Havoc's Latest Releases on Github Repository](https://github.com/greenmatthew/HarvestHavoc/releases)
-- [Harvest Havoc on Personal Git Website Repository](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git)
-- [Harvest Havoc on Github Repository](https://github.com/greenmatthew/HarvestHavoc.git)
-
-**Note: Velecs Engine can be found inside the Harvest Havoc repository as a submodule at libs/velecs/**
-
-- [Velecs Engine on Personal Git Website Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
-- [Velecs Engine on Github Repository](https://github.com/greenmatthew/VelecsEngineCPP.git)
+- Tech Demo Binary Releases: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/HarvestHavoc/releases) | [github.com](https://github.com/greenmatthew/HarvestHavoc/releases)
+- Tech Demo Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git) | [github.com](https://github.com/greenmatthew/HarvestHavoc.git)
+- Game Engine Library Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/Velecs.git) | [github.com](https://github.com/greenmatthew/VelecsEngineCPP.git)
+  - **Note:** The game engine can also be found within the Tech Demo repository as a submodule at `libs/velecs/`
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 - [Purpose](#purpose)
