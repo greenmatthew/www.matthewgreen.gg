@@ -33,7 +33,7 @@ update-repo:
 # Update repo, build, and deploy to production directory
 install: update-repo build
     @echo "Syncing to target directory..."
-    sudo rsync -av --delete --info=progress1 {{public_dir}}/ {{install_dir}}
+    sudo rsync -av --delete --stats {{public_dir}}/ {{install_dir}}
     @echo "Setting appropriate permissions..."
     sudo chown -R root:root {{install_dir}}
     @echo "Installation complete!"
