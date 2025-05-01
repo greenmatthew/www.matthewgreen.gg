@@ -5,7 +5,7 @@ priority: 100  # Controls order in listings (lower numbers appear first)
 type: "project"
 draft: false  # Set to true to hide this project from production
 
-summary: "It is a learning application, made in Unity, intended to be a companion application to the current curriculum of Introduction to Engineering Design courses at the University of Texas at Arlington."
+summary: "Built a prototype VR learning application, made in Unity, intended to be a companion application for students learning Computer-Aided Design (CAD) at the University of Texas at Arlington that features interactive video lessons."
 # Preview image for listings
 previewImage:
     src: "media/preview.png"

@@ -5,7 +5,7 @@ priority: 500  # Controls order in listings (lower numbers appear first)
 type: "project"
 draft: false  # Set to true to hide this project from production
 
-summary: "The site you are looking at right now."
+summary: "I have created my own portfolio website from scratch and am self-hosting it. The site was built using a static site generator, HUGO. It's site you are looking at right now."
 # Preview image for listings
 # previewImage:
 #     src: "preview.jpg"
