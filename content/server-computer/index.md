@@ -29,15 +29,9 @@ A hobby of mine as of lately is working on an old server computer that I bought.
 In total I am self-hosting with Docker containers a portfolio website, git website, cloud storage, media streaming service, JupyterLabs service, and a game server or two occasionally. All accessible by me or anyone else in the world, whose been giving access, using my domain name with the service's respective subdomain and an associated wildcard SSL certificate to ensure privacy of data. I am sure this list will grow over time as I find new services that I need in my life.
 
 {{< heading-link type="h2" >}} Website {{< /heading-link >}}
-A portfolio website, that you are looking at right now, that shows off my projects, skills, work experience, education, and tells you more about myself.
+The portfolio website that you are looking at right now!
 
-I started with a little knowledge about HTML, CSS, and hosting a website. I started with searching for a
-style template that I resonated with me. I landed on a style that looked like a terminal of course. I
-then got to work writing HTML adding content.
-
-After a while I found, a static webpage workflow was frustrating to handle with more than one webpage with common elements, so I tried to change everything to dynamic webpages. I ran into some issues trying to do that with just HTML, however, I switched to using a mixture of HTML and PHP to better suit my needs. While I do not use much PHP, it helped to break down the website into different modules and I reuse said modules, to prevent code duplication.
-
-I used Git, like I do for any project, for safely storing and doing version control of the source code on my personal Git website [here](https://git.matthewgreen.gg/mgreen/matthewgreen.gg) or on GitHub [here](https://github.com/greenmatthew/matthewgreen.gg).
+Learn more about that journey [here](/www.matthewgreen.gg).
 
 
 {{< heading-link type="h2" >}} Git Website {{< /heading-link >}}
