@@ -7,7 +7,6 @@ draft: false # Swap to false to actually make the module display
 ---
 
 {{< terminal-css/timeline >}}
-    
     {{< terminal-css/card
         header="University of Texas at Arlington"
         subheader="<p>Aug. 2019 - Dec. 2022</p><p><b>Bachelor of Science in Computer Science</b></p><p>Arlington, TX</p>" >}}

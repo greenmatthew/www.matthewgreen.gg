@@ -7,6 +7,7 @@ draft: false # Swap to false to actually make the module display
 ---
 
 ### Soft Skills
+
 - Collaboration
 - Communication
 - Troubleshooting
@@ -16,6 +17,7 @@ draft: false # Swap to false to actually make the module display
 - Organization
 
 ### Technical Skills
+
 - Unity Engine (Advanced)
 - Git (Advanced)
 - C# (Advanced/Expert)
