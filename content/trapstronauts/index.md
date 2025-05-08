@@ -9,12 +9,14 @@ summary: "A local multiplayer party game where 2-4 players vote on a map. Then r
 # Preview image for listings
 previewImage:
     src: "media/preview.png"
-    alt: "Trapstonauts Preview"
+    alt: "Trapstronauts Preview"
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
+
 - Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git) | [github.com](https://github.com/greenmatthew/Trapstronauts)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
+<!-- markdownlint-disable MD051 -->
 - [Purpose](#purpose)
 - [Summary](#summary)
 - [Points System](#points-system)
@@ -23,6 +25,7 @@ previewImage:
 - [Placement System](#placement-system)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
+<!-- markdownlint-enable MD051 -->
 
 {{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 This is a video game project made for the 2022 Fall semester CSE Game Design Special Topics course at the University of Texas at Arlington.
@@ -40,7 +43,6 @@ It is a local multiplayer party game, made in Godot Engine 3, which draws heavy 
 
 A motif of the game is that the players are always able to compete and harass other players through different game functionalities, even before they are racing for points. Which makes it the perfect game to play with a group of friends to laugh over.
 
-
 {{< heading-link type="h2" >}} Points System {{< /heading-link >}}
 
 {{< media/image
@@ -57,7 +59,6 @@ There are many ways to get points, some events give you more points than others:
 - Being the first person to finish, if not the only person to finish.
 - Kills from traps you have placed.
 - Post-mortem arrival to the finish line.
-
 
 {{< heading-link type="h2" >}} Maps {{< /heading-link >}}
 There are multiple maps included with the demo build.
@@ -104,7 +105,6 @@ There are multiple maps included with the demo build.
     {{< /media/gallery-row >}}
 {{< /media/gallery >}}
 
-
 {{< heading-link type="h2" >}} Voting System {{< /heading-link >}}
 
 {{< media/image
@@ -114,7 +114,6 @@ There are multiple maps included with the demo build.
 >}}
 
 The players vote on which map they want, however, instead of a majority vote winning, it is proportionally selected at random. Meaning each vote has an equal chance of being randomly selected. For example, if two players voted on Sawmill and one voted on Valley, then it would be a two-thirds chance of being Sawmill and one-thirds chance of being Valley, once the players start the game at the portal room.
-
 
 {{< heading-link type="h2" >}} Placement System {{< /heading-link >}}
 
@@ -144,48 +143,47 @@ At the start of every round, the players get a random assortment of items, which
 
 The platforms are for making or blocking paths to the finish line. Then for the traps they can kill players making it harder to get to the finish but can also sometimes be used as a platform. Finally, there is the bombs, which blow up a small areas of placed items, which is useful for if the map is impossible or if a player wants to remove a group of items. Most players usually have their own path to get to the finish through the map and they place items to make their path easier or to make others' paths harder to navigate without dying.
 
-
 {{< heading-link type="h2" >}} Conclusion {{< /heading-link >}}
 
 The final demo build was genuinely fun to play with some friends. Although it did have more bugs in it then we would like to admit. Overall, it was a remarkable success. If it had more content it really be a contender for publishing on Steam or other digital game vendors.
 
-
 {{< heading-link type="h2" >}} Future Work {{< /heading-link >}}
 
 If we were to keep working on the game there is many things we would have liked to add.
+
 - Finish the hub map. It was missing many features from the original vision of the game.
 
-    - A storage bay - containing a mini-game to play while waiting for other players.
+  - A storage bay - containing a mini-game to play while waiting for other players.
 
-    - An engine room - where the host player can tweak settings about the game.
+  - An engine room - where the host player can tweak settings about the game.
 
-    - Better bedrooms - they were supposed to have beds in them, and wardrobes used to customize and choose characters. Also motion sensing doors, that only open to the owner's motion. You could lock a player in your bedroom if you wanted.
+  - Better bedrooms - they were supposed to have beds in them, and wardrobes used to customize and choose characters. Also motion sensing doors, that only open to the owner's motion. You could lock a player in your bedroom if you wanted.
 
 - More maps of course.
 
-    - Sun - where solar flares shoot out and cook anyone hit by one as a unique environmental hazard.
+  - Sun - where solar flares shoot out and cook anyone hit by one as a unique environmental hazard.
 
-    - Mini Moons - where multiple miniature moons are present and have a gravitational pull on the players as they get near, making it difficult to get past them to the finish.
+  - Mini Moons - where multiple miniature moons are present and have a gravitational pull on the players as they get near, making it difficult to get past them to the finish.
 
-    - Mountainous or City Skyline Planet - where the players are occasionally hit by gusts of wind, which happen at random times with random force and duration.
+  - Mountainous or City Skyline Planet - where the players are occasionally hit by gusts of wind, which happen at random times with random force and duration.
 
-    - Caverns Planet - where the players are underground in a cavern and there is platforms that crumble a second after they are touched, sending any player or players on top to fall to their deaths. Any crumbled platforms would reappear the following round.
+  - Caverns Planet - where the players are underground in a cavern and there is platforms that crumble a second after they are touched, sending any player or players on top to fall to their deaths. Any crumbled platforms would reappear the following round.
 
-    - Ice Planet - where all the starting surfaces start with ice, causing the players to slide when moving on to it. Occasionally a blizzard will come through making it hard to see. There is a small warning before the blizzard so you at least have a little time to hunker down. During a blizzard there is a chance for the surfaces of player placed items, if not already, to become covered in ice.
+  - Ice Planet - where all the starting surfaces start with ice, causing the players to slide when moving on to it. Occasionally a blizzard will come through making it hard to see. There is a small warning before the blizzard so you at least have a little time to hunker down. During a blizzard there is a chance for the surfaces of player placed items, if not already, to become covered in ice.
 
-    - Stormy Planet - the overall visibility of the map is limited because from an intense thunderstorm occurring. At occasional, random intervals lightning strikes greatly increasing visibility for a short period before fading back to darkness. An additional idea would be where there is a small change that the lightning could strike a player if they do not have a structure above them. Also if the lighting strikes metal, then it will kill any players touching the metal.
+  - Stormy Planet - the overall visibility of the map is limited because from an intense thunderstorm occurring. At occasional, random intervals lightning strikes greatly increasing visibility for a short period before fading back to darkness. An additional idea would be where there is a small change that the lightning could strike a player if they do not have a structure above them. Also if the lighting strikes metal, then it will kill any players touching the metal.
 
 - More items to place
 
-    - An alternative bigger bomb, with a larger radius of item removal.
+  - An alternative bigger bomb, with a larger radius of item removal.
 
-    - Rotator - creates a physical rotation system, which rotates any cardinally adjacent placed items.
+  - Rotator - creates a physical rotation system, which rotates any cardinally adjacent placed items.
 
-    - Alien Goo - a sticky substance that attaches items together into one whole physical structure. It also slows down a player if they are touching it. This can be used to attach more items to a rotator's rotation system.
+  - Alien Goo - a sticky substance that attaches items together into one whole physical structure. It also slows down a player if they are touching it. This can be used to attach more items to a rotator's rotation system.
 
-    - Electrifier - when placed next to metal items, it kills anything touching them, upon a fixed timer going off. The electrical system can be extended by placing metal items adjacent to other metal items.
+  - Electrifier - when placed next to metal items, it kills anything touching them, upon a fixed timer going off. The electrical system can be extended by placing metal items adjacent to other metal items.
 
-    - And much more, but these are the most notable.
+  - And much more, but these are the most notable.
 
 - Laser Reflections - so when a rotator rotates a laser or a laser drone shoots at the player, any metal items reflect the laser, possibly causing a chain reaction of reflections and possibly killing players.
 

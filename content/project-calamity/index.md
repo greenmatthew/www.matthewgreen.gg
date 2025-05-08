@@ -12,23 +12,26 @@ previewImage:
     alt: "Project Calamity Preview"
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
+
 - UTA Senior Design: [blog.uta.edu](https://blog.uta.edu/cseseniordesign/2022/10/21/project-calamity/)
 - Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/ProjectCalamity.git) | [github.com](https://github.com/greenmatthew/ProjectCalamity)
 - Initial Ideas Document: [github.com](https://github.com/greenmatthew/ProjectCalamity/blob/master/_Resources/Notes/Ideas.pdf)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
+<!-- markdownlint-disable MD051 -->
 - [Purpose](#purpose)
 - [Summary](#summary)
 - [Story](#story)
 - [Setting](#setting)
 - [Player Management Station (PMS)](#pms)
-    - [Beta PMS](#beta-pms)
-    - [Alpha PMS](#alpha-pms)
+  - [Beta PMS](#beta-pms)
+  - [Alpha PMS](#alpha-pms)
 - [Inventory System](#inventory-system)
 - [Health System](#health-system)
 - [Combat](#combat)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
+<!-- markdownlint-enable MD051 -->
 
 {{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 This is a video game project made for the 2022 Summer & Fall semester CSE Senior Design I & II courses at the University of Texas at Arlington.
@@ -117,6 +120,7 @@ The bounty hunter's spaceship crash lands on the outskirts of the compound. In a
 The Player Management Station (PMS) devices are a critical part of the gameplay loop and found all over the map. There are two different types of PMS: Alpha and Beta. They both have modules in them allowing the player to do certain things to help them survive. Beta PMS have less modules and reduced capabilities of said modules, whereas Alpha PMS have full the same exact modules with full capabilities and even more modules.
 
 {{< heading-link type="h2" >}} Beta PMS {{< /heading-link >}}
+
 - Suit Upgrade Module - Allowing upgrading of armor and movement speed.
 
 - Weapon Upgrade Module - Allowing upgrading of weapons.
@@ -126,6 +130,7 @@ The Player Management Station (PMS) devices are a critical part of the gameplay 
 - Quests Module - Where you can accept quests and turn in quest items and collect finished quests' rewards.
 
 {{< heading-link type="h2" >}} Alpha PMS {{< /heading-link >}}
+
 - All the same modules from the Beta PMS, but these modules can push and pull items into or from the Stash Module.
 
 - Stash Module - A place to store items for later use.
@@ -162,6 +167,7 @@ These stations are inspired by the Dark Souls franchise bon fires and the Dead S
 {{< /media/gallery >}}
 
 The player's inventory contains multiple different slots for equipment.
+
 - Primary Weapon Slot - Can be used to equip long guns only.
 
 - Secondary Weapon Slot - Can be used to equip long guns or pistols.
@@ -186,7 +192,9 @@ Both the vests and backpacks have internal storage inside them, where you can mo
 
 - Health is regenerated from health kits or resting at an Alpha PMS; however, health kits are incredibly rare to find and costly to craft.
 
-*** ***Notice: None of these features are in the final build. There is just 100 health points and is unrecoverable unless you restart the game.*** ***
+{{< terminal-css/alert type="error" >}}
+    None of these features are in the final build. There is just 100 health points and is unrecoverable unless you restart the game.
+{{< /terminal-css/alert >}}
 
 {{< heading-link type="h2" >}} Combat {{< /heading-link >}}
 

@@ -17,16 +17,19 @@ previewImage:
 {{< /terminal-css/alert >}}
 
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
+
 - Rad TV Website: [radtv.com](https://radtv.com/)
-- Documentation: 
+- Documentation:
   - Main Documentation: [docs.rad.live](https://docs.rad.live/rad)
   - PS5/PSVR2 Documentation: [docs.rad.live](https://docs.rad.live/rad/getting-started-subscribers-viewers/rad-tv-for-ps5-ps-vr2)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
+<!-- markdownlint-disable MD051 -->
 - [Image Gallery](#image-gallery)
 - [Summary](#summary)
 - [The Journey](#the-journey)
 - [Documentation](#documentation)
+<!-- markdownlint-enable MD051 -->
 
 {{< heading-link type="h2" >}} Image Gallery {{< /heading-link >}}
 {{< media/gallery >}}
@@ -125,7 +128,7 @@ In the meanwhile, my manager was learning about how to configure the application
 
 In parallel with my build process efforts, my manager was learning the requirements for publishing on Sony's platform. While he handled the publishing settings configuration, I took on the responsibility of learning how to upload, process, and schedule both the initial build and subsequent patches. Both processes proved to be challenging, requiring numerous support tickets with Sony. Despite these obstacles, we successfully prepared the application for release.
 
-Our next challenge was navigating Sony's rigorous QA process. The initial submission returned numerous "Must Fix" issues for both application versions. This process became unexpectedly lengthy as we encountered shifting requirements—each time we addressed all known issues, we either discovered our fixes were insufficient or received new previously unreported requirements. Sony was particularly stringent about performance, necessitating significant refactoring of UI code originally written by previous developers. 
+Our next challenge was navigating Sony's rigorous QA process. The initial submission returned numerous "Must Fix" issues for both application versions. This process became unexpectedly lengthy as we encountered shifting requirements—each time we addressed all known issues, we either discovered our fixes were insufficient or received new previously unreported requirements. Sony was particularly stringent about performance, necessitating significant refactoring of UI code originally written by previous developers.
 
 Perhaps the most surprising requirement came during our fourth submission cycle, when Sony suddenly mandated support for the PS5 media remote for our media application—a feature never previously mentioned as required for our VR version. Since Unity's PS5 input package lacked this functionality, I implemented it myself though a quite annoying pattern: creating a C++ wrapper library to interface with Sony's native input API, then building a C# wrapper to call the functions in the C++ wrapper to integrate with Unity. This was actually quite fun to do, however, I was certainly annoyed when some buttons did not work, only to discover that quick development builds did not get access to some buttons. I had to spend a whole bunch of extra time doing the hybrid build process described earlier. No--the documentation for Sony's input API does not mention this.
 

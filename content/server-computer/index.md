@@ -13,6 +13,7 @@ previewImage:
     class: "auto-fit"
 ---
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
+<!-- markdownlint-disable MD051 -->
 - [Summary](#summary)
 - [Website](#website)
 - [Git Website](#git-website)
@@ -22,6 +23,7 @@ previewImage:
 - [Game Servers](#game-servers)
 - [Other Services](#other-services)
 - [Future Work](#future-work)
+<!-- markdownlint-enable MD051 -->
 
 {{< heading-link type="h2" >}} Summary {{< /heading-link >}}
 A hobby of mine as of lately is working on an old server computer that I bought. At first, I just wanted a dedicated computer for hosting video game servers for me and my friends. Next thing I know I am buying a server rack for it, trying different operating systems for my use case, and seeing the infinite possibilities of self-hosting with Docker containers. I can say that I am now a huge fan of self-hosting and Docker containers. I am even hosting this website off it and several other services. As well as upgrading security with SSL certificates and solving the issue of having a dynamic public IP address for these services.
@@ -33,7 +35,6 @@ The portfolio website that you are looking at right now!
 
 Learn more about that journey [here](/www.matthewgreen.gg).
 
-
 {{< heading-link type="h2" >}} Git Website {{< /heading-link >}}
 I have setup my own personal Git website where I store all my projects. It acts as redundancy to GitHub,
 but also allows me to circumvent GitHub restrictions on file sizes, push sizes, and Git LFS storage
@@ -43,7 +44,7 @@ GitHub would allow.
 At first, I was having many issues with repositories becoming corrupted or just being missing, but after
 switching from a SQLite3 database to a MySQL database everything worked great. Now I can use Git just
 like I would with GitHub, and it has been pleasant to have.
-    
+
 You can see this website and all my public repositories [here](https://git.matthewgreen.gg/mgreen).
 
 {{< heading-link type="h2" >}} Wildcard SSL/TLS Certificate {{< /heading-link >}}
@@ -72,19 +73,19 @@ I have many things that I would like to do in the future with my server computer
 
 - Build a brand-new custom server computer from scratch. My current server computer is an old Dell PowerEdge R710, which came out all the way back in 2009. I was only 7 or 8 at the time of its release. Everything on it could be many times better. While, it still works incredibly well for most of my use cases, it is slowly running out of memory from all the docker containers. Also, some game servers require better hardware than what I have. So, I want something better. What I would like to see in it.
 
-    - Discrete GPU for on-the-fly video transcoding and hosting game servers.
+  - Discrete GPU for on-the-fly video transcoding and hosting game servers.
 
-    - Better bandwidth Ethernet port, such as 2.5 Gbps or ever 10 Gbps ports, for quicker local file transfers.
+  - Better bandwidth Ethernet port, such as 2.5 Gbps or ever 10 Gbps ports, for quicker local file transfers.
 
-    - Better CPU with faster clock speeds and a newer architecture and plenty of cores for all my Docker containers. My current system has a 2.67 GHz max clock speed per core. Which is not enough for some game servers or high player counts.
+  - Better CPU with faster clock speeds and a newer architecture and plenty of cores for all my Docker containers. My current system has a 2.67 GHz max clock speed per core. Which is not enough for some game servers or high player counts.
 
-    - Better and quieter fans and liquid cooling. The server computer I have is quite noticeably loud.
+  - Better and quieter fans and liquid cooling. The server computer I have is quite noticeably loud.
 
-    - 3.5” and 2.5” drive bays, my current server computer only has 2.5” which are not really used for hard drives anymore which seems to be the best storage for my needs, because I need lots of storage not necessarily the fastest with a 2.5” SSD.
+  - 3.5” and 2.5” drive bays, my current server computer only has 2.5” which are not really used for hard drives anymore which seems to be the best storage for my needs, because I need lots of storage not necessarily the fastest with a 2.5” SSD.
 
-    - A cache SSD drive, for caching frequently requested files and file transfers.
+  - A cache SSD drive, for caching frequently requested files and file transfers.
 
-    - More and newer architecture memory. My current system has only 32 GB of DDR3 memory.
+  - More and newer architecture memory. My current system has only 32 GB of DDR3 memory.
 
 - Maybe getting a rack mountable JBOD or Just A Bunch of Disks, which is just a chassis that has several drive bays. Allowing the expansion of storage on the server computer without having to upgrade the drives themselves. Then switching to a ZFS file system for redundancy rather than using RAID with a RAID controller.
 

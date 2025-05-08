@@ -13,15 +13,18 @@ previewImage:
     attribution: "Image Content - © University of Texas at Arlington. All rights reserved."
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
+
 - Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/CADModelViewer.git) | [github.com](https://github.com/greenmatthew/CADModelViewer.git)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
+<!-- markdownlint-disable MD051 -->
 - [Purpose](#purpose)
 - [Summary](#summary)
 - [Lesson System](#lesson-system)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Developer Tutorials](#developer-tutorials)
+<!-- markdownlint-enable MD051 -->
 
 {{< heading-link type="h2" >}} Purpose {{< /heading-link >}}
 I was engaged by [Dr. Raul Fernandez](https://www.uta.edu/academics/faculty/profile?username=fernande#About%20Me), from the Mechanical and Aerospace Engineering Department at the University of Texas at Arlington, to independently develop a VR application for his innovative [Mechanical Engineering VR study program](https://mevrstudy.uta.edu). The application is designed to introduce students to Computer Aided Design (CAD) concepts within an immersive 3D virtual environment. The utilization of VR technology facilitates a focused interaction with CAD models, allowing students to engage in real-time exploration while following video lessons.
@@ -79,7 +82,6 @@ Looking ahead, the plan is to extend support for animations, with the aspiration
     {{< /media/gallery-row >}}
 {{< /media/gallery >}}
 
-
 {{< heading-link type="h2" >}} Conclusion {{< /heading-link >}}
 After nearly two years of dedicated work on this app, it's in the most refined state to date.
 
@@ -90,6 +92,7 @@ Creating lessons is now a more streamlined process, and while uploading them to 
 Now, the app has reached a milestone where it mirrors the initial vision that was set for it. Fundamentally, it's complete; what remains is the addition of quality-of-life features and more content such as animations and extra backgrounds, which were not part of the original goal, to enhance the user experience further.
 
 {{< heading-link type="h2" >}} Future Work {{< /heading-link >}}
+
 - **Lesson Creation:** It's crucial for Dr. Fernandez to begin crafting real lessons for the application to enable student utilization.
 
 - **SolidWorks Assembly Import:** Enhance the capability to import entire SolidWorks assemblies into Unity, ensuring the proper rendering of textures and animations.
