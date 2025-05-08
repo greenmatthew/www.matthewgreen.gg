@@ -1,0 +1,6 @@
+{
+    // Allow inline HTML elements
+    "MD033": false,
+    // Disable line length restrictions
+    "MD013": false
+}
