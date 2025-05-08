@@ -8,7 +8,7 @@ draft: false # Swap to false to actually make the module display
 
 {{< media/image src="modules/about-me/me-profile-pic-square.jpg" alt="Me" size="small" >}}
 
-Hello, I'm Matthew Green—a 23-year-old Software Engineer with a passion for both tech and a well-rounded lifestyle. When I'm not immersed in coding or game development, you'll find me playing video games, diving into Dungeons & Dragons sessions, rock climbing, or hitting the tennis courts. I also love collecting physical copies of movies and TV series, and I keep busy with self-hosting projects and managing my homelab.
+Hello, I'm Matthew Green—a 24-year-old Software Engineer with a passion for both tech and a well-rounded lifestyle. When I'm not immersed in coding or game development, you'll find me playing video games, diving into Dungeons & Dragons sessions, rock climbing, or hitting the tennis courts. I also love collecting physical copies of movies and TV series, and I keep busy with self-hosting projects and managing my homelab.
 
 I began programming 7.5 years ago after taking a Computer Programming & Game Design course in high school, which sparked my passion for game development. From that moment, I knew exactly what I wanted to do. After graduating high school, I attended the University of Texas at Arlington to earn my Bachelor's Degree in Computer Science.
 
