@@ -15,7 +15,7 @@ previewImage:
 
 - Tech Demo Binary Releases: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/HarvestHavoc/releases) | [github.com](https://github.com/greenmatthew/HarvestHavoc/releases)
 - Tech Demo Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/HarvestHavoc.git) | [github.com](https://github.com/greenmatthew/HarvestHavoc.git)
-- Game Engine Library Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/Velecs.git) | [github.com](https://github.com/greenmatthew/VelecsEngineCPP.git)
+- Game Engine Library Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/velecs-cpp.git) | [github.com](https://github.com/greenmatthew/velecs-cpp.git)
   - **Note:** The game engine can also be found within the Tech Demo repository as a submodule at `libs/velecs/`
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
