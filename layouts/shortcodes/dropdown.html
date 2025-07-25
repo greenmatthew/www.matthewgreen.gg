@@ -1,0 +1,53 @@
+{{/*
+Shortcode: dropdown
+
+Description:
+    Creates a collapsible dropdown section that can be toggled open/closed.
+    Perfect for showing additional content that users can choose to view.
+
+Args:
+    title (string, required):
+        The text to display on the toggle button.
+    open (bool, optional):
+        If "true", the dropdown starts expanded. Defaults to "false".
+
+Usage Examples:
+    Basic usage:
+        {{< dropdown title="More Skills" >}}
+            - Additional skill 1
+            - Additional skill 2
+        {{< /dropdown >}}
+        
+    Start expanded:
+        {{< dropdown title="Show Details" open="true" >}}
+            Content here...
+        {{< /dropdown >}}
+
+Note:
+    Uses pure CSS and a small bit of JavaScript for the toggle functionality.
+    Styled to match the terminal.css theme.
+*/}}
+
+{{ $title := .Get "title" }}
+{{ $open := eq (.Get "open" | default "false") "true" }}
+{{ $id := printf "dropdown-%d" (add 1000 (mul (now.UnixMilli) (len $title))) }}
+
+<div class="dropdown-container">
+    <button 
+        class="dropdown-toggle" 
+        onclick="toggleDropdown('{{ $id }}')"
+        aria-expanded="{{ $open }}"
+        aria-controls="{{ $id }}"
+    >
+        <span class="dropdown-arrow" id="{{ $id }}-arrow">{{ if $open }}▼{{ else }}▶{{ end }}</span>
+        {{ $title }}
+    </button>
+    
+    <div 
+        class="dropdown-content" 
+        id="{{ $id }}"
+        {{ if not $open }}style="display: none;"{{ end }}
+    >
+        {{ .Inner | markdownify | safeHTML }}
+    </div>
+</div>
