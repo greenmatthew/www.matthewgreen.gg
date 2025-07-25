@@ -12,7 +12,7 @@ draft: false # Swap to false to actually make the module display
         header="Unity / VR / Game Console Engineer"
         subheader="<p>Jan. 2024 - Feb. 2025</p><p><b>Rad TV</b></p><p>Remote</p>" >}}
         <p>
-            Independently developed and maintained the PlayStation VR2 (PSVR2) version of Rad TV for PS5, a hybrid media streaming application—the first of its kind on the PS5.
+            Independently developed and maintained the PlayStation VR2 (PSVR2) version of <a href="/rad-tv-for-ps-vr2/">Rad TV for PS5 / PS VR2</a>, a hybrid media streaming application—the first of its kind on the PS5.
         </p>
         <ul>
             <li>Brought an incomplete PS4 + PSVR port to a fully functional PSVR2 release.</li>
