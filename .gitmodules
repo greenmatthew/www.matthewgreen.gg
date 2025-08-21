@@ -4,6 +4,6 @@
 [submodule "static/dnd-near"]
 	path = static/dnd-near
 	url = https://github.com/greenmatthew/dnd-near.git
-[submodule "static/monthly-budget-planner"]
-	path = static/monthly-budget-planner
+[submodule "apps/monthly-budget-planner"]
+	path = apps/monthly-budget-planner
 	url = https://github.com/greenmatthew/monthly-budget-planner.git

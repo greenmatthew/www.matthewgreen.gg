@@ -10,9 +10,21 @@ install_dir := "/mnt/data/nginx/config/www"
 @help:
     just -l
 
+# Build apps and sync to static directory
+build-apps:
+    echo "Building monthly-budget-planner..."
+    {{hugo}} --source apps/monthly-budget-planner --minify --cleanDestinationDir
+    echo "Syncing to static directory..."
+    rsync -av --delete apps/monthly-budget-planner/public/ static/monthly-budget-planner/
+    echo "Apps built successfully!"
+
 # Build the site
-build:
+build: build-apps
     {{hugo}}
+
+# Start the Hugo server with fast render disabled (good for testing content changes)
+test-with-apps: build-apps
+    {{hugo}} server --disableFastRender --bind=0.0.0.0 --baseURL=http://{{local_ip}}:1313
 
 # Start the Hugo server with fast render disabled (good for testing content changes)
 test:
@@ -38,6 +50,9 @@ install: update-repo build
     sudo chown -R root:root {{install_dir}}
     @echo "Installation complete!"
 
+clean-apps:
+    rm -rf apps/monthly-budget-planner/public/
+
 # Clean up the compiled site
-clean:
+clean: clean-apps
     rm -rf {{public_dir}}
