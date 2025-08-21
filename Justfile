@@ -52,4 +52,5 @@ install: update-repo build
 
 # Clean up the compiled site
 clean:
+    rm -rf apps/monthly-budget-planner/public/
     rm -rf {{public_dir}}
