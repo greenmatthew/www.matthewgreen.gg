@@ -15,7 +15,7 @@ build-apps:
     echo "Building monthly-budget-planner..."
     {{hugo}} --source apps/monthly-budget-planner --minify --cleanDestinationDir
     echo "Syncing to static directory..."
-    rsync -av --delete apps/monthly-budget-planner/public/ public/monthly-budget-planner/
+    rsync --mkpath -av --delete apps/monthly-budget-planner/public/ public/monthly-budget-planner/
     echo "Apps built successfully!"
 
 # Build the site
