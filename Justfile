@@ -15,7 +15,7 @@ build-apps:
     echo "Building monthly-budget-planner..."
     {{hugo}} --source apps/monthly-budget-planner --minify --cleanDestinationDir
     echo "Syncing to static directory..."
-    rsync -av --delete apps/monthly-budget-planner/public/ static/monthly-budget-planner/
+    rsync -av --delete apps/monthly-budget-planner/public/ public/monthly-budget-planner/
     echo "Apps built successfully!"
 
 # Build the site
@@ -50,9 +50,6 @@ install: update-repo build
     sudo chown -R root:root {{install_dir}}
     @echo "Installation complete!"
 
-clean-apps:
-    rm -rf apps/monthly-budget-planner/public/
-
 # Clean up the compiled site
-clean: clean-apps
+clean:
     rm -rf {{public_dir}}
