@@ -13,7 +13,7 @@ previewImage:
 ---
 {{< heading-link type="h2" >}} Links {{< /heading-link >}}
 
-- Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/matthewgreen/Trapstronauts.git) | [github.com](https://github.com/greenmatthew/Trapstronauts)
+- Project Repository: [git.matthewgreen.gg](https://git.matthewgreen.gg/mgreen/trapstronauts) | [github.com](https://github.com/greenmatthew/trapstronauts)
 
 {{< heading-link type="h2" >}} Content {{< /heading-link >}}
 <!-- markdownlint-disable MD051 -->
