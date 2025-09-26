@@ -3,7 +3,7 @@
 # Define variables
 hugo := "hugo"
 public_dir := "public"
-apps_dir := "{{public}}/apps"
+apps_dir := public_dir / "apps"
 local_ip := "192.168.0.221"
 install_dir := "/mnt/data/nginx/config/www"
 
