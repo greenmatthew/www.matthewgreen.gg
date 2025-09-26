@@ -3,6 +3,7 @@
 # Define variables
 hugo := "hugo"
 public_dir := "public"
+apps_dir := "{{public}}/apps"
 local_ip := "192.168.0.221"
 install_dir := "/mnt/data/nginx/config/www"
 
@@ -14,9 +15,11 @@ install_dir := "/mnt/data/nginx/config/www"
 build-apps:
     echo "Building monthly-budget-planner..."
     {{hugo}} --source apps/monthly-budget-planner --minify --cleanDestinationDir
-    echo "Syncing to static directory..."
-    rsync --mkpath -av --delete apps/monthly-budget-planner/public/ public/monthly-budget-planner/
-    echo "Apps built successfully!"
+    echo "Syncing monthly-budget-planner to public directory..."
+    rsync --mkpath -av --delete apps/monthly-budget-planner/public/ {{apps_dir}}/monthly-budget-planner/
+    echo "Syncing dnd-near to public directory..."
+    rsync --mkpath -av --delete apps/dnd-near/ {{apps_dir}}/dnd-near/
+    echo "Apps updated/built and installed successfully!"
 
 # Build the site
 build: build-apps
