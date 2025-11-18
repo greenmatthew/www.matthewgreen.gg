@@ -27,7 +27,7 @@ draft: false # Swap to false to actually make the module display
 
     {{< terminal-css/card
         header="XR Technology Programmer"
-        subheader="<p>Feb. 2022 - Oct. 2023</p><p><b>University of Texas at Arlington</b></p><p>Arlington, TX</p>" >}}
+        subheader="<p>Feb. 2022 - Sep. 2023</p><p><b>University of Texas at Arlington</b></p><p>Arlington, TX</p>" >}}
         <p>
             Independently developed a prototype <a href="/cad-model-viewer/">VR application</a> for the Mechanical and Aerospace Engineering Department at UTA, as part of a <a href="https://mevrstudy.uta.edu">study program</a>. The application introduces students to Computer-Aided Design (CAD) concepts in an immersive 3D environment, enabling real-time interaction with CAD models alongside video lessons.
         </p>
