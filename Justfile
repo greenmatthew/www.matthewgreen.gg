@@ -5,7 +5,7 @@ hugo := "hugo"
 public_dir := "public"
 apps_dir := public_dir / "apps"
 local_ip := "192.168.0.221"
-install_dir := "/mnt/data/nginx/config/www"
+install_dir := "/mnt/matthewgreen.gg/www/config/www"
 
 # Default recipe - shows help information (just --list also works)
 @help:
