@@ -9,6 +9,11 @@ draft: false # Swap to false to actually make the module display
 {{< terminal-css/timeline >}}
 
     {{< terminal-css/card
+        header="Software Engineer"
+        subheader="<p>Dec. 2025 - Present</p><p><b>Körber Supply Chain</b></p><p>DFW Airport, TX</p>" >}}
+    {{< /terminal-css/card >}}
+
+    {{< terminal-css/card
         header="Unity / VR / Game Console Engineer"
         subheader="<p>Jan. 2024 - Feb. 2025</p><p><b>Rad TV</b></p><p>Remote</p>" >}}
         <p>
@@ -41,7 +46,7 @@ draft: false # Swap to false to actually make the module display
 
     {{< terminal-css/card
         header="Designated Hitter"
-        subheader="<p>Mar. 2020 - Mar. 2020</p><p><b>Walgreens</b></p><p>North Richland Hills, TX</p>" >}}
+        subheader="<p>Mar. 2020 - Mar. 2020</p><p><b>Walgreens</b></p>" >}}
         <p>
             Promoted after applying for and receiving a Pharmacy Technician Trainee Certification, which made me eligible to begin training as a Pharmacy Technician. I had just started computer-based training and was preparing to take on pharmacy responsibilities when my family asked me to step away due to concerns about working in a pharmacy during the Covid pandemic.
         </p>
@@ -49,7 +54,7 @@ draft: false # Swap to false to actually make the module display
 
     {{< terminal-css/card
         header="Customer Service Associate"
-        subheader="<p>Aug. 2019 - Feb. 2020</p><p><b>Walgreens</b></p><p>North Richland Hills, TX</p>" >}}
+        subheader="<p>Aug. 2019 - Feb. 2020</p><p><b>Walgreens</b></p>" >}}
         <p>
             Provided excellent customer service in a fast-paced retail environment, assisting customers while handling transactions, managing shelf inventory, processing photo orders, and performing various other store operations as needed.
         </p>
