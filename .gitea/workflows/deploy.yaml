@@ -46,4 +46,10 @@ jobs:
           test -d public/apps/dnd-near
 
       - name: Deploy
-        run: rsync -a --delete public/ /deploy/
+        # --omit-dir-times / --no-perms: /deploy is owned by nginx's uid 911
+        # while the runner is uid 1000 in group 911. Group-write is enough to
+        # create and delete entries inside it, but setting a directory's mtime
+        # or mode requires *ownership*, so plain -a fails on the destination
+        # root with EPERM. File mtimes are still preserved, which is what
+        # rsync's incremental comparison needs.
+        run: rsync -a --delete --omit-dir-times --no-perms public/ /deploy/
