@@ -61,4 +61,7 @@ disableKinds = ["section"]
 [taxonomies]
 
 [permalinks]
-  modules = "/:filename/"
+  # :filename was deprecated in Hugo 0.144.0 and removed by 0.164.0, where it
+  # is a hard build error. :contentbasename is the replacement and resolves
+  # identically for these single-level module files.
+  modules = "/:contentbasename/"
