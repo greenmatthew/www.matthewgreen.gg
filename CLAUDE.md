@@ -9,11 +9,12 @@ Planned work and priorities: see [ROADMAP.md](ROADMAP.md).
 - **Hugo** static site generator. Config TOML (`hugo.toml`); content front matter YAML.
 - **`just`** task runner (`Justfile`). No Make, no npm, no Go modules, no `package.json`.
 - **Git LFS** store media — see `.gitattributes`.
-- **No CI.** No `.github/`, no workflows, no Netlify/Vercel/Cloudflare config. Build and deploy by
-  hand.
+- **CI is Gitea Actions**, `.gitea/workflows/deploy.yaml`, self-hosted runner. No `.github/`, no
+  Netlify/Vercel/Cloudflare.
+- **`jq`** required — `scripts/build-apps.sh` parse `data/apps.json` with it.
 
 Version note: `hugo.toml` declares `extended = false, min = "0.116.0"`, but
-`apps/monthly-budget-planner` use SASS, which need Hugo **extended**. Full `just build` therefore
+`monthly-budget-planner` use SASS, which need Hugo **extended**. Full `just build` therefore
 need extended Hugo despite config claim. Locally installed: `0.154.5+extended`.
 
 ## Commands
@@ -22,26 +23,52 @@ All via `just` (run `just` or `just help` to list):
 
 | Recipe | What it does |
 | --- | --- |
-| `build-apps` | Builds `apps/monthly-budget-planner` (`--minify --cleanDestinationDir`), then rsyncs both apps into `public/apps/<name>/` |
+| `build-apps` | Runs `scripts/build-apps.sh` — builds every app in `data/apps.json`, installs to `public/apps/<name>/` |
 | `build` | Depends on `build-apps`, then runs bare `hugo` |
 | `test` | `hugo server --disableFastRender --bind=0.0.0.0 --baseURL=http://192.168.0.221:1313` |
 | `test-with-apps` | Same as `test`, but rebuilds apps first |
 | `test-fast-render` | Server with fast render left on |
-| `update-repo` | `git fetch && git pull && git submodule update --init --recursive` |
-| `install` | The deploy — see below |
-| `clean` | `rm -rf apps/monthly-budget-planner/public/ public/` |
+| `clean` | `rm -rf public/ .apps-cache/` |
+
+No `install` or `update-repo` recipe any more — deploy is CI's job.
 
 `test*` recipes bind `0.0.0.0` with **hardcoded LAN baseURL** (`192.168.0.221:1313`), set by
 `local_ip` variable at top of `Justfile`.
 
+## Apps registry
+
+`data/apps.json` is source of truth for apps. Per entry: `name` (published at `public/apps/<name>/`),
+`repo`, `ref` (branch or tag — bare SHA won't work, shallow clone by SHA needs Gitea server config
+that isn't enabled), `build` (shell command run in checkout; empty = static, copied verbatim),
+`output` (dir within checkout to publish, `.` for whole thing), `listed` (reserved for Milestone 3
+apps index, unused today).
+
+`scripts/build-apps.sh` consume it, and is what **both** `just build-apps` and CI run, so local and
+CI can't drift. If `apps/<name>/` exist locally it's used as-is and never fetched — that's how you
+hack on app in place against real site. Otherwise clone lands in `$APPS_CACHE` (default
+`.apps-cache/`; CI points it at runner's persistent volume so `actions/checkout` clean doesn't
+nuke it).
+
+Adding app = one JSON entry. Don't edit `Justfile` for it.
+
 ## Deploy
 
-`just install` run **on server itself**. Chains `update-repo` → `build` →
-`sudo rsync -av --delete public/ /mnt/matthewgreen.gg/www/config/www` → `sudo chown -R root:root`.
-Serving is self-hosted nginx.
+Push to `master` triggers `.gitea/workflows/deploy.yaml` on self-hosted runner labelled
+`site-builder` (host mode — job runs in runner container itself, no Docker socket). Steps: checkout
+with LFS + submodules → `./scripts/build-apps.sh` → `hugo --minify` → sanity checks → `rsync -a
+--delete --omit-dir-times --no-perms public/ /deploy/`. Serving is self-hosted nginx.
+`workflow_dispatch` also available for manual run.
 
-This arrangement — Hugo required on server, submodules pulled there, manual invocation — what
-Milestone 1 in [ROADMAP.md](ROADMAP.md) exists to replace. Don't invest in improving it.
+Three deliberate choices, don't undo them:
+
+- **No `pull_request` trigger.** Runner has write access to live webroot; fork PR must never reach
+  it. Trigger set makes that structural.
+- **`--omit-dir-times --no-perms`.** `/deploy` owned by nginx uid 911, runner is uid 1000 in group
+  911. Group-write enough to create/delete inside, but setting directory mtime or mode need
+  *ownership*, so plain `-a` fail on destination root with EPERM. File mtimes still preserved,
+  which is what rsync incremental compare need.
+- **Verify step before rsync.** `--delete` against live webroot, so build that silently produced
+  nothing would empty site. Checks `public/index.html` non-empty and both app dirs exist.
 
 ## Git remotes
 
@@ -51,13 +78,16 @@ Milestone 1 in [ROADMAP.md](ROADMAP.md) exists to replace. Don't invest in impro
 
 ## Submodules
 
-Three, per `.gitmodules`:
+One left, per `.gitmodules`:
 
 - `themes/hugo-terminal.css` — site owner's **own** theme repo, Hugo port of
   [terminal.css](https://terminalcss.xyz/dark/). Fixing something in theme is legitimate option,
-  not just override. Slated for replacement (Milestone 4).
-- `apps/monthly-budget-planner` — **nested Hugo site** with own `hugo.toml` and `Justfile`.
-- `apps/dnd-near` — archived plain static HTML/JS/CSS. Rsync'd verbatim, no build step.
+  not just override. Slated for replacement (Milestone 4), which is where submodule-vs-what
+  question get settled.
+
+Apps used to be submodules too. Now registry entries — see "Apps registry" above.
+`monthly-budget-planner` is **nested Hugo site** with own `hugo.toml` and `Justfile`; `dnd-near` is
+archived plain static HTML/JS/CSS, copied verbatim, no build step.
 
 ## Content
 
@@ -117,11 +147,10 @@ Site-level overrides live in `layouts/`. Ones worth reading before editing:
 3. `hugo.toml` line 21 has bare `[main]` table that does nothing. `[[menus.main]]` is absolute TOML
    key, so menu entries land correctly at root regardless — but reads as if it scopes them.
 4. `disableKinds = ["section"]` contradicts `[outputs] section = ["HTML"]`. Outputs entry inert.
-5. `[permalinks] modules = "/:filename/"` publishes every module **twice** — inlined on `/` and
-   standalone at `/about-me/`, `/skills/`, etc. Standalone copies render through theme's generic
-   `_default/single.html`, which prints `<time>` element from date modules don't have. This line
-   also emits build warning: `:filename` deprecated in Hugo 0.144.0, removed in future release —
-   replacement is `:contentbasename`.
+5. `[permalinks] modules = "/:contentbasename/"` publishes every module **twice** — inlined on `/`
+   and standalone at `/about-me/`, `/skills/`, etc. Standalone copies render through theme's generic
+   `_default/single.html`, which prints `<time>` element from date modules don't have. (Token itself
+   fixed — was `:filename`, removed in Hugo 0.164.0.)
 6. Archetype front-matter formats disagree: `archetypes/default.md` is TOML (`+++`), while
    `archetypes/module.md` and `archetypes/project/index.md` are YAML — and all real content YAML.
    `default.md` otherwise unused.

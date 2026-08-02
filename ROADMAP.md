@@ -8,21 +8,21 @@ Status key: **Not started** · **In progress** · **Done**
 
 ## 1. Build & install refactor
 
-**Status:** Not started
+**Status:** Done
 
-Get off git submodules, and off requirement that Hugo be installed on server to compile and rsync into nginx content directory.
+Got off app submodules, and off requirement that Hugo be installed on server to compile and rsync into nginx content directory.
 
-Foundational, so goes first: everything downstream ship through this pipeline, and it independent of theme and content both. Do now = every later milestone get build/deploy loop worth trusting.
+**What shipped**
 
-Current arrangement (documented in [CLAUDE.md](CLAUDE.md)): `just install` runs on server, chaining `update-repo` → `build` → `sudo rsync` → `chown`, with three submodules pulled down and Hugo extended required on box.
+- Builds run in **Gitea Actions** on self-hosted instance — `.gitea/workflows/deploy.yaml`, push to `master` or manual `workflow_dispatch`. No `pull_request` trigger on purpose: runner has write access to live webroot, so fork PR must never reach it.
+- Deploy is `rsync -a --delete --omit-dir-times --no-perms public/ /deploy/`, guarded by build-nonempty checks (`public/index.html`, both app dirs) so failed build can't empty site. `just install` gone; Hugo no longer on server.
+- **App submodules replaced by registry** — `data/apps.json` lists name/repo/ref/build/output/listed; `scripts/build-apps.sh` clones, builds, installs to `public/apps/<name>/`. Adding app = one JSON entry, no `Justfile` edit. Same script runs locally and in CI, so builds can't drift. Local `apps/<name>/` checkout wins over clone, so in-place hacking still works.
+- `listed` field already in registry, reserved for Milestone 3 apps index.
 
-**Open questions**
+**Carried forward**
 
-- Where builds run? Gitea Actions on self-hosted instance / GitHub Actions publishing artifacts / build on workstation and deploy output only.
-- What replaces submodules for theme and apps?
-- How apps get registered with build, so adding one not bespoke `Justfile` edit each time?
-
-**Constraint:** design must stay **toolchain-agnostic**. If theme chosen in Milestone 4 needs Node/npm, pipeline must absorb that without second rewrite.
+- `themes/hugo-terminal.css` **still a submodule** — only one left. Theme replaced in Milestone 4 anyway; resolve submodule question there rather than churn twice.
+- **Constraint still stands:** design stay **toolchain-agnostic**. If theme chosen in Milestone 4 needs Node/npm, runner must absorb that without second rewrite.
 
 ---
 
@@ -105,7 +105,7 @@ Continuous, not discrete phase — folded into each milestone above. Concrete it
 
 - **36 MB of `.jxr` files committed as raw git blobs.**
   `content/rad-tv-for-ps-vr2/media/unused/` is 83 MB total, and `.gitattributes` doesn't list `.jxr` — so three HDR files (14 MB, 13 MB, 8.6 MB) sit in git history proper, not LFS. Hugo can't process `.jxr` anyway, and directory named "unused". Removing from history is a rewrite — weigh against just deleting going forward.
-- **Deprecated permalink token — will break on future Hugo.** `hugo.toml` uses `[permalinks] modules = "/:filename/"`; `:filename` deprecated in Hugo 0.144.0, slated for removal. Replacement is `:contentbasename`. Build warns today. Resolve alongside decision on whether modules should publish standalone pages at all.
+- ~~**Deprecated permalink token.**~~ **Fixed** — `hugo.toml` now uses `modules = "/:contentbasename/"`. Still open: whether modules should publish standalone pages at all, since each one renders twice (inlined on `/` and at `/about-me/` etc.). Revisit in Milestone 4.
 - `static/private/` empty, produces stray `public/private/` every build.
 - `.gitignore` still excludes `static/media/cad-model-viewer/lessons`, path no longer anywhere in repo.
 - `layouts/shortcodes/dropdown.html` generates IDs via `printf "dropdown-%d" (add 1000 (mul (now.UnixMilli) (len $title)))` — two dropdowns with same-length titles built in same millisecond collide.
