@@ -1,25 +1,23 @@
 # Justfile for Hugo commands
+#
+# Deployment is no longer done from here. Pushing to master triggers
+# .gitea/workflows/deploy.yaml, which builds on a Gitea Actions runner and
+# rsyncs into the nginx content directory. Hugo is no longer installed on the
+# server.
 
 # Define variables
 hugo := "hugo"
 public_dir := "public"
-apps_dir := public_dir / "apps"
 local_ip := "192.168.0.221"
-install_dir := "/mnt/matthewgreen.gg/www/config/www"
 
 # Default recipe - shows help information (just --list also works)
 @help:
     just -l
 
-# Build apps and sync to static directory
+# Build every app in data/apps.json and install under public/apps/
+# Same script the CI workflow runs, so local and CI builds cannot drift.
 build-apps:
-    echo "Building monthly-budget-planner..."
-    {{hugo}} --source apps/monthly-budget-planner --minify --cleanDestinationDir
-    echo "Syncing monthly-budget-planner to public directory..."
-    rsync --mkpath -av --delete apps/monthly-budget-planner/public/ {{apps_dir}}/monthly-budget-planner/
-    echo "Syncing dnd-near to public directory..."
-    rsync --mkpath -av --delete apps/dnd-near/ {{apps_dir}}/dnd-near/
-    echo "Apps updated/built and installed successfully!"
+    ./scripts/build-apps.sh
 
 # Build the site
 build: build-apps
@@ -37,23 +35,7 @@ test:
 test-fast-render:
     {{hugo}} server --bind=0.0.0.0 --baseURL=http://{{local_ip}}:1313
 
-# Update the repository and all submodules (useful for deployment server)
-update-repo:
-    @echo "Updating git repository..."
-    git fetch
-    git pull
-    @echo "Updating git submodules..."
-    git submodule update --init --recursive
-
-# Update repo, build, and deploy to production directory
-install: update-repo build
-    @echo "Syncing to target directory..."
-    sudo rsync -av --delete --stats {{public_dir}}/ {{install_dir}}
-    @echo "Setting appropriate permissions..."
-    sudo chown -R root:root {{install_dir}}
-    @echo "Installation complete!"
-
-# Clean up the compiled site
+# Clean up the compiled site and cached app checkouts
 clean:
-    rm -rf apps/monthly-budget-planner/public/
     rm -rf {{public_dir}}
+    rm -rf .apps-cache

@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "monthly-budget-planner",
+      "repo": "https://git.matthewgreen.gg/mgreen/monthly-budget-planner.git",
+      "ref": "master",
+      "build": "hugo --minify --cleanDestinationDir",
+      "output": "public",
+      "listed": true
+    },
+    {
+      "name": "dnd-near",
+      "repo": "https://git.matthewgreen.gg/mgreen/archive-dnd-near-js.git",
+      "ref": "master",
+      "build": "",
+      "output": ".",
+      "listed": false
+    }
+  ]
+}

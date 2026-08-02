@@ -1,0 +1,49 @@
+name: Build and deploy
+
+# Push to master only. Deliberately no pull_request trigger: the runner has
+# write access to the live webroot, and a fork PR must never be able to reach
+# it. Keeping the trigger to pushes makes that structural rather than a setting
+# somewhere else that could be flipped wrong.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    # Matches GITEA_RUNNER_LABELS in the www stack. Host-mode runner: the job
+    # runs inside the runner container itself, which is why no image is named
+    # here and why the runner needs no Docker socket.
+    runs-on: site-builder
+
+    env:
+      # Outside the workspace, so actions/checkout's clean does not wipe it and
+      # app clones stay warm between runs.
+      APPS_CACHE: /data/cache/apps
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Site media is stored in LFS.
+          lfs: true
+          # Still needed for the theme. Apps come from data/apps.json instead.
+          submodules: true
+
+      - name: Build apps
+        run: ./scripts/build-apps.sh
+
+      - name: Build site
+        # No --cleanDestinationDir: build-apps.sh has already written into
+        # public/apps/, and cleaning would wipe it.
+        run: hugo --minify
+
+      - name: Verify build produced a real site
+        # The deploy below is rsync --delete against the live webroot. Without
+        # this, a build that silently produced nothing would empty the site.
+        run: |
+          test -s public/index.html
+          test -d public/apps/monthly-budget-planner
+          test -d public/apps/dnd-near
+
+      - name: Deploy
+        run: rsync -a --delete public/ /deploy/

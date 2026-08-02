@@ -3,6 +3,9 @@
 public/
 resources/
 
+# App checkouts cloned by scripts/build-apps.sh from data/apps.json
+.apps-cache/
+
 # Removing annoying Windows files
 **Thumbs.db
 
