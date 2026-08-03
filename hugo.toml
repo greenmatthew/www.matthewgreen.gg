@@ -1,5 +1,5 @@
 baseURL = '/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = '''Matthew Green's Showcase'''
 theme = 'hugo-terminal.css'
 
