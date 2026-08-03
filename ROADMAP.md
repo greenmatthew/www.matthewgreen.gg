@@ -77,11 +77,48 @@ Replace `themes/hugo-terminal.css`, showing its age. Largest churn in roadmap �
 
 Note current theme is site owner's own repo, so shortcomings fixable not inherited. Reasons to move on anyway: loads terminal.css 0.7.4, highlight.js 9.13.1 (very old, uses deprecated `hljs.highlightBlock`), and `buttons.js` from CDNs with no SRI; `theme.toml` and README still unfilled scaffolding; carries dead partials (`head/css.html` looks for `css/main.css` that doesn't exist).
 
+**Intended target — Minimal Black**
+
+<https://themes.gohugo.io/themes/hugo-minimal-black/> — theme directory listing, the page to revisit
+for screenshots, tags and full feature list.
+
+| | |
+| --- | --- |
+| Source | <https://gitlab.com/jimchr12/hugo-minimal-black> (GitLab, not GitHub/Gitea) |
+| Demo | <https://minimal-black-demo.netlify.app> |
+| Author | Jim Christopoulos, <https://jimchristopoulos.com/> |
+| License | MIT |
+| Requires | Hugo **extended ≥ 0.120.0**, plus **Node.js + npm** for Tailwind |
+| Install | git submodule or plain clone into `themes/minimal-black` — no Hugo Module |
+| Last updated | 2025-12-22 |
+
+Advertised: dark-mode-first true black with purple accents, light/dark toggle, responsive, built-in
+search, TOC, syntax highlighting, Mermaid, GFM, Font Awesome + Devicon, multiple about-page layouts,
+Google Analytics hook.
+
+**What choosing it decides**
+
+- **Breaks the toolchain-agnostic constraint.** Tailwind means `npm install` in `themes/minimal-black`
+  before Hugo runs — a real build step, on the runner too, contradicting Milestone 1's carried-forward
+  rule and CLAUDE.md's "no npm, no `package.json`". Either accept Node on the runner (and add the step
+  to `.gitea/workflows/deploy.yaml`) or precompile the CSS once and commit it. Decide before any layout
+  work starts.
+- **Hugo floor is satisfied** — 0.120.0 extended is below the site's existing 0.158.0 floor, and the
+  workstation is on 0.164.0 extended. Runner still unverified (Milestone 8).
+- **Submodule question survives.** Ships as a submodule from a *third* host, so the answer isn't
+  "drop submodules" by default — it's swap `themes/hugo-terminal.css` for `themes/minimal-black`, or
+  vendor it to keep the dependency on Gitea.
+- **Not a Hugo Module**, so it doesn't force Milestone 5's Go question either way.
+
 **Open questions**
 
-- Target theme not chosen yet — picking one may be part of this milestone.
-- Replacement need Node/npm toolchain? Feeds back into Milestone 1 design.
-- How much custom shortcode surface (`heading-link`, `media/*`, `dropdown`) carries over vs gets rebuilt against new theme conventions?
+- Node/npm: accept on runner, or precompile Tailwind CSS and commit? See above.
+- How much custom shortcode surface (`heading-link`, `media/*`, `dropdown`) carries over vs gets rebuilt
+  against new theme conventions?
+- Theme is blog/portfolio-shaped; this site is a single-page jump-menu homepage built from `modules`
+  (quirk 9). How much of `layouts/index.html` and `layouts/partials/module.html` survives?
+- Own theme repo is being traded for a single-maintainer external one — shortcomings stop being
+  fixable-in-place, same maintenance risk noted in Milestone 5.
 
 ---
 
