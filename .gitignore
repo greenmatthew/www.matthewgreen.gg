@@ -6,6 +6,11 @@ resources/
 # App checkouts cloned by scripts/build-apps.sh from data/apps.json
 .apps-cache/
 
+# Local app checkouts. scripts/build-apps.sh prefers apps/<name>/ over cloning,
+# so this is where you hack on an app in place against the real site. Each one
+# is its own repo; none of them belong to this one.
+apps/
+
 # Removing annoying Windows files
 **Thumbs.db
 

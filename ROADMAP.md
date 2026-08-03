@@ -28,15 +28,22 @@ Got off app submodules, and off requirement that Hugo be installed on server to 
 
 ## 2. Add the new app
 
-**Status:** Not started
+**Status:** Done
 
-Single self-contained HTML file (icon generator) currently living outside repo. Commit it = no more risk of losing it; wiring trivial once Milestone 1 settles how apps built and installed.
+`delta-diff` — client-side text diff tool, formerly single 24 KB HTML file sitting in Downloads with no version control. (Roadmap previously mis-described this as "icon generator".) Built because online diff tools want account, impose daily limit, or give no assurance pasted text isn't uploaded — no good for confidential data.
 
-**Open questions**
+**What shipped**
 
-- Where file live, and what name in-repo?
-- What URL to serve at (e.g. `/apps/<name>/`)?
-- Fully self-contained, or pulls external resources at runtime?
+- **Own repo**, `mgreen/delta-diff`, wired in as registry entry in `data/apps.json`. **No submodule** — Milestone 1 already killed that arrangement. Published at `/apps/delta-diff/`. `build` empty, `output` `.` — plain static, copied verbatim.
+- **Monofile split three ways** — `index.html` (markup) / `css/style.css` / `js/app.js`, plus `vendor/`. No bundler, no Node, no build step, so toolchain-agnostic constraint holds.
+- **`jsdiff` vendored and pinned** at 7.0.0. Was loaded from `cdnjs.cloudflare.com` at runtime through three-URL fallback chain **with no SRI** — unverified remote script with full access to whatever sat in textareas, on tool whose whole pitch is safety for confidential data. Now zero third-party requests, works offline, privacy claim in header unconditionally true. CDN array, `loadDiff()`, and load-failure banner all deleted.
+- **Licensed** — MIT for app, jsdiff's BSD-3 shipped at `vendor/jsdiff-LICENSE.txt` and credited in footer. Serving source to browser grants no license; needed explicit file.
+- `.gitignore` gained `apps/` — local app checkouts are separate repos, don't belong to this one.
+- Verify step in `.gitea/workflows/deploy.yaml` gained `test -d public/apps/delta-diff`. That guard is per-app by design.
+
+**Carried forward**
+
+- `listed: true` in registry, so it appears once Milestone 3 builds apps index. Nothing links to it until then.
 
 ---
 

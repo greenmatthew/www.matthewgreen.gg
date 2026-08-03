@@ -45,11 +45,12 @@ apps index, unused today).
 
 `scripts/build-apps.sh` consume it, and is what **both** `just build-apps` and CI run, so local and
 CI can't drift. If `apps/<name>/` exist locally it's used as-is and never fetched — that's how you
-hack on app in place against real site. Otherwise clone lands in `$APPS_CACHE` (default
-`.apps-cache/`; CI points it at runner's persistent volume so `actions/checkout` clean doesn't
-nuke it).
+hack on app in place against real site. `apps/` is gitignored, since each checkout is own repo.
+Otherwise clone lands in `$APPS_CACHE` (default `.apps-cache/`; CI points it at runner's persistent
+volume so `actions/checkout` clean doesn't nuke it).
 
-Adding app = one JSON entry. Don't edit `Justfile` for it.
+Adding app = one JSON entry, plus one `test -d public/apps/<name>` line in deploy workflow's verify
+step. Don't edit `Justfile` for it.
 
 ## Deploy
 
@@ -68,7 +69,8 @@ Three deliberate choices, don't undo them:
   *ownership*, so plain `-a` fail on destination root with EPERM. File mtimes still preserved,
   which is what rsync incremental compare need.
 - **Verify step before rsync.** `--delete` against live webroot, so build that silently produced
-  nothing would empty site. Checks `public/index.html` non-empty and both app dirs exist.
+  nothing would empty site. Checks `public/index.html` non-empty and all three app dirs exist. One
+  line per app — add one when you add app.
 
 ## Git remotes
 
@@ -85,9 +87,15 @@ One left, per `.gitmodules`:
   not just override. Slated for replacement (Milestone 4), which is where submodule-vs-what
   question get settled.
 
-Apps used to be submodules too. Now registry entries — see "Apps registry" above.
-`monthly-budget-planner` is **nested Hugo site** with own `hugo.toml` and `Justfile`; `dnd-near` is
-archived plain static HTML/JS/CSS, copied verbatim, no build step.
+Apps used to be submodules too. Now registry entries — see "Apps registry" above. Three exist:
+
+- `monthly-budget-planner` — **nested Hugo site**, own `hugo.toml` and `Justfile`. Needs Hugo
+  extended (SASS).
+- `dnd-near` — archived plain static HTML/JS/CSS, copied verbatim, no build step.
+- `delta-diff` — client-side text diff tool. Static, no build step. `index.html` + `css/style.css`
+  + `js/app.js` + `vendor/`. **`jsdiff` vendored deliberately** (pinned 7.0.0 UMD, BSD-3 license
+  shipped alongside) — was CDN-loaded with no SRI, which is untenable for tool people paste
+  confidential text into. Don't "modernize" it back to a CDN. MIT.
 
 ## Content
 

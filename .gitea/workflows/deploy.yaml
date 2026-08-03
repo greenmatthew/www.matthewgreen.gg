@@ -44,6 +44,7 @@ jobs:
           test -s public/index.html
           test -d public/apps/monthly-budget-planner
           test -d public/apps/dnd-near
+          test -d public/apps/delta-diff
 
       - name: Deploy
         # --omit-dir-times / --no-perms: /deploy is owned by nginx's uid 911

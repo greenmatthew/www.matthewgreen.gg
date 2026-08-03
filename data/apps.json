@@ -15,6 +15,14 @@
       "build": "",
       "output": ".",
       "listed": false
+    },
+    {
+      "name": "delta-diff",
+      "repo": "https://git.matthewgreen.gg/mgreen/delta-diff.git",
+      "ref": "master",
+      "build": "",
+      "output": ".",
+      "listed": true
     }
   ]
 }

@@ -73,9 +73,13 @@ while [ "$i" -lt "$count" ]; do
 
     echo "==> $name: installing to $DEST/$name/"
     mkdir -p "$DEST/$name"
-    # --exclude .git: for apps published with output ".", the checkout's own git
-    # metadata would otherwise be served publicly.
+    # For apps published with output ".", anything sitting in the checkout root
+    # gets served publicly. Exclude the things that are never part of the app:
+    # the checkout's own git metadata, its CI config, and agent tooling config
+    # (Claude Code projects .claude/ and .mcp.json into whatever directory it
+    # is working in, so these appear in local builds without being committed).
     rsync -a --delete --exclude='.git' --exclude='.gitea' \
+        --exclude='.claude' --exclude='.mcp.json' \
         "$src/$output/" "$DEST/$name/"
 done
 
