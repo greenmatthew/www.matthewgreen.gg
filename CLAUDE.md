@@ -141,7 +141,7 @@ Site-level overrides live in `layouts/`. Ones worth reading before editing:
   `assets/css/{custom,media,dropdown}.css` and `assets/js/dropdown.js`.
 - `layouts/partials/media/image.html` — hand-rolled image pipeline. Resolves page-bundle →
   global assets → remote, emits WebP at five widths (480/768/1024/1366/1920) in `<picture>` with
-  srcset, plus lightbox link and `<figcaption>`. Subject of Milestone 5; treat as under review
+  srcset, plus lightbox link and `<figcaption>`. Subject of Milestone 6; treat as under review
   rather than settled.
 
 ## Known quirks
