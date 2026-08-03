@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /private/
+
+# Apps with "listed": false in data/apps.json. They are still built and
+# deployed, they are just not advertised, so keep them out of search results
+# too. One line per unlisted app -- this is advisory only, not access control.
+Disallow: /apps/dnd-near/

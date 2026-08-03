@@ -1,0 +1,41 @@
+<!-- layouts/shortcodes/app-listings.html -->
+{{/*
+Shortcode: app-listings
+
+Description:
+    Renders the apps index from data/apps.json. Only entries with `listed: true`
+    appear here; an unlisted app is still built and deployed, it is simply not
+    advertised. Registry order is listing order -- there is no separate sort
+    field, so reordering the index means reordering data/apps.json.
+
+Note:
+    The apps themselves are installed into public/apps/<name>/ by
+    scripts/build-apps.sh, which runs outside Hugo. Hugo therefore has no page
+    for them and cannot verify that a link target exists, so a typo in `name`
+    yields a silent 404. The guard for that is the per-app
+    `test -d public/apps/<name>` line in .gitea/workflows/deploy.yaml.
+
+Usage example:
+    {{< app-listings >}}
+*/}}
+{{/* hugo.Data, not .Site.Data, which was deprecated in Hugo 0.156.0. */}}
+{{ range where hugo.Data.apps.apps "listed" true }}
+    {{ if not .title }}
+        {{ errorf "Title not set for listed app '%s' (file: data/apps.json)" .name }}
+    {{ end }}
+    {{ if not .summary }}
+        {{ errorf "Summary not set for listed app '%s' (file: data/apps.json)" .name }}
+    {{ end }}
+
+    {{ $appLink := printf "/apps/%s/" .name | relURL }}
+    <h3><a href="{{ $appLink }}">{{ .title }}</a></h3>
+
+    <p>{{ .summary }}</p>
+
+    {{/* The registry stores a clone URL; trim .git for the browsable page. */}}
+    {{ $repoLink := strings.TrimSuffix ".git" .repo }}
+    <p>
+        You can open this app <a href="{{ $appLink }}">here</a>{{ with $repoLink }}, or
+        read its source <a href="{{ . }}">here</a>{{ end }}.
+    </p>
+{{ end }}

@@ -1,0 +1,20 @@
+{{/*
+    Standalone page for a single module.
+
+    Modules are homepage sections -- layouts/index.html inlines every one of
+    them, wrapped by layouts/partials/module.html. But [permalinks] in hugo.toml
+    also publishes each module on its own at /<name>/, so /apps/, /skills/ and
+    friends are real pages that people can land on.
+
+    Those pages used to fall through to the theme's _default/single.html, which
+    prints a <time> element. Modules carry no date, so every one of them
+    rendered "January 1, 0001". This override exists to drop that, and to match
+    the markup of the inlined copy.
+*/}}
+{{ define "main" }}
+    {{ partial "heading-link.html" (dict "type" "h1" "id" .Params.id "Inner" .Title) }}
+
+    <div class="module-content">
+        {{ .Content }}
+    </div>
+{{ end }}

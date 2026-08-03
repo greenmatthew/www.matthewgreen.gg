@@ -13,9 +13,15 @@ Planned work and priorities: see [ROADMAP.md](ROADMAP.md).
   Netlify/Vercel/Cloudflare.
 - **`jq`** required — `scripts/build-apps.sh` parse `data/apps.json` with it.
 
-Version note: `hugo.toml` declares `extended = false, min = "0.116.0"`, but
-`monthly-budget-planner` use SASS, which need Hugo **extended**. Full `just build` therefore
-need extended Hugo despite config claim. Locally installed: `0.154.5+extended`.
+Version note: `hugo.toml` declares `extended = false, min = "0.116.0"`. **Both wrong.**
+`monthly-budget-planner` use SASS, so need Hugo **extended**; theme's `baseof.html` use
+`site.Language.Locale` / `.Direction`, added **0.158.0**; `app-listings.html` use `hugo.Data`,
+added **0.156.0**. Real floor therefore **0.158.0 extended**. Locally installed: `0.164.0+extended`
+(official `.deb` from gohugoio releases, live at `/usr/local/bin/hugo`, `apt-mark hold` set).
+
+Don't `apt install hugo` — Ubuntu `resolute/universe` package (`/usr/bin/hugo`,
+`VendorInfo=ubuntu:`) is 0.154.5, below floor. Runner need same 0.158.0+ upgrade before `master`
+can deploy any of this.
 
 ## Commands
 
@@ -37,11 +43,15 @@ No `install` or `update-repo` recipe any more — deploy is CI's job.
 
 ## Apps registry
 
-`data/apps.json` is source of truth for apps. Per entry: `name` (published at `public/apps/<name>/`),
-`repo`, `ref` (branch or tag — bare SHA won't work, shallow clone by SHA needs Gitea server config
-that isn't enabled), `build` (shell command run in checkout; empty = static, copied verbatim),
-`output` (dir within checkout to publish, `.` for whole thing), `listed` (reserved for Milestone 3
-apps index, unused today).
+`data/apps.json` is source of truth for apps. Build fields, read by `scripts/build-apps.sh`: `name`
+(published at `public/apps/<name>/`), `repo`, `ref` (branch or tag — bare SHA won't work, shallow
+clone by SHA needs Gitea server config that isn't enabled), `build` (shell command run in checkout;
+empty = static, copied verbatim), `output` (dir within checkout to publish, `.` for whole thing).
+
+Display fields, read by `layouts/shortcodes/app-listings.html`, ignored by script: `listed` (true =
+linked from apps index; false = still built and deployed, just not advertised), `title`, `summary`.
+Last two **required when `listed` true** — shortcode `errorf` otherwise, same as `project-listings`
+does for missing `priority`. Index order = registry array order, no sort field.
 
 `scripts/build-apps.sh` consume it, and is what **both** `just build-apps` and CI run, so local and
 CI can't drift. If `apps/<name>/` exist locally it's used as-is and never fetched — that's how you
@@ -50,7 +60,11 @@ Otherwise clone lands in `$APPS_CACHE` (default `.apps-cache/`; CI points it at 
 volume so `actions/checkout` clean doesn't nuke it).
 
 Adding app = one JSON entry, plus one `test -d public/apps/<name>` line in deploy workflow's verify
-step. Don't edit `Justfile` for it.
+step. Don't edit `Justfile` for it. Unlisted app also want `Disallow: /apps/<name>/` line in
+`static/robots.txt` — advisory only, not access control.
+
+Apps aren't Hugo pages, so Hugo **can't** verify link from index resolve. Typo in `name` = silent
+404, and those `test -d` lines are only guard.
 
 ## Deploy
 
@@ -118,8 +132,8 @@ previewImage:
 ---
 ```
 
-**Modules** — homepage sections at `content/modules/<name>.md`, `type: "module"`. Five exist:
-about-me (0), projects (100), skills (200), work-experience (300), education (400).
+**Modules** — homepage sections at `content/modules/<name>.md`, `type: "module"`. Six exist:
+about-me (0), projects (100), apps (150), skills (200), work-experience (300), education (400).
 
 `priority` **ascending** — lower renders first. Note `layouts/shortcodes/project-listings.html`
 calls `errorf` and **fails the build** when project has no `priority`, and silently skips any page
@@ -136,6 +150,8 @@ Site-level overrides live in `layouts/`. Ones worth reading before editing:
 
 - `layouts/index.html` — overrides theme homepage; ranges `modules` section by priority.
 - `layouts/project/single.html` — project page template.
+- `layouts/module/single.html` — standalone module page (see quirk 5). Exists to *not* print theme's
+  `<time>`, which modules have no date for.
 - `layouts/partials/module.html` — wraps each module in `<section id="..." class="module">`.
 - `layouts/partials/head-extension.html` — theme's hook point; minifies and fingerprints
   `assets/css/{custom,media,dropdown}.css` and `assets/js/dropdown.js`.
@@ -156,16 +172,26 @@ Site-level overrides live in `layouts/`. Ones worth reading before editing:
    key, so menu entries land correctly at root regardless — but reads as if it scopes them.
 4. `disableKinds = ["section"]` contradicts `[outputs] section = ["HTML"]`. Outputs entry inert.
 5. `[permalinks] modules = "/:contentbasename/"` publishes every module **twice** — inlined on `/`
-   and standalone at `/about-me/`, `/skills/`, etc. Standalone copies render through theme's generic
-   `_default/single.html`, which prints `<time>` element from date modules don't have. (Token itself
-   fixed — was `:filename`, removed in Hugo 0.164.0.)
-6. Archetype front-matter formats disagree: `archetypes/default.md` is TOML (`+++`), while
+   and standalone at `/about-me/`, `/skills/`, etc. (Token itself fixed — was `:filename`, removed
+   in Hugo 0.164.0. Zero-date `<time>` fixed too, by `layouts/module/single.html`.) Double render
+   now **load-bearing**: `content/modules/apps.md` standalone copy *is* `/apps/` index page. Don't
+   remove standalone module pages without replacing that.
+6. `content/modules/apps.md` publishes to `public/apps/`, same dir `build-apps.sh` install apps
+   into. Not conflict: script rsync each app's own subdir, never parent, and `hugo` don't clean
+   (quirk 1). But it mean `just clean` + bare `hugo` produce `/apps/` index whose every link 404.
+7. Archetype front-matter formats disagree: `archetypes/default.md` is TOML (`+++`), while
    `archetypes/module.md` and `archetypes/project/index.md` are YAML — and all real content YAML.
    `default.md` otherwise unused.
-7. `hugo new` archetypes set `draft: true` and ship Lorem ipsum bodies; new content must be
+8. `hugo new` archetypes set `draft: true` and ship Lorem ipsum bodies; new content must be
    un-drafted before it appears.
-8. Nav is **single-page jump menu** — all `hugo.toml` menu entries are anchors (`#about-me`,
-   `#projects`, …), not real pages.
+9. Nav is **single-page jump menu** — all `hugo.toml` menu entries are anchors (`#about-me`,
+   `#projects`, …), not real pages. Theme's `menu.html` prefix each with `site.BaseURL`, so they
+   render `/#apps` and work from any page, not only `/`.
+10. **Hugo below 0.158.0 can't build this site at all** — theme submodule commit `26ace06` use
+    `site.Language.Locale` / `.Direction`, and error is `can't evaluate field Locale in type
+    *langs.Language`. Workstation fixed (0.164.0, see Version note above). **Runner not verified** —
+    `master` sit at `71644c4`, before theme bump, so live site fine today, but deploy will break
+    the moment anything newer merge. Check runner's Hugo before pushing `master`.
 
 ## Conventions
 

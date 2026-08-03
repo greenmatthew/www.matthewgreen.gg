@@ -18,7 +18,14 @@
 #           plain static files and is copied verbatim
 #   output  directory within the checkout to publish, relative; "." for the
 #           whole checkout
-#   listed  reserved for Milestone 3's apps index; unused by this script
+#
+# The remaining fields are read by layouts/shortcodes/app-listings.html when
+# Hugo renders the apps index, and are unused by this script:
+#
+#   listed   true to link the app from the apps index; false means it is still
+#            built and deployed, just not advertised
+#   title    display name in the index; required when listed is true
+#   summary  one or two sentences for the index; required when listed is true
 #
 # Local development: if apps/<name>/ exists it is used as-is and never fetched,
 # so you can hack on an app in place against the real site. Otherwise the app is

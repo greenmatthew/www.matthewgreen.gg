@@ -40,8 +40,13 @@ jobs:
       - name: Verify build produced a real site
         # The deploy below is rsync --delete against the live webroot. Without
         # this, a build that silently produced nothing would empty the site.
+        #
+        # public/apps/index.html is the apps index. Hugo writes it into the same
+        # directory build-apps.sh installs the apps into, which is safe because
+        # build-apps.sh rsyncs each app's own subdirectory and never the parent.
         run: |
           test -s public/index.html
+          test -s public/apps/index.html
           test -d public/apps/monthly-budget-planner
           test -d public/apps/dnd-near
           test -d public/apps/delta-diff

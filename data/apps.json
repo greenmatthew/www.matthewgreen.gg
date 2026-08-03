@@ -2,6 +2,8 @@
   "apps": [
     {
       "name": "monthly-budget-planner",
+      "title": "Monthly Budget Planner",
+      "summary": "Set your income, define spending categories, allocate an amount to each, and read back a monthly summary. Runs entirely in the browser, saves to local storage, and works offline.",
       "repo": "https://git.matthewgreen.gg/mgreen/monthly-budget-planner.git",
       "ref": "master",
       "build": "hugo --minify --cleanDestinationDir",
@@ -10,6 +12,8 @@
     },
     {
       "name": "dnd-near",
+      "title": "D&D Near",
+      "summary": "Archived. Kept online so old links keep working.",
       "repo": "https://git.matthewgreen.gg/mgreen/archive-dnd-near-js.git",
       "ref": "master",
       "build": "",
@@ -18,6 +22,8 @@
     },
     {
       "name": "delta-diff",
+      "title": "Delta Diff",
+      "summary": "A text diff tool that never uploads anything. No account, no daily limit, and no third-party requests at all, so it is safe to paste confidential text into.",
       "repo": "https://git.matthewgreen.gg/mgreen/delta-diff.git",
       "ref": "master",
       "build": "",

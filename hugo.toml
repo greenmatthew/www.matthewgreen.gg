@@ -30,6 +30,11 @@ disableKinds = ["section"]
         weight = 20
 
     [[menus.main]]
+        name = 'Apps'
+        pageRef = '#apps'
+        weight = 25
+
+    [[menus.main]]
         name = 'Skills'
         pageRef = '#skills'
         weight = 30

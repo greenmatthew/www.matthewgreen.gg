@@ -49,16 +49,23 @@ Got off app submodules, and off requirement that Hugo be installed on server to 
 
 ## 3. Apps section / page
 
-**Status:** Not started
+**Status:** Done
 
-Make apps discoverable — now they exist under `/apps/` with nothing linking to them. Needs public/private distinction: some apps stay unlisted.
+Apps existed under `/apps/` with nothing linking to them. Now indexed, with public/private distinction.
 
-Falls out of Milestones 1 and 2 naturally, since both touch how apps registered.
+**What shipped**
 
-**Open questions**
+- **Registry gained display metadata** — `title` and `summary` per entry in `data/apps.json`, required when `listed: true`. Adding app to index is still one JSON entry, no template edit. Schema comment at top of `scripts/build-apps.sh` documents all three Hugo-side fields; script itself ignores them.
+- **`layouts/shortcodes/app-listings.html`** — ranges `where site.Data.apps.apps "listed" true`, in registry order. No sort field; reorder index by reordering JSON. `errorf` on listed app missing `title`/`summary`, same fail-build convention `project-listings.html` uses for `priority`.
+- **Homepage module** at `content/modules/apps.md`, priority 150 — between projects (100) and skills (200). Nav entry `#apps` at weight 25. Standalone page, not separate template, per "both" answer below.
+- **`/apps/` landing page falls out of quirk #5 for free.** `[permalinks] modules = "/:contentbasename/"` publishes `apps.md` at `/apps/` — same directory `build-apps.sh` populates. Safe because `build-apps.sh` rsyncs each app's own subdirectory and never the `public/apps/` parent, and `hugo` doesn't clean. So double-render, normally a wart, produces real index page at natural URL.
+- **`layouts/module/single.html`** — standalone module pages used to fall through to theme's `_default/single.html`, which prints `<time>` from date modules don't carry, rendering "January 1, 0001" on `/about-me/`, `/skills/` and friends. Override drops it. Half of quirk #5 resolved; the "should modules publish standalone at all" half still belongs to Milestone 4.
+- **Unlisted = built, deployed, reachable, not advertised.** `dnd-near` keeps `listed: false`, plus `Disallow: /apps/dnd-near/` in `static/robots.txt`. Hand-maintained one line per unlisted app, matching the per-app verify-step pattern. Advisory only — anything needing real privacy is nginx auth, deliberately not built here.
+- Verify step in `.gitea/workflows/deploy.yaml` gained `test -s public/apps/index.html`. Hugo has no page for apps and cannot check a link target exists, so a typo'd `name` is a silent 404; the per-app `test -d` lines are the only guard.
 
-- How "private" enforced? Unlisted but reachable by URL / excluded from build entirely / behind auth at nginx layer.
-- Homepage module (like projects), standalone page, or both?
+**Carried forward**
+
+- **No preview images on app cards.** Projects get them via `media/image.html`, but apps have no page bundle, so previews need images committed to this repo at `assets/apps/<name>/` (LFS already covers `.png`) plus a `preview` registry field. Deferred rather than dropped — deliberately not built against `layouts/partials/media/image.html` while that partial is under review. Pick it back up in Milestone 6, once the image pipeline settles.
 
 ---
 
@@ -120,6 +127,8 @@ Sits after theme switch because partly theme-coupled — `image-large|medium|sma
 
 **Worth investigating:** whether Hugo newer image-processing features supersede parts of hand-rolled logic; whether five breakpoints right number; whether AVIF worth adding alongside WebP; and whether resolution chain (page bundle → global assets → remote) does anything Hugo now does natively.
 
+**Inherited from Milestone 3:** app cards in `/apps/` index have no preview images, because apps have no page bundle and the global-assets path runs through the partial under review here. Add `preview` field to `data/apps.json` and images at `assets/apps/<name>/` once the pipeline is settled — it's the first consumer test of whatever resolution chain survives.
+
 ---
 
 ## 7. Content refresh
@@ -144,7 +153,8 @@ Continuous, not discrete phase — folded into each milestone above. Concrete it
 
 - **36 MB of `.jxr` files committed as raw git blobs.**
   `content/rad-tv-for-ps-vr2/media/unused/` is 83 MB total, and `.gitattributes` doesn't list `.jxr` — so three HDR files (14 MB, 13 MB, 8.6 MB) sit in git history proper, not LFS. Hugo can't process `.jxr` anyway, and directory named "unused". Removing from history is a rewrite — weigh against just deleting going forward.
-- ~~**Deprecated permalink token.**~~ **Fixed** — `hugo.toml` now uses `modules = "/:contentbasename/"`. Still open: whether modules should publish standalone pages at all, since each one renders twice (inlined on `/` and at `/about-me/` etc.). Revisit in Milestone 4.
+- ~~**Deprecated permalink token.**~~ **Fixed** — `hugo.toml` now uses `modules = "/:contentbasename/"`. The zero-date `<time>` those standalone pages printed is fixed too, by `layouts/module/single.html` (Milestone 3). Still open: whether modules should publish standalone pages at all, since each one renders twice (inlined on `/` and at `/about-me/` etc.). Milestone 3 now depends on one of them — `/apps/` *is* the module's standalone render — so removing them wholesale is no longer free. Revisit in Milestone 4.
+- ~~**Theme requires Hugo ≥ 0.158.0, workstation has 0.154.5.**~~ **Half fixed.** Theme commit `26ace06` moved `baseof.html` to `site.Language.Locale` / `.Direction`, which don't exist on older Hugo, so the build died with `can't evaluate field Locale in type *langs.Language`. Workstation now on **0.164.0 extended**, from the official gohugoio `.deb` rather than Ubuntu's `resolute/universe` package, which is stuck at 0.154.5 — `apt-mark hold` keeps it that way. **The runner is the open half.** `master` is still at `71644c4`, one commit before the theme bump, so the live site is unaffected — but the first merge carrying `83687f5` will fail the build unless the runner image is on 0.158.0+ too. Verify that before pushing `master`, not after.
 - `static/private/` empty, produces stray `public/private/` every build.
 - `.gitignore` still excludes `static/media/cad-model-viewer/lessons`, path no longer anywhere in repo.
 - `layouts/shortcodes/dropdown.html` generates IDs via `printf "dropdown-%d" (add 1000 (mul (now.UnixMilli) (len $title)))` — two dropdowns with same-length titles built in same millisecond collide.
